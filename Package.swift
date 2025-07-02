@@ -1,32 +1,31 @@
-
 // swift-tools-version:5.5
 // Generated automatically by generate_spm_package.py
 
 import PackageDescription
 
 let package = Package(
-    name: "FluentEmoji",
+    name: "FluentUIEmoji",
     platforms: [
         .iOS(.v13),
-        .macOS(.v10_15)
+        .macOS(.v10_15),
     ],
     products: [
         .library(
-            name: "FluentEmoji",
-            targets: ["FluentEmoji"]
-        ),
+            name: "FluentUIEmoji",
+            targets: ["FluentUIEmoji"]
+        )
     ],
     targets: [
         .target(
-            name: "FluentEmoji",
-            path: "Sources/FluentEmoji",
+            name: "FluentUIEmoji",
+            path: "Sources/FluentUIEmoji",
             resources: [
                 .process("Resources")
             ]
         ),
         .testTarget(
-            name: "FluentEmojiTests",
-            dependencies: ["FluentEmoji"]
-        )
+            name: "FluentUIEmojiTests",
+            dependencies: ["FluentUIEmoji"]
+        ),
     ]
 )

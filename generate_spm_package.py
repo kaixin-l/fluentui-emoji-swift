@@ -7,12 +7,12 @@ from pathlib import Path
 
 # Configuration
 UPSTREAM_REPO = "https://github.com/microsoft/fluentui-emoji/archive/refs/heads/main.zip"
-OUTPUT_DIR = "fluentui-emoji-swift"
-ASSETS_DIR = f"{OUTPUT_DIR}/Sources/FluentEmoji/Resources"
-SOURCES_DIR = f"{OUTPUT_DIR}/Sources/FluentEmoji"
+OUTPUT_DIR = "fluent-ui-emoji-swift"
+ASSETS_DIR = f"{OUTPUT_DIR}/Sources/FluentUIEmoji/Resources"
+SOURCES_DIR = f"{OUTPUT_DIR}/Sources/FluentUIEmoji"
 PACKAGE_SWIFT = f"{OUTPUT_DIR}/Package.swift"
-SWIFT_FILE = f"{SOURCES_DIR}/FluentEmoji.swift"
-TESTS_DIR = f"{OUTPUT_DIR}/Tests/FluentEmojiTests"
+SWIFT_FILE = f"{SOURCES_DIR}/FluentUIEmoji.swift"
+TESTS_DIR = f"{OUTPUT_DIR}/Tests/FluentUIEmojiTests"
 
 
 def to_camel_case(name):
@@ -74,12 +74,12 @@ def generate_swift_file():
         f'case {name} = "{original}"' for name, original in emoji_cases)
 
     swift_content = r"""
-// FluentEmoji.swift
+// FluentUIEmoji.swift
 // Generated automatically by generate_spm_package.py
 
 import Foundation
 
-public enum FluentEmoji: String, CaseIterable {
+public enum FluentUIEmoji: String, CaseIterable {
     %s
 
     /// Returns the URL for the emoji's 3D PNG asset.
@@ -109,28 +109,28 @@ def generate_package_swift():
 import PackageDescription
 
 let package = Package(
-    name: "FluentEmoji",
+    name: "FluentUIEmoji",
     platforms: [
         .iOS(.v13),
         .macOS(.v10_15)
     ],
     products: [
         .library(
-            name: "FluentEmoji",
-            targets: ["FluentEmoji"]
+            name: "FluentUIEmoji",
+            targets: ["FluentUIEmoji"]
         ),
     ],
     targets: [
         .target(
-            name: "FluentEmoji",
-            path: "Sources/FluentEmoji",
+            name: "FluentUIEmoji",
+            path: "Sources/FluentUIEmoji",
             resources: [
                 .process("Resources")
             ]
         ),
         .testTarget(
-            name: "FluentEmojiTests",
-            dependencies: ["FluentEmoji"]
+            name: "FluentUIEmojiTests",
+            dependencies: ["FluentUIEmoji"]
         )
     ]
 )
@@ -142,21 +142,21 @@ let package = Package(
 def generate_test_file():
     """Generate a basic test file for the SPM package."""
     test_content = r"""
-// FluentEmojiTests.swift
+// FluentUIEmojiTests.swift
 // Generated automatically by generate_spm_package.py
 
 import XCTest
-@testable import FluentEmoji
+@testable import FluentUIEmoji
 
-final class FluentEmojiTests: XCTestCase {
+final class FluentUIEmojiTests: XCTestCase {
     func testEmojiURLs() {
-        for emoji in FluentEmoji.allCases {
+        for emoji in FluentUIEmoji.allCases {
             XCTAssertNotNil(emoji.url, "URL for \(emoji.rawValue) should not be nil")
         }
     }
 }
 """
-    with open(f"{TESTS_DIR}/FluentEmojiTests.swift", "w") as f:
+    with open(f"{TESTS_DIR}/FluentUIEmojiTests.swift", "w") as f:
         f.write(test_content)
 
 
