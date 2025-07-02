@@ -39,26 +39,7 @@ jobs:
         id: version
         run: |
           # Get the latest tag, default to 1.0.0 if no tags exist
-          LATEST_TAG=$(git tag -l | grep -E '^[0-9]+\.[0-9]+\.[0-9]+
-
-      - name: Commit and Push Changes
-        if: steps.check_changes.outputs.has_changes == 'true'
-        run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
-          git add .
-          git commit -m "Update SPM package with latest fluentui-emoji assets"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Create and Push Tag
-        if: steps.check_changes.outputs.has_changes == 'true'
-        run: |
-          git tag ${{ steps.version.outputs.new_tag }}
-          git push origin ${{ steps.version.outputs.new_tag }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} | sort -V | tail -n1)
+          LATEST_TAG=$(git tag -l | grep -E '^[0-9]+\.[0-9]+\.[0-9]+$' | sort -V | tail -n1)
           if [ -z "$LATEST_TAG" ]; then
             NEW_TAG="1.0.0"
           else

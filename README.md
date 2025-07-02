@@ -1,5 +1,7 @@
 # Fluent UI Emoji Swift Package
 
+[![Update SPM Package](https://github.com/kaixin-l/fluentui-emoji-swift/actions/workflows/update-spm.yml/badge.svg)](https://github.com/kaixin-l/fluentui-emoji-swift/actions/workflows/update-spm.yml)
+
 A Swift Package Manager (SPM) package for Microsoft's Fluent UI Emoji, providing type-safe access to 3D emoji assets with camelCase naming. This package is automatically generated from the [microsoft/fluentui-emoji](https://github.com/microsoft/fluentui-emoji) repository and updated daily via GitHub Actions to ensure the latest emoji assets are available.
 
 ![Fluent UI Emoji Banner](art/readme_banner.webp)
@@ -32,7 +34,7 @@ Add the following to your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/kaixin-l/fluentui-emoji-swift.git", from: "1.0.7")
+    .package(url: "https://github.com/kaixin-l/fluentui-emoji-swift.git", from: "1.0.0")
 ]
 ```
 
@@ -41,7 +43,7 @@ dependencies: [
 1. Open your project in Xcode
 2. Navigate to `File > Add Packages`
 3. Enter `https://github.com/kaixin-l/fluentui-emoji-swift.git`
-4. Select version `1.0.7` or later
+4. Select version `1.0.0` or later
 5. Add the `FluentUIEmoji` library to your target
 
 ## Usage
