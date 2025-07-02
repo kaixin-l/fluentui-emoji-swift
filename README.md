@@ -1,8 +1,8 @@
 # Fluent UI Emoji Swift Package
 
-![Fluent UI Emoji Banner](art/readme_banner.webp)
-
 A Swift Package Manager (SPM) package for Microsoft's Fluent UI Emoji, providing type-safe access to 3D emoji assets with camelCase naming. This package is automatically generated from the [microsoft/fluentui-emoji](https://github.com/microsoft/fluentui-emoji) repository and updated daily via GitHub Actions to ensure the latest emoji assets are available.
+
+![Fluent UI Emoji Banner](art/readme_banner.webp)
 
 ## Features
 
