@@ -9,6 +9,7 @@ A Swift Package Manager (SPM) package for Microsoft's Fluent UI Emoji, providing
 - **Type-Safe Emoji Access**: Use the `FluentEmoji` enum with camelCase names (e.g., `grinningFace`) to access emoji assets.
 - **3D PNG Assets**: Includes only high-quality 3D PNG emojis from the Fluent UI Emoji collection.
 - **SPM Compatibility**: Seamlessly integrates with Swift projects on iOS 13+ and macOS 10.15+.
+- **Non-SPM Support**: Fallback to `Bundle.main` for resource access in non-SPM contexts.
 - **Automated Updates**: GitHub Actions workflow ensures the package stays up-to-date with the upstream repository.
 - **Lightweight**: Optimized to include only 3D PNG assets, minimizing package size.
 

@@ -1293,6 +1293,11 @@ public enum FluentEmoji: String, CaseIterable {
 
     /// Returns the URL for the emoji's 3D PNG asset.
     public var url: URL? {
-        Bundle.module.url(forResource: rawValue, withExtension: "png", subdirectory: rawValue)
+        // Try SPM bundle first
+        if let url = Bundle.module.url(forResource: rawValue, withExtension: "png", subdirectory: rawValue) {
+            return url
+        }
+        // Fallback to main bundle for non-SPM contexts
+        return Bundle.main.url(forResource: rawValue, withExtension: "png", subdirectory: "Resources/\(rawValue)")
     }
 }
