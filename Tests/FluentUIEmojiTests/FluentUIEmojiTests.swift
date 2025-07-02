@@ -8,7 +8,50 @@ import XCTest
 final class FluentUIEmojiTests: XCTestCase {
     func testEmojiURLs() {
         for emoji in FluentUIEmoji.allCases {
-            XCTAssertNotNil(emoji.url, "URL for \(emoji.rawValue) should not be nil")
+            XCTAssertNotNil(emoji.url, "URL for \(emoji.displayName) should not be nil")
+        }
+    }
+    
+    func testEmojiIdentifiers() {
+        for emoji in FluentUIEmoji.allCases {
+            XCTAssertFalse(emoji.identifier.isEmpty, "Identifier should not be empty")
+            XCTAssertEqual(emoji.identifier, emoji.rawValue, "Identifier should match rawValue")
+        }
+    }
+    
+    func testEmojiDisplayNames() {
+        for emoji in FluentUIEmoji.allCases {
+            XCTAssertFalse(emoji.displayName.isEmpty, "Display name should not be empty")
+        }
+    }
+    
+    func testEmojiCategories() {
+        for emoji in FluentUIEmoji.allCases {
+            XCTAssertTrue(EmojiCategory.allCases.contains(emoji.category), "Category should be valid")
+        }
+    }
+    
+    func testSearchFunctionality() {
+        let results = FluentUIEmoji.search("face")
+        XCTAssertFalse(results.isEmpty, "Search for 'face' should return results")
+        
+        let emptyResults = FluentUIEmoji.search("")
+        XCTAssertTrue(emptyResults.isEmpty, "Empty search should return no results")
+    }
+    
+    func testPopularEmojis() {
+        XCTAssertFalse(FluentUIEmoji.popular.isEmpty, "Popular emojis list should not be empty")
+        for emoji in FluentUIEmoji.popular {
+            XCTAssertTrue(FluentUIEmoji.allCases.contains(emoji), "Popular emoji should exist in allCases")
+        }
+    }
+    
+    func testCategoryFiltering() {
+        for category in EmojiCategory.allCases {
+            let emojis = FluentUIEmoji.emojis(in: category)
+            for emoji in emojis {
+                XCTAssertEqual(emoji.category, category, "Emoji should belong to correct category")
+            }
         }
     }
 }
