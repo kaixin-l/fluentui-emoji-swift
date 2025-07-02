@@ -7,7 +7,7 @@ from pathlib import Path
 
 # Configuration
 UPSTREAM_REPO = "https://github.com/microsoft/fluentui-emoji/archive/refs/heads/main.zip"
-OUTPUT_DIR = "fluent-ui-emoji-swift"
+OUTPUT_DIR = "fluentui-emoji-swift"
 ASSETS_DIR = f"{OUTPUT_DIR}/Sources/FluentUIEmoji/Resources"
 SOURCES_DIR = f"{OUTPUT_DIR}/Sources/FluentUIEmoji"
 PACKAGE_SWIFT = f"{OUTPUT_DIR}/Package.swift"

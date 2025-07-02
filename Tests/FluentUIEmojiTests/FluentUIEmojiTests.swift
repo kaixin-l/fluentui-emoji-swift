@@ -1,13 +1,13 @@
 
-// FluentEmojiTests.swift
+// FluentUIEmojiTests.swift
 // Generated automatically by generate_spm_package.py
 
 import XCTest
-@testable import FluentEmoji
+@testable import FluentUIEmoji
 
-final class FluentEmojiTests: XCTestCase {
+final class FluentUIEmojiTests: XCTestCase {
     func testEmojiURLs() {
-        for emoji in FluentEmoji.allCases {
+        for emoji in FluentUIEmoji.allCases {
             XCTAssertNotNil(emoji.url, "URL for \(emoji.rawValue) should not be nil")
         }
     }

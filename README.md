@@ -12,6 +12,18 @@ A Swift Package Manager (SPM) package for Microsoft's Fluent UI Emoji, providing
 - **Automated Updates**: GitHub Actions workflow ensures the package stays up-to-date with the upstream repository
 - **Lightweight**: Optimized to include only 3D PNG assets, minimizing package size
 
+## Local Development
+
+To generate the SPM package locally from the source:
+
+```bash
+python3 generate_spm_package.py
+mv fluentui-emoji-swift/* .
+rmdir fluentui-emoji-swift
+```
+
+This will download the latest Fluent UI Emoji assets from Microsoft's repository and generate the Swift package structure.
+
 ## Installation
 
 ### Swift Package Manager
@@ -20,7 +32,7 @@ Add the following to your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/kaixin-l/fluent-ui-emoji-swift.git", from: "1.0.6")
+    .package(url: "https://github.com/kaixin-l/fluentui-emoji-swift.git", from: "1.0.7")
 ]
 ```
 
@@ -28,8 +40,8 @@ dependencies: [
 
 1. Open your project in Xcode
 2. Navigate to `File > Add Packages`
-3. Enter `https://github.com/kaixin-l/fluent-ui-emoji-swift.git`
-4. Select version `1.0.6` or later
+3. Enter `https://github.com/kaixin-l/fluentui-emoji-swift.git`
+4. Select version `1.0.7` or later
 5. Add the `FluentUIEmoji` library to your target
 
 ## Usage
@@ -69,7 +81,7 @@ If `emoji.url` returns `nil`:
 3. **Debug Output**: The `FluentUIEmoji.url` property logs resource lookup attempts to the console
 4. **File Naming**: Ensure the raw value matches the filename pattern (e.g., `Soft ice cream` for `soft_ice_cream_3d.png`)
 
-For additional help, open an issue on the [GitHub repository](https://github.com/kaixin-l/fluent-ui-emoji-swift).
+For additional help, open an issue on the [GitHub repository](https://github.com/kaixin-l/fluentui-emoji-swift).
 
 ## Requirements
 
@@ -99,4 +111,4 @@ This project is licensed under the MIT License, consistent with the original [mi
 
 ## Contact
 
-For questions or support, please open an issue on the [GitHub repository](https://github.com/kaixin-l/fluent-ui-emoji-swift).
+For questions or support, please open an issue on the [GitHub repository](https://github.com/kaixin-l/fluentui-emoji-swift).

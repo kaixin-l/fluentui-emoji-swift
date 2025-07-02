@@ -1,10 +1,10 @@
 
-// FluentEmoji.swift
+// FluentUIEmoji.swift
 // Generated automatically by generate_spm_package.py
 
 import Foundation
 
-public enum FluentEmoji: String, CaseIterable {
+public enum FluentUIEmoji: String, CaseIterable {
     case cutOfMeat = "Cut Of Meat"
     case heavyEqualsSign = "Heavy Equals Sign"
     case heartOnFire = "Heart On Fire"
