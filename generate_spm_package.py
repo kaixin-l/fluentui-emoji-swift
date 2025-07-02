@@ -41,28 +41,34 @@ def create_package_structure():
 
 
 def copy_emoji_assets(repo_dir):
-    """Copy 3D PNG assets to the Resources directory under Sources/FluentEmoji."""
+    """Copy 3D PNG assets to Resources/, keeping original filenames."""
     assets_path = f"{repo_dir}/assets"
+    copied_files = 0
     for emoji_dir in Path(assets_path).iterdir():
         if emoji_dir.is_dir():
             for file in emoji_dir.glob("3D/*_3d.png"):
-                dest_dir = Path(ASSETS_DIR) / emoji_dir.name
-                dest_dir.mkdir(exist_ok=True)
-                shutil.copy(file, dest_dir / file.name)
+                dest_file = Path(ASSETS_DIR) / file.name
+                shutil.copy(file, dest_file)
+                print(f"Copied {file} to {dest_file}")
+                copied_files += 1
+    print(f"Total files copied: {copied_files}")
 
 
 def generate_swift_file():
     """Generate a Swift enum with camelCase cases for each emoji."""
     emoji_cases = []
-    for emoji_dir in Path(ASSETS_DIR).iterdir():
-        if emoji_dir.is_dir():
-            camel_name = to_camel_case(emoji_dir.name)
+    for file in Path(ASSETS_DIR).glob("*_3d.png"):
+        # Remove '_3d.png' to get rawValue (e.g., 'soft_ice_cream_3d.png' -> 'Soft ice cream')
+        raw_name = file.stem.replace('_3d', '')
+        # Convert to title case for rawValue (e.g., 'soft_ice_cream' -> 'Soft ice cream')
+        raw_name = ' '.join(word.capitalize() for word in raw_name.split('_'))
+        camel_name = to_camel_case(raw_name)
+        if re.match(r'^[a-zA-Z_][a-zA-Z0-9_]*$', camel_name):
+            emoji_cases.append((camel_name, raw_name))
+        else:
+            camel_name = f"_{camel_name}"
             if re.match(r'^[a-zA-Z_][a-zA-Z0-9_]*$', camel_name):
-                emoji_cases.append((camel_name, emoji_dir.name))
-            else:
-                camel_name = f"_{camel_name}"
-                if re.match(r'^[a-zA-Z_][a-zA-Z0-9_]*$', camel_name):
-                    emoji_cases.append((camel_name, emoji_dir.name))
+                emoji_cases.append((camel_name, raw_name))
 
     cases = "\n    ".join(
         f'case {name} = "{original}"' for name, original in emoji_cases)
@@ -78,17 +84,27 @@ public enum FluentEmoji: String, CaseIterable {
 
     /// Returns the URL for the emoji's 3D PNG asset.
     public var url: URL? {
+        // Convert rawValue to lowercase with underscores (e.g., 'Soft ice cream' -> 'soft_ice_cream')
+        let fileName = rawValue.lowercased().replacingOccurrences(of: " ", with: "_") + "_3d"
         // Try SPM bundle first
         #if canImport(SwiftPM)
-        if let url = Bundle.module.url(forResource: rawValue, withExtension: "png", subdirectory: rawValue) {
+        if let url = Bundle.module.url(forResource: fileName, withExtension: "png") {
+            print("Found SPM resource: \(fileName).png at \(url)")
             return url
+        } else {
+            print("SPM resource not found for: \(fileName).png")
         }
         #endif
         // Fallback to main bundle for non-SPM contexts
-        return Bundle.main.url(forResource: rawValue, withExtension: "png", subdirectory: "Resources/%s")
+        if let url = Bundle.main.url(forResource: fileName, withExtension: "png", subdirectory: "Resources") {
+            print("Found main bundle resource: \(fileName).png at \(url)")
+            return url
+        }
+        print("Main bundle resource not found for: \(fileName).png")
+        return nil
     }
 }
-""" % (cases, r'\(rawValue)')
+""" % cases
 
     with open(SWIFT_FILE, "w") as f:
         f.write(swift_content)

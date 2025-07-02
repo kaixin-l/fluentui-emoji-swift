@@ -7,7 +7,7 @@ A Swift Package Manager (SPM) package for Microsoft's Fluent UI Emoji, providing
 ## Features
 
 - **Type-Safe Emoji Access**: Use the `FluentEmoji` enum with camelCase names (e.g., `grinningFace`) to access emoji assets.
-- **3D PNG Assets**: Includes only high-quality 3D PNG emojis from the Fluent UI Emoji collection.
+- **3D PNG Assets**: Includes only high-quality 3D PNG emojis, stored as `<emoji_name>_3d.png` in `Sources/FluentEmoji/Resources/` (e.g., `soft_ice_cream_3d.png`).
 - **SPM Compatibility**: Seamlessly integrates with Swift projects on iOS 13+ and macOS 10.15+.
 - **Non-SPM Support**: Fallback to `Bundle.main` for resource access in non-SPM contexts.
 - **Automated Updates**: GitHub Actions workflow ensures the package stays up-to-date with the upstream repository.
@@ -46,9 +46,17 @@ Then, run `swift package resolve` or update your project in Xcode to fetch the p
 3. Enter `https://github.com/kaixin-l/fluentui-emoji-swift.git` and select version `1.0.0` or later.
 4. Add the `FluentEmoji` library to your target.
 
+### Local Development
+To build and test the package locally:
+1. Clone the repository: `git clone https://github.com/kaixin-l/fluentui-emoji-swift.git`.
+2. Run `python3 generate_spm_package.py` to generate the package structure, ensuring `Sources/FluentEmoji/Resources/` contains `<emoji_name>_3d.png` files.
+3. Open `Package.swift` in Xcode 12.0+ or run `swift build`.
+4. Note: In Xcode, the `Resources/` directory may not appear in the project navigator due to SPM's resource bundling, but assets are embedded in the module's resource bundle.
+5. Run tests with `swift test` or Xcode's test navigator.
+
 ## Usage
 
-The package provides a `FluentEmoji` enum for type-safe access to emoji assets. Each enum case corresponds to an emoji, with a camelCase name (e.g., `grinningFace` for "Grinning Face") and a `url` property to access the 3D PNG asset stored in `Sources/FluentEmoji/Resources/`.
+The package provides a `FluentEmoji` enum for type-safe access to emoji assets. Each enum case corresponds to an emoji, with a camelCase name (e.g., `grinningFace` for "Grinning Face") and a `url` property to access the 3D PNG asset stored in `Sources/FluentEmoji/Resources/<emoji_name>_3d.png`.
 
 ### Example: Accessing a Specific Emoji
 
@@ -70,9 +78,21 @@ import FluentEmoji
 for emoji in FluentEmoji.allCases {
     if let url = emoji.url {
         print("Emoji: \(emoji.rawValue), URL: \(url.absoluteString)")
+    } else {
+        print("Emoji: \(emoji.rawValue), URL: Not found")
     }
 }
 ```
+
+## Troubleshooting
+
+If `emoji.url` returns `nil`:
+1. **Check Resources**: Ensure `Sources/FluentEmoji/Resources/` contains `<emoji_name>_3d.png` files (e.g., `soft_ice_cream_3d.png`). Run `ls -R Sources/FluentEmoji/Resources` to verify.
+2. **Verify Git**: Run `git ls-files | grep Sources/FluentEmoji/Resources` to confirm resources are tracked.
+3. **Debug Output**: The `FluentEmoji.url` property logs resource lookup attempts. Check the console for messages like `SPM resource not found for: <name>_3d.png` or `Main bundle resource not found for: <name>_3d.png`.
+4. **Non-SPM Context**: If using the package outside SPM, copy `Sources/FluentEmoji/Resources/` to your project's resources and add it to the target's `Copy Bundle Resources` build phase.
+5. **File Naming**: Ensure `rawValue` matches the filename without `_3d` (e.g., `Soft ice cream` for `soft_ice_cream_3d.png`).
+6. Open an issue on the [GitHub repository](https://github.com/kaixin-l/fluentui-emoji-swift) with console logs and project details.
 
 ## Requirements
 
