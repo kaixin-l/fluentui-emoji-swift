@@ -19,6 +19,7 @@ let package = Package(
     targets: [
         .target(
             name: "FluentEmoji",
+            path: "Sources/FluentEmoji",
             resources: [
                 .process("Resources")
             ]

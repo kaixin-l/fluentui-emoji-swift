@@ -86,21 +86,11 @@ public enum FluentEmoji: String, CaseIterable {
     public var url: URL? {
         // Convert rawValue to lowercase with underscores (e.g., 'Soft ice cream' -> 'soft_ice_cream')
         let fileName = rawValue.lowercased().replacingOccurrences(of: " ", with: "_") + "_3d"
-        // Try SPM bundle first
-        #if canImport(SwiftPM)
         if let url = Bundle.module.url(forResource: fileName, withExtension: "png") {
             print("Found SPM resource: \(fileName).png at \(url)")
             return url
-        } else {
-            print("SPM resource not found for: \(fileName).png")
         }
-        #endif
-        // Fallback to main bundle for non-SPM contexts
-        if let url = Bundle.main.url(forResource: fileName, withExtension: "png", subdirectory: "Resources") {
-            print("Found main bundle resource: \(fileName).png at \(url)")
-            return url
-        }
-        print("Main bundle resource not found for: \(fileName).png")
+        print("SPM resource not found for: \(fileName).png")
         return nil
     }
 }
@@ -133,6 +123,7 @@ let package = Package(
     targets: [
         .target(
             name: "FluentEmoji",
+            path: "Sources/FluentEmoji",
             resources: [
                 .process("Resources")
             ]

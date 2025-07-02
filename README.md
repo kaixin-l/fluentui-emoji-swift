@@ -46,14 +46,6 @@ Then, run `swift package resolve` or update your project in Xcode to fetch the p
 3. Enter `https://github.com/kaixin-l/fluentui-emoji-swift.git` and select version `1.0.0` or later.
 4. Add the `FluentEmoji` library to your target.
 
-### Local Development
-To build and test the package locally:
-1. Clone the repository: `git clone https://github.com/kaixin-l/fluentui-emoji-swift.git`.
-2. Run `python3 generate_spm_package.py` to generate the package structure, ensuring `Sources/FluentEmoji/Resources/` contains `<emoji_name>_3d.png` files.
-3. Open `Package.swift` in Xcode 12.0+ or run `swift build`.
-4. Note: In Xcode, the `Resources/` directory may not appear in the project navigator due to SPM's resource bundling, but assets are embedded in the module's resource bundle.
-5. Run tests with `swift test` or Xcode's test navigator.
-
 ## Usage
 
 The package provides a `FluentEmoji` enum for type-safe access to emoji assets. Each enum case corresponds to an emoji, with a camelCase name (e.g., `grinningFace` for "Grinning Face") and a `url` property to access the 3D PNG asset stored in `Sources/FluentEmoji/Resources/<emoji_name>_3d.png`.
