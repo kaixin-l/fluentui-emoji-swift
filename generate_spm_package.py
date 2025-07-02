@@ -8,7 +8,7 @@ from pathlib import Path
 # Configuration
 UPSTREAM_REPO = "https://github.com/microsoft/fluentui-emoji/archive/refs/heads/main.zip"
 OUTPUT_DIR = "fluentui-emoji-swift"
-ASSETS_DIR = f"{OUTPUT_DIR}/Resources"
+ASSETS_DIR = f"{OUTPUT_DIR}/Sources/FluentEmoji/Resources"
 SOURCES_DIR = f"{OUTPUT_DIR}/Sources/FluentEmoji"
 PACKAGE_SWIFT = f"{OUTPUT_DIR}/Package.swift"
 SWIFT_FILE = f"{SOURCES_DIR}/FluentEmoji.swift"
@@ -17,11 +17,9 @@ TESTS_DIR = f"{OUTPUT_DIR}/Tests/FluentEmojiTests"
 
 def to_camel_case(name):
     """Convert a string like 'Grinning Face' to 'grinningFace'."""
-    # Replace special characters with spaces, split, and process each word
     words = re.sub(r'[^a-zA-Z0-9\s]', ' ', name).split()
     if not words:
         return name.lower()
-    # Lowercase the first word, capitalize the rest
     return words[0].lower() + ''.join(word.capitalize() for word in words[1:])
 
 
@@ -43,11 +41,10 @@ def create_package_structure():
 
 
 def copy_emoji_assets(repo_dir):
-    """Copy 3D PNG assets to the Resources directory, preserving original names."""
+    """Copy 3D PNG assets to the Resources directory under Sources/FluentEmoji."""
     assets_path = f"{repo_dir}/assets"
     for emoji_dir in Path(assets_path).iterdir():
         if emoji_dir.is_dir():
-            # Look for 3D PNG files only
             for file in emoji_dir.glob("3D/*_3d.png"):
                 dest_dir = Path(ASSETS_DIR) / emoji_dir.name
                 dest_dir.mkdir(exist_ok=True)
@@ -56,21 +53,17 @@ def copy_emoji_assets(repo_dir):
 
 def generate_swift_file():
     """Generate a Swift enum with camelCase cases for each emoji."""
-    # Collect emoji names and convert to camelCase
     emoji_cases = []
     for emoji_dir in Path(ASSETS_DIR).iterdir():
         if emoji_dir.is_dir():
             camel_name = to_camel_case(emoji_dir.name)
-            # Ensure the name is a valid Swift identifier
             if re.match(r'^[a-zA-Z_][a-zA-Z0-9_]*$', camel_name):
                 emoji_cases.append((camel_name, emoji_dir.name))
             else:
-                # Handle invalid identifiers by prefixing with underscore
                 camel_name = f"_{camel_name}"
                 if re.match(r'^[a-zA-Z_][a-zA-Z0-9_]*$', camel_name):
                     emoji_cases.append((camel_name, emoji_dir.name))
 
-    # Generate enum cases
     cases = "\n    ".join(
         f'case {name} = "{original}"' for name, original in emoji_cases)
 
@@ -86,9 +79,11 @@ public enum FluentEmoji: String, CaseIterable {
     /// Returns the URL for the emoji's 3D PNG asset.
     public var url: URL? {
         // Try SPM bundle first
+        #if canImport(SwiftPM)
         if let url = Bundle.module.url(forResource: rawValue, withExtension: "png", subdirectory: rawValue) {
             return url
         }
+        #endif
         // Fallback to main bundle for non-SPM contexts
         return Bundle.main.url(forResource: rawValue, withExtension: "png", subdirectory: "Resources/%s")
     }
@@ -123,7 +118,7 @@ let package = Package(
         .target(
             name: "FluentEmoji",
             resources: [
-                .copy("Resources")
+                .process("Resources")
             ]
         ),
         .testTarget(
@@ -160,13 +155,11 @@ final class FluentEmojiTests: XCTestCase {
 
 def main():
     """Main function to generate the SPM package."""
-    # Clean up previous output
     if os.path.exists(OUTPUT_DIR):
         shutil.rmtree(OUTPUT_DIR)
     if os.path.exists("temp"):
         shutil.rmtree("temp")
 
-    # Download and process.\\\
     repo_dir = download_and_extract_repo()
     create_package_structure()
     copy_emoji_assets(repo_dir)
@@ -174,7 +167,6 @@ def main():
     generate_package_swift()
     generate_test_file()
 
-    # Clean up
     shutil.rmtree("temp")
     print(f"SPM package generated at {OUTPUT_DIR}")
 

@@ -20,7 +20,7 @@ let package = Package(
         .target(
             name: "FluentEmoji",
             resources: [
-                .copy("Resources")
+                .process("Resources")
             ]
         ),
         .testTarget(

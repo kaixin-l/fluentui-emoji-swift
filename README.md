@@ -48,7 +48,7 @@ Then, run `swift package resolve` or update your project in Xcode to fetch the p
 
 ## Usage
 
-The package provides a `FluentEmoji` enum for type-safe access to emoji assets. Each enum case corresponds to an emoji, with a camelCase name (e.g., `grinningFace` for "Grinning Face") and a `url` property to access the 3D PNG asset.
+The package provides a `FluentEmoji` enum for type-safe access to emoji assets. Each enum case corresponds to an emoji, with a camelCase name (e.g., `grinningFace` for "Grinning Face") and a `url` property to access the 3D PNG asset stored in `Sources/FluentEmoji/Resources/`.
 
 ### Example: Accessing a Specific Emoji
 
@@ -79,6 +79,7 @@ for emoji in FluentEmoji.allCases {
 - Swift 5.5 or later
 - iOS 13.0 or later
 - macOS 10.15 or later
+- Xcode 12.0 or later (for local development)
 
 ## Contributing
 
