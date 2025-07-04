@@ -61,18 +61,54 @@ def categorize_emoji(name):
     """Categorize emoji based on simplified name patterns."""
     name_lower = name.lower()
 
-    # Symbols (includes Faces & Emotions, Symbols & Flags)
-    symbol_keywords = ['face', 'smile', 'grin', 'laugh', 'cry', 'tear', 'wink', 'kiss', 'angry', 'sad',
-                       'happy', 'eyes', 'mouth', 'tongue', 'flag', 'heart', 'symbol', 'sign', 'arrow',
-                       'cross', 'star', 'circle', 'square', 'triangle', 'diamond', 'button', 'mark']
-    if any(keyword in name_lower for keyword in symbol_keywords):
-        return 'symbols'
+    # Faces & Emotions (strictly facial expressions)
+    face_keywords = ['face', 'smile', 'grin', 'laugh', 'cry', 'tear', 'wink', 'kiss', 'angry', 'sad',
+                     'happy', 'emotion', 'feeling', 'joy', 'sorrow', 'surprised', 'shocked', 'nervous',
+                     'worried', 'confused', 'sleepy', 'tired', 'frown', 'pout', 'smirk', 'expressionless',
+                     'neutral', 'unamused', 'relieved', 'pensive', 'astonished', 'hushed',
+                     'flushed', 'pleading', 'grimacing', 'lying', 'shushing', 'thinking', 'zipper']
+    # Exclude non-face items that might contain these keywords
+    if any(keyword in name_lower for keyword in face_keywords) and not any(exclude in name_lower for exclude in ['cat', 'monkey', 'moon', 'sun']):
+        return 'faces'
+
+    # Time & Numbers (clocks, numbers, calendars)
+    time_keywords = ['clock', 'oclock', 'thirty', 'calendar', 'timer', 'stopwatch', 'hourglass', 'alarm',
+                     'keycap', 'spiral calendar', 'tear off calendar', 'mantelpiece clock']
+    if any(keyword in name_lower for keyword in time_keywords):
+        return 'time'
+
+    # People & Body
+    people_keywords = ['person', 'man', 'woman', 'boy', 'girl', 'baby', 'child', 'adult', 'old',
+                       'hand', 'finger', 'thumb', 'fist', 'palm', 'wave', 'clap', 'point', 'peace',
+                       'ok', 'victory', 'love', 'gesture', 'body', 'head', 'hair', 'beard', 'wrestling',
+                       'fencing', 'genie', 'zombie', 'bunny ears', 'with bunny ears', 'handshake',
+                       'hugging', 'bust', 'busts', 'speaking head', 'brain', 'tongue', 'tooth', 'eye', 'eyes',
+                       'ear', 'nose', 'mouth', 'lips', 'kiss mark', 'footprints', 'paw prints']
+    if any(keyword in name_lower for keyword in people_keywords):
+        return 'people'
+
+    # Weather & Sky
+    weather_keywords = ['weather', 'sun', 'moon', 'star', 'cloud', 'rain', 'snow', 'wind', 'lightning',
+                        'rainbow', 'comet', 'shooting star', 'milky way', 'ringed planet', 'tornado',
+                        'cyclone', 'fog', 'foggy', 'droplet', 'sweat droplets', 'umbrella', 'sunrise',
+                        'sunset', 'bridge at night', 'night with stars', 'crescent', 'waxing', 'waning',
+                        'gibbous', 'quarter', 'new moon', 'full moon', 'first quarter', 'last quarter']
+    if any(keyword in name_lower for keyword in weather_keywords):
+        return 'weather'
 
     # Animals & Nature
     animal_keywords = ['cat', 'dog', 'bird', 'fish', 'bear', 'pig', 'cow', 'horse', 'monkey', 'lion',
                        'tiger', 'elephant', 'mouse', 'rabbit', 'fox', 'wolf', 'frog', 'snake', 'dragon',
                        'turtle', 'whale', 'dolphin', 'shark', 'octopus', 'butterfly', 'bee', 'spider',
-                       'ant', 'bug', 'tree', 'flower', 'plant', 'leaf', 'mushroom']
+                       'ant', 'bug', 'tree', 'flower', 'plant', 'leaf', 'mushroom', 'nature', 'forest',
+                       'chick', 'rooster', 'chicken', 'turkey', 'duck', 'eagle', 'owl', 'bat', 'koala',
+                       'panda', 'penguin', 'polar bear', 'sloth', 'otter', 'beaver', 'skunk', 'raccoon',
+                       'chipmunk', 'hedgehog', 'unicorn', 'zebra', 'giraffe', 'hippopotamus', 'rhinoceros',
+                       'gorilla', 'orangutan', 'kangaroo', 'llama', 'camel', 'bison', 'ox', 'water buffalo',
+                       'goat', 'ram', 'sheep', 'ewe', 'deer', 'moose', 'boar', 'leopard', 'seal', 'lobster',
+                       'crab', 'shrimp', 'squid', 'snail', 'worm', 'microbe', 'coral', 'seedling', 'herb',
+                       'shamrock', 'clover', 'palm tree', 'cactus', 'tulip', 'rose', 'sunflower', 'blossom',
+                       'cherry blossom', 'hibiscus', 'lotus', 'bouquet', 'wilted flower', 'hyacinth']
     if any(keyword in name_lower for keyword in animal_keywords):
         return 'animals'
 
@@ -80,25 +116,142 @@ def categorize_emoji(name):
     food_keywords = ['food', 'drink', 'coffee', 'tea', 'wine', 'beer', 'cake', 'bread', 'pizza',
                      'burger', 'fruit', 'apple', 'banana', 'grape', 'strawberry', 'cherry', 'peach',
                      'lemon', 'watermelon', 'pineapple', 'coconut', 'avocado', 'tomato', 'carrot',
-                     'corn', 'potato', 'cheese', 'meat', 'chicken', 'fish', 'egg', 'milk', 'honey',
-                     'salt', 'pepper', 'ice', 'cream']
+                     'corn', 'potato', 'cheese', 'meat', 'chicken', 'egg', 'milk', 'honey',
+                     'salt', 'pepper', 'ice cream', 'restaurant', 'kitchen', 'cooking', 'sandwich',
+                     'hamburger', 'hot dog', 'taco', 'burrito', 'pizza', 'spaghetti', 'curry',
+                     'sushi', 'bento', 'rice', 'noodles', 'soup', 'salad', 'pancakes', 'waffle',
+                     'cookie', 'doughnut', 'pie', 'chocolate', 'candy', 'lollipop', 'custard',
+                     'pudding', 'shortcake', 'cupcake', 'birthday cake', 'pretzel', 'bagel',
+                     'croissant', 'baguette', 'flatbread', 'stuffed flatbread', 'tamale', 'falafel',
+                     'fondue', 'dumpling', 'fortune cookie', 'takeout', 'beverage', 'tropical drink',
+                     'cocktail', 'wine glass', 'beer mug', 'clinking', 'cup', 'teacup', 'hot beverage',
+                     'bottle', 'sake', 'champagne', 'popping cork', 'olive', 'pickle', 'popcorn',
+                     'chestnut', 'peanuts', 'beans', 'pea pod', 'garlic', 'onion', 'bell pepper',
+                     'hot pepper', 'cucumber', 'leafy green', 'broccoli', 'eggplant', 'lime',
+                     'kiwi fruit', 'mango', 'melon', 'blueberries', 'grapes', 'tangerine', 'pear',
+                     'ginger root', 'butter', 'bacon', 'cut of meat', 'poultry leg', 'meat on bone',
+                     'fried shrimp', 'fish cake', 'moon cake', 'dango', 'oden', 'roasted sweet potato',
+                     'canned food', 'honey pot', 'baby bottle', 'glass of milk', 'mate', 'bubble tea']
     if any(keyword in name_lower for keyword in food_keywords):
         return 'food'
 
-    # Activities (includes Activities & Sports, Travel & Places)
-    activity_keywords = ['sport', 'ball', 'game', 'play', 'run', 'swim', 'ski', 'bike', 'car', 'plane',
-                         'train', 'boat', 'ship', 'rocket', 'music', 'guitar', 'piano', 'drum', 'dance',
-                         'party', 'celebration', 'house', 'building', 'city', 'country', 'map', 'hotel',
-                         'school', 'hospital', 'church', 'castle', 'bridge', 'tower', 'mountain', 'beach',
-                         'desert', 'forest', 'island']
+    # Activities & Sports
+    activity_keywords = ['sport', 'ball', 'game', 'play', 'run', 'swim', 'ski', 'bike', 'exercise',
+                         'fitness', 'gym', 'dance', 'music', 'guitar', 'piano', 'drum', 'sing',
+                         'party', 'celebration', 'festival', 'concert', 'theater', 'movie', 'tv',
+                         'soccer', 'football', 'basketball', 'baseball', 'tennis', 'volleyball',
+                         'rugby', 'cricket', 'field hockey', 'ice hockey', 'lacrosse', 'badminton',
+                         'ping pong', 'bowling', 'boxing', 'martial arts', 'wrestling', 'fencing',
+                         'goal net', 'trophy', 'medal', 'sports medal', 'military medal', 'skiing',
+                         'skis', 'ice skate', 'roller skate', 'skateboard', 'flying disc', 'kite',
+                         'yo yo', 'chess', 'game die', 'slot machine', 'video game', 'joystick',
+                         'puzzle piece', 'mahjong', 'flower playing cards', 'performing arts',
+                         'circus tent', 'ferris wheel', 'roller coaster', 'carousel horse', 'trumpet',
+                         'saxophone', 'violin', 'banjo', 'accordion', 'flute', 'drum', 'long drum',
+                         'musical note', 'musical notes', 'musical score', 'musical keyboard',
+                         'microphone', 'studio microphone', 'headphone', 'radio', 'ticket',
+                         'admission tickets', 'clapper board', 'film', 'movie camera', 'video camera',
+                         'film projector', 'television', 'camping', 'tent']
     if any(keyword in name_lower for keyword in activity_keywords):
         return 'activities'
 
-    # Objects
+    # Travel & Places
+    travel_keywords = ['house', 'building', 'city', 'country', 'map', 'hotel', 'school', 'hospital',
+                       'church', 'castle', 'bridge', 'tower', 'mountain', 'beach', 'desert', 'island',
+                       'car', 'plane', 'train', 'boat', 'ship', 'rocket', 'bus', 'taxi', 'bicycle',
+                       'road', 'street', 'park', 'garden', 'office', 'shop', 'store', 'market',
+                       'mosque', 'temple', 'synagogue', 'kaaba', 'shinto shrine', 'hindu temple',
+                       'classical building', 'statue of liberty', 'tokyo tower', 'mount fuji',
+                       'volcano', 'national park', 'cityscape', 'houses', 'derelict house',
+                       'house with garden', 'love hotel', 'convenience store', 'department store',
+                       'post office', 'japanese post office', 'bank', 'atm', 'customs', 'passport control',
+                       'baggage claim', 'left luggage', 'elevator', 'escalator', 'wheelchair symbol',
+                       'mens room', 'womens room', 'restroom', 'water closet', 'potable water',
+                       'non potable water', 'litter in bin sign', 'no littering', 'no smoking',
+                       'no entry', 'prohibited', 'children crossing', 'no pedestrians', 'no bicycles',
+                       'no mobile phones', 'no one under eighteen', 'automobile', 'oncoming automobile',
+                       'sport utility vehicle', 'pickup truck', 'delivery truck', 'articulated lorry',
+                       'tractor', 'racing car', 'motorcycle', 'motor scooter', 'auto rickshaw',
+                       'bicycle', 'kick scooter', 'bus', 'oncoming bus', 'trolleybus', 'minibus',
+                       'ambulance', 'fire engine', 'police car', 'oncoming police car', 'taxi',
+                       'oncoming taxi', 'airplane', 'small airplane', 'airplane departure',
+                       'airplane arrival', 'helicopter', 'suspension railway', 'mountain railway',
+                       'mountain cableway', 'aerial tramway', 'ship', 'motor boat', 'speedboat',
+                       'ferry', 'passenger ship', 'anchor', 'sailboat', 'canoe', 'flying saucer',
+                       'seat', 'luggage', 'railway car', 'high speed train', 'bullet train',
+                       'train', 'metro', 'light rail', 'station', 'tram', 'monorail',
+                       'railway track', 'motorway', 'construction', 'building construction',
+                       'fountain', 'playground slide', 'oil drum', 'fuel pump']
+    if any(keyword in name_lower for keyword in travel_keywords):
+        return 'travel'
+
+    # Symbols & Flags (symbols, signs, arrows, geometric shapes)
+    symbol_keywords = ['symbol', 'sign', 'arrow', 'cross', 'circle', 'square', 'triangle', 'diamond',
+                       'button', 'mark', 'warning', 'info', 'question', 'exclamation', 'check', 'x',
+                       'plus', 'minus', 'multiply', 'divide', 'equals', 'infinity', 'heart', 'star',
+                       'sparkle', 'sparkles', 'glowing star', 'shooting star', 'eight pointed star',
+                       'six pointed star', 'star of david', 'dotted six pointed star', 'sparkler',
+                       'fireworks', 'red heart', 'orange heart', 'yellow heart', 'green heart',
+                       'blue heart', 'purple heart', 'brown heart', 'black heart', 'grey heart',
+                       'white heart', 'pink heart', 'light blue heart', 'heart with arrow',
+                       'heart with ribbon', 'sparkling heart', 'growing heart', 'beating heart',
+                       'revolving hearts', 'two hearts', 'heart decoration', 'heart exclamation',
+                       'broken heart', 'heart on fire', 'mending heart', 'red circle', 'orange circle',
+                       'yellow circle', 'green circle', 'blue circle', 'purple circle', 'brown circle',
+                       'black circle', 'white circle', 'red square', 'orange square', 'yellow square',
+                       'green square', 'blue square', 'purple square', 'brown square', 'black square',
+                       'white square', 'large orange diamond', 'large blue diamond', 'small orange diamond',
+                       'small blue diamond', 'red triangle', 'red triangle pointed down', 'diamond with a dot',
+                       'radio button', 'white square button', 'black square button', 'check box with check',
+                       'ballot box with ballot', 'heavy check mark', 'heavy multiplication x', 'cross mark',
+                       'cross mark button', 'heavy plus sign', 'heavy minus sign', 'heavy division sign',
+                       'curly loop', 'double curly loop', 'part alternation mark', 'eight spoked asterisk',
+                       'sparkle', 'double exclamation mark', 'interrobang', 'question mark', 'white question mark',
+                       'red question mark', 'exclamation mark', 'white exclamation mark', 'red exclamation mark',
+                       'wavy dash', 'copyright', 'registered', 'trade mark', 'hash', 'keycap asterisk',
+                       'information', 'id', 'name badge', 'japanese symbol for beginner', 'heavy dollar sign',
+                       'currency exchange', 'medical symbol', 'recycling symbol', 'fleur de lis', 'trident emblem',
+                       'beginner', 'o button', 'p button', 'a button', 'b button', 'ab button',
+                       'cl button', 'cool button', 'free button', 'id button', 'new button', 'ng button',
+                       'ok button', 'sos button', 'up button', 'vs button', 'japanese', 'accept', 'congratulations', 'secret',
+                       'red circle', 'blue circle', 'white circle', 'black circle',
+                       'hollow red circle', 'heavy large circle', 'aries', 'taurus', 'gemini', 'cancer',
+                       'leo', 'virgo', 'libra', 'scorpio', 'sagittarius', 'capricorn', 'aquarius', 'pisces',
+                       'ophiuchus', 'six pointed star', 'atm sign', 'put litter in its place', 'potable water',
+                       'wheelchair', 'no entry', 'no entry sign', 'prohibited', 'no bicycles', 'no smoking',
+                       'no littering', 'non potable water', 'no pedestrians', 'children crossing',
+                       'no mobile phones', 'no one under eighteen', 'radioactive', 'biohazard', 'up arrow',
+                       'upper right arrow', 'right arrow', 'lower right arrow', 'down arrow', 'lower left arrow',
+                       'left arrow', 'upper left arrow', 'up down arrow', 'left right arrow', 'clockwise vertical arrows',
+                       'counterclockwise arrows button', 'back arrow', 'end arrow', 'on arrow', 'soon arrow',
+                       'top arrow', 'twisted rightwards arrows', 'repeat button', 'repeat single button',
+                       'arrow forward', 'fast forward button', 'next track button', 'play or pause button',
+                       'reverse button', 'fast reverse button', 'last track button', 'upwards button',
+                       'fast up button', 'downwards button', 'fast down button', 'pause button', 'stop button',
+                       'record button', 'eject button', 'cinema', 'dim button', 'bright button', 'antenna bars',
+                       'vibration mode', 'mobile phone off', 'female sign', 'male sign', 'transgender symbol',
+                       'heavy multiplication x', 'heavy plus sign', 'heavy minus sign', 'heavy division sign',
+                       'heavy equals sign', 'infinity', 'bangbang', 'interrobang', 'question', 'grey question',
+                       'white question', 'grey exclamation', 'exclamation', 'heavy exclamation mark', 'flag']
+    if any(keyword in name_lower for keyword in symbol_keywords):
+        return 'symbols'
+
+    # Objects & Tools (default)
     object_keywords = ['phone', 'computer', 'book', 'pen', 'key', 'lock', 'tool', 'hammer', 'knife',
-                       'gun', 'bomb', 'money', 'coin', 'gem', 'ring', 'crown', 'hat', 'shirt', 'dress',
-                       'shoe', 'bag', 'watch', 'glasses', 'umbrella', 'light', 'fire', 'water', 'earth',
-                       'moon', 'sun', 'star', 'cloud', 'rainbow', 'lightning', 'snow', 'wind']
+                       'money', 'coin', 'gem', 'ring', 'crown', 'hat', 'shirt', 'dress', 'shoe', 'bag',
+                       'watch', 'glasses', 'light', 'fire', 'water', 'briefcase', 'handbag', 'purse',
+                       'clutch bag', 'backpack', 'luggage', 'suitcase', 'shopping bag', 'shopping cart',
+                       'basket', 'gift', 'wrapped gift', 'ribbon', 'bow', 'balloon', 'confetti',
+                       'party popper', 'scissors', 'wrench', 'screwdriver', 'nut and bolt', 'gear',
+                       'brick', 'magnet', 'gun', 'pistol', 'bomb', 'firecracker', 'knife', 'dagger',
+                       'sword', 'shield', 'bow and arrow', 'boomerang', 'mirror', 'lipstick',
+                       'gem stone', 'crown', 'top hat', 'graduation cap', 'billed cap', 'womans hat',
+                       'rescue workers helmet', 'military helmet', 'prayer beads', 'lipstick', 'ring',
+                       'handbag', 'purse', 'clutch bag', 'school backpack', 'briefcase', 'necktie',
+                       'jeans', 'dress', 'bikini', 'one piece swimsuit', 'kimono', 'sari', 'lab coat',
+                       'safety vest', 'coat', 'shorts', 'gloves', 'scarf', 'socks', 'running shoe',
+                       'hiking boot', 'womans boot', 'mans shoe', 'high heeled shoe', 'womans sandal',
+                       'thong sandal', 'ballet shoes', 'flat shoe', 'running shirt', 'martial arts uniform']
     if any(keyword in name_lower for keyword in object_keywords):
         return 'objects'
 
@@ -322,25 +475,51 @@ public enum FluentUIEmoji: String, CaseIterable {{
 
 /// Categories for organizing emojis.
 public enum EmojiCategory: String, CaseIterable {{
-    case symbols = "Symbols"
+    case faces = "Faces & Emotions"
+    case people = "People & Body"
+    case time = "Time & Numbers"
     case animals = "Animals & Nature"
+    case weather = "Weather & Sky"
     case food = "Food & Drink"
-    case activities = "Activities"
-    case objects = "Objects"
+    case activities = "Activities & Sports"
+    case travel = "Travel & Places"
+    case objects = "Objects & Tools"
+    case symbols = "Symbols & Flags"
     
     /// Display name for the category.
     public var displayName: String {{
         return self.rawValue
     }}
     
+    /// English name for the category.
+    public var englishName: String {{
+        switch self {{
+        case .faces: return "Faces and Emotions"
+        case .people: return "People and Body"
+        case .time: return "Time and Numbers"
+        case .animals: return "Animals and Nature"
+        case .weather: return "Weather and Sky"
+        case .food: return "Food and Drink"
+        case .activities: return "Activities and Sports"
+        case .travel: return "Travel and Places"
+        case .objects: return "Objects and Tools"
+        case .symbols: return "Symbols and Flags"
+        }}
+    }}
+    
     /// Icon emoji for the category.
     public var icon: String {{
         switch self {{
-        case .symbols: return "😀"
+        case .faces: return "😀"
+        case .people: return "👤"
+        case .time: return "🕐"
         case .animals: return "🐶"
+        case .weather: return "☀️"
         case .food: return "🍎"
         case .activities: return "⚽"
+        case .travel: return "🏠"
         case .objects: return "📱"
+        case .symbols: return "⭐"
         }}
     }}
 }}
@@ -470,6 +649,14 @@ final class FluentUIEmojiTests: XCTestCase {
         // Test that all emojis have valid URLs
         for emoji in FluentUIEmoji.allCases {
             XCTAssertNotNil(emoji.url, "Emoji \(emoji.rawValue) should have a valid URL")
+        }
+    }
+    
+    func testCategoryDistribution() {
+        // Test that each category has at least one emoji
+        for category in EmojiCategory.allCases {
+            let emojisInCategory = FluentUIEmoji.emojis(in: category)
+            XCTAssertFalse(emojisInCategory.isEmpty, "Category \(category.displayName) should not be empty")
         }
     }
 }

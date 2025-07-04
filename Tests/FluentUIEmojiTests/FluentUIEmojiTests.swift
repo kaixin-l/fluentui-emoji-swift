@@ -61,4 +61,12 @@ final class FluentUIEmojiTests: XCTestCase {
             XCTAssertNotNil(emoji.url, "Emoji \(emoji.rawValue) should have a valid URL")
         }
     }
+    
+    func testCategoryDistribution() {
+        // Test that each category has at least one emoji
+        for category in EmojiCategory.allCases {
+            let emojisInCategory = FluentUIEmoji.emojis(in: category)
+            XCTAssertFalse(emojisInCategory.isEmpty, "Category \(category.displayName) should not be empty")
+        }
+    }
 }
