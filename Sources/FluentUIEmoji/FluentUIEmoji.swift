@@ -5,1291 +5,1291 @@
 import Foundation
 
 public enum FluentUIEmoji: String, CaseIterable {
-    case cutOfMeat = "cutOfMeat"
-    case heavyEqualsSign = "heavyEqualsSign"
-    case heartOnFire = "heartOnFire"
-    case busStop = "busStop"
-    case soccerBall = "soccerBall"
-    case catFace = "catFace"
-    case sneezingFace = "sneezingFace"
-    case endArrow = "endArrow"
-    case loudlyCryingFace = "loudlyCryingFace"
+    case cutOfMeat = "cut_of_meat"
+    case heavyEqualsSign = "heavy_equals_sign"
+    case heartOnFire = "heart_on_fire"
+    case busStop = "bus_stop"
+    case soccerBall = "soccer_ball"
+    case catFace = "cat_face"
+    case sneezingFace = "sneezing_face"
+    case endArrow = "end_arrow"
+    case loudlyCryingFace = "loudly_crying_face"
     case placard = "placard"
     case crown = "crown"
-    case japaneseBargainButton = "japaneseBargainButton"
-    case safetyPin = "safetyPin"
+    case japaneseBargainButton = "japanese_bargain_button"
+    case twoHumpCamel = "two_hump_camel"
+    case safetyPin = "safety_pin"
     case pancakes = "pancakes"
-    case wineGlass = "wineGlass"
-    case newButton = "newButton"
-    case wheelchairSymbol = "wheelchairSymbol"
+    case wineGlass = "wine_glass"
+    case newButton = "new_button"
+    case highHeeledShoe = "high_heeled_shoe"
+    case wheelchairSymbol = "wheelchair_symbol"
     case tiger = "tiger"
-    case frowningFace = "frowningFace"
-    case inputSymbols = "inputSymbols"
-    case sleepyFace = "sleepyFace"
-    case doubleCurlyLoop = "doubleCurlyLoop"
-    case babyBottle = "babyBottle"
-    case femaleSign = "femaleSign"
-    case computerDisk = "computerDisk"
-    case lowBattery = "lowBattery"
+    case frowningFace = "frowning_face"
+    case inputSymbols = "input_symbols"
+    case sleepyFace = "sleepy_face"
+    case doubleCurlyLoop = "double_curly_loop"
+    case babyBottle = "baby_bottle"
+    case femaleSign = "female_sign"
+    case computerDisk = "computer_disk"
+    case lowBattery = "low_battery"
     case construction = "construction"
-    case moonViewingCeremony = "moonViewingCeremony"
-    case shootingStar = "shootingStar"
-    case upsideDownFace = "upsideDownFace"
+    case moonViewingCeremony = "moon_viewing_ceremony"
+    case shootingStar = "shooting_star"
     case zzz = "zzz"
     case fountain = "fountain"
-    case sunBehindLargeCloud = "sunBehindLargeCloud"
+    case sunBehindLargeCloud = "sun_behind_large_cloud"
     case mate = "mate"
-    case fieldHockey = "fieldHockey"
+    case fieldHockey = "field_hockey"
     case brick = "brick"
-    case smallOrangeDiamond = "smallOrangeDiamond"
-    case noMobilePhones = "noMobilePhones"
-    case japaneseProhibitedButton = "japaneseProhibitedButton"
+    case smallOrangeDiamond = "small_orange_diamond"
+    case noMobilePhones = "no_mobile_phones"
+    case japaneseProhibitedButton = "japanese_prohibited_button"
     case teapot = "teapot"
     case scissors = "scissors"
-    case dashingAway = "dashingAway"
+    case dashingAway = "dashing_away"
     case rocket = "rocket"
-    case rolledUpNewspaper = "rolledUpNewspaper"
-    case growingHeart = "growingHeart"
-    case downcastFaceWithSweat = "downcastFaceWithSweat"
-    case noPedestrians = "noPedestrians"
-    case tropicalDrink = "tropicalDrink"
+    case growingHeart = "growing_heart"
+    case downcastFaceWithSweat = "downcast_face_with_sweat"
+    case tShirt = "t_shirt"
+    case noPedestrians = "no_pedestrians"
+    case tropicalDrink = "tropical_drink"
     case shield = "shield"
     case mosque = "mosque"
     case scarf = "scarf"
     case cloud = "cloud"
-    case moneyBag = "moneyBag"
-    case fastUpButton = "fastUpButton"
+    case moneyBag = "money_bag"
+    case fastUpButton = "fast_up_button"
     case doughnut = "doughnut"
     case menorah = "menorah"
+    case faceWithHeadBandage = "face_with_head_bandage"
     case gear = "gear"
     case sponge = "sponge"
-    case sadButRelievedFace = "sadButRelievedFace"
-    case spiralShell = "spiralShell"
-    case personWrestling = "personWrestling"
-    case highSpeedTrain = "highSpeedTrain"
+    case sadButRelievedFace = "sad_but_relieved_face"
+    case spiralShell = "spiral_shell"
+    case jackOLantern = "jack_o_lantern"
+    case personWrestling = "person_wrestling"
     case moose = "moose"
-    case fleurDeLis = "fleurDeLis"
-    case beamingFaceWithSmilingEyes = "beamingFaceWithSmilingEyes"
-    case shoppingBags = "shoppingBags"
+    case beamingFaceWithSmilingEyes = "beaming_face_with_smiling_eyes"
+    case shoppingBags = "shopping_bags"
     case spaghetti = "spaghetti"
-    case spiralCalendar = "spiralCalendar"
-    case inboxTray = "inboxTray"
-    case hairPick = "hairPick"
-    case pirateFlag = "pirateFlag"
+    case spiralCalendar = "spiral_calendar"
+    case inboxTray = "inbox_tray"
+    case hairPick = "hair_pick"
+    case pirateFlag = "pirate_flag"
     case deer = "deer"
-    case magicWand = "magicWand"
-    case smilingFaceWithHorns = "smilingFaceWithHorns"
-    case firstQuarterMoonFace = "firstQuarterMoonFace"
+    case magicWand = "magic_wand"
+    case smilingFaceWithHorns = "smiling_face_with_horns"
+    case firstQuarterMoonFace = "first_quarter_moon_face"
     case handbag = "handbag"
     case dumpling = "dumpling"
-    case bitingLip = "bitingLip"
+    case bitingLip = "biting_lip"
     case bird = "bird"
-    case thinkingFace = "thinkingFace"
-    case railwayCar = "railwayCar"
-    case fullMoon = "fullMoon"
-    case upLeftArrow = "upLeftArrow"
-    case clinkingBeerMugs = "clinkingBeerMugs"
-    case aerialTramway = "aerialTramway"
-    case grinningCatWithSmilingEyes = "grinningCatWithSmilingEyes"
-    case brightButton = "brightButton"
-    case woozyFace = "woozyFace"
+    case thinkingFace = "thinking_face"
+    case railwayCar = "railway_car"
+    case fullMoon = "full_moon"
+    case clinkingBeerMugs = "clinking_beer_mugs"
+    case aerialTramway = "aerial_tramway"
+    case grinningCatWithSmilingEyes = "grinning_cat_with_smiling_eyes"
+    case brightButton = "bright_button"
+    case woozyFace = "woozy_face"
     case lime = "lime"
     case fondue = "fondue"
     case pick = "pick"
-    case rightArrowCurvingLeft = "rightArrowCurvingLeft"
+    case rightArrowCurvingLeft = "right_arrow_curving_left"
     case locomotive = "locomotive"
-    case japaneseMonthlyAmountButton = "japaneseMonthlyAmountButton"
-    case perseveringFace = "perseveringFace"
+    case japaneseMonthlyAmountButton = "japanese_monthly_amount_button"
+    case perseveringFace = "persevering_face"
     case penguin = "penguin"
-    case kitchenKnife = "kitchenKnife"
-    case brownCircle = "brownCircle"
-    case headShakingHorizontally = "headShakingHorizontally"
-    case musicalNotes = "musicalNotes"
-    case babyChick = "babyChick"
-    case fourThirty = "fourThirty"
+    case kitchenKnife = "kitchen_knife"
+    case brownCircle = "brown_circle"
+    case headShakingHorizontally = "head_shaking_horizontally"
+    case musicalNotes = "musical_notes"
+    case babyChick = "baby_chick"
     case coral = "coral"
     case leopard = "leopard"
-    case twoHearts = "twoHearts"
+    case twoHearts = "two_hearts"
     case sun = "sun"
     case seal = "seal"
-    case transgenderFlag = "transgenderFlag"
+    case transgenderFlag = "transgender_flag"
     case rainbow = "rainbow"
-    case upArrow = "upArrow"
+    case upArrow = "up_arrow"
     case bank = "bank"
-    case pauseButton = "pauseButton"
-    case dollarBanknote = "dollarBanknote"
+    case pauseButton = "pause_button"
+    case dollarBanknote = "dollar_banknote"
     case salt = "salt"
     case cactus = "cactus"
-    case slightlyFrowningFace = "slightlyFrowningFace"
+    case dottedSixPointedStar = "dotted_six_pointed_star"
+    case slightlyFrowningFace = "slightly_frowning_face"
     case key = "key"
     case boomerang = "boomerang"
     case melon = "melon"
     case alembic = "alembic"
-    case musicalScore = "musicalScore"
-    case divingMask = "divingMask"
+    case musicalScore = "musical_score"
+    case divingMask = "diving_mask"
     case sled = "sled"
-    case rabbitFace = "rabbitFace"
+    case rabbitFace = "rabbit_face"
     case bus = "bus"
     case olive = "olive"
-    case noBicycles = "noBicycles"
-    case shallowPanOfFood = "shallowPanOfFood"
+    case noBicycles = "no_bicycles"
+    case shallowPanOfFood = "shallow_pan_of_food"
     case rosette = "rosette"
-    case reminderRibbon = "reminderRibbon"
+    case reminderRibbon = "reminder_ribbon"
     case headphone = "headphone"
-    case keycap6 = "keycap6"
+    case keycap6 = "keycap_6"
     case brain = "brain"
-    case incomingEnvelope = "incomingEnvelope"
-    case beerMug = "beerMug"
+    case incomingEnvelope = "incoming_envelope"
+    case beerMug = "beer_mug"
     case eagle = "eagle"
-    case videoGame = "videoGame"
+    case videoGame = "video_game"
     case dove = "dove"
-    case fourLeafClover = "fourLeafClover"
-    case chartDecreasing = "chartDecreasing"
-    case redApple = "redApple"
+    case fourLeafClover = "four_leaf_clover"
+    case chartDecreasing = "chart_decreasing"
+    case redApple = "red_apple"
     case taurus = "taurus"
-    case inputLatinLowercase = "inputLatinLowercase"
-    case crossedSwords = "crossedSwords"
-    case smilingFaceWithSunglasses = "smilingFaceWithSunglasses"
+    case inputLatinLowercase = "input_latin_lowercase"
+    case crossedSwords = "crossed_swords"
+    case smilingFaceWithSunglasses = "smiling_face_with_sunglasses"
     case chains = "chains"
-    case playOrPauseButton = "playOrPauseButton"
+    case playOrPauseButton = "play_or_pause_button"
     case saxophone = "saxophone"
-    case deliveryTruck = "deliveryTruck"
-    case moneyWithWings = "moneyWithWings"
-    case faceWithThermometer = "faceWithThermometer"
-    case greenSquare = "greenSquare"
+    case deliveryTruck = "delivery_truck"
+    case moneyWithWings = "money_with_wings"
+    case faceWithThermometer = "face_with_thermometer"
+    case greenSquare = "green_square"
     case garlic = "garlic"
-    case kissingCat = "kissingCat"
-    case triangularRuler = "triangularRuler"
-    case keycapHashtag = "keycapHashtag"
-    case rightArrowCurvingDown = "rightArrowCurvingDown"
+    case kissingCat = "kissing_cat"
+    case triangularRuler = "triangular_ruler"
+    case keycapHashtag = "keycap_hashtag"
+    case rightArrowCurvingDown = "right_arrow_curving_down"
     case coconut = "coconut"
-    case pottedPlant = "pottedPlant"
+    case pottedPlant = "potted_plant"
     case information = "information"
-    case oncomingPoliceCar = "oncomingPoliceCar"
-    case riceCracker = "riceCracker"
-    case whiteSmallSquare = "whiteSmallSquare"
-    case yellowCircle = "yellowCircle"
-    case flyingDisc = "flyingDisc"
-    case birthdayCake = "birthdayCake"
+    case oncomingPoliceCar = "oncoming_police_car"
+    case riceCracker = "rice_cracker"
+    case whiteSmallSquare = "white_small_square"
+    case yellowCircle = "yellow_circle"
+    case flyingDisc = "flying_disc"
+    case birthdayCake = "birthday_cake"
     case clamp = "clamp"
     case mushroom = "mushroom"
-    case horizontalTrafficLight = "horizontalTrafficLight"
-    case riceBall = "riceBall"
+    case frontFacingBabyChick = "front_facing_baby_chick"
+    case horizontalTrafficLight = "horizontal_traffic_light"
+    case riceBall = "rice_ball"
     case rat = "rat"
-    case vibrationMode = "vibrationMode"
+    case vibrationMode = "vibration_mode"
     case jar = "jar"
-    case faceWithSteamFromNose = "faceWithSteamFromNose"
-    case pButton = "pButton"
-    case yenBanknote = "yenBanknote"
+    case faceWithSteamFromNose = "face_with_steam_from_nose"
+    case pButton = "p_button"
+    case yenBanknote = "yen_banknote"
     case octopus = "octopus"
     case satellite = "satellite"
-    case leafyGreen = "leafyGreen"
-    case doubleExclamationMark = "doubleExclamationMark"
+    case leafyGreen = "leafy_green"
+    case doubleExclamationMark = "double_exclamation_mark"
     case customs = "customs"
     case bug = "bug"
     case seat = "seat"
     case sparkler = "sparkler"
-    case blueHeart = "blueHeart"
-    case railwayTrack = "railwayTrack"
-    case ballotBoxWithBallot = "ballotBoxWithBallot"
-    case mountainRailway = "mountainRailway"
-    case meltingFace = "meltingFace"
-    case airplaneArrival = "airplaneArrival"
-    case foldingHandFan = "foldingHandFan"
+    case blueHeart = "blue_heart"
+    case railwayTrack = "railway_track"
+    case ballotBoxWithBallot = "ballot_box_with_ballot"
+    case mountainRailway = "mountain_railway"
+    case meltingFace = "melting_face"
+    case airplaneArrival = "airplane_arrival"
+    case foldingHandFan = "folding_hand_fan"
     case bookmark = "bookmark"
     case ship = "ship"
     case bison = "bison"
-    case rollerCoaster = "rollerCoaster"
-    case hotPepper = "hotPepper"
-    case pageWithCurl = "pageWithCurl"
-    case hotFace = "hotFace"
+    case rollerCoaster = "roller_coaster"
+    case hotPepper = "hot_pepper"
+    case pageWithCurl = "page_with_curl"
+    case hotFace = "hot_face"
     case lizard = "lizard"
     case unlocked = "unlocked"
-    case waxingCrescentMoon = "waxingCrescentMoon"
+    case waxingCrescentMoon = "waxing_crescent_moon"
     case toolbox = "toolbox"
-    case baguetteBread = "baguetteBread"
-    case keycap4 = "keycap4"
+    case baguetteBread = "baguette_bread"
+    case keycap4 = "keycap_4"
     case grapes = "grapes"
-    case loveHotel = "loveHotel"
+    case loveHotel = "love_hotel"
     case yarn = "yarn"
-    case freeButton = "freeButton"
+    case freeButton = "free_button"
+    case globeShowingAsiaAustralia = "globe_showing_asia_australia"
     case wolf = "wolf"
-    case openMailboxWithRaisedFlag = "openMailboxWithRaisedFlag"
-    case newMoon = "newMoon"
-    case yawningFace = "yawningFace"
+    case openMailboxWithRaisedFlag = "open_mailbox_with_raised_flag"
+    case newMoon = "new_moon"
+    case yawningFace = "yawning_face"
     case peanuts = "peanuts"
-    case barberPole = "barberPole"
-    case blackCircle = "blackCircle"
-    case keycap8 = "keycap8"
-    case repeatButton = "repeatButton"
+    case barberPole = "barber_pole"
+    case blackCircle = "black_circle"
+    case keycap8 = "keycap_8"
+    case repeatButton = "repeat_button"
     case hammer = "hammer"
-    case suspensionRailway = "suspensionRailway"
+    case suspensionRailway = "suspension_railway"
     case cupcake = "cupcake"
-    case graduationCap = "graduationCap"
+    case graduationCap = "graduation_cap"
     case anchor = "anchor"
-    case straightRuler = "straightRuler"
+    case eMail = "e_mail"
+    case straightRuler = "straight_ruler"
     case rose = "rose"
     case tongue = "tongue"
     case skateboard = "skateboard"
-    case nauseatedFace = "nauseatedFace"
-    case japaneseNoVacancyButton = "japaneseNoVacancyButton"
+    case nauseatedFace = "nauseated_face"
+    case japaneseNoVacancyButton = "japanese_no_vacancy_button"
     case mosquito = "mosquito"
     case pineapple = "pineapple"
     case telephone = "telephone"
-    case whiteQuestionMark = "whiteQuestionMark"
-    case cannedFood = "cannedFood"
+    case whiteQuestionMark = "white_question_mark"
+    case cannedFood = "canned_food"
     case biohazard = "biohazard"
-    case mechanicalArm = "mechanicalArm"
+    case mechanicalArm = "mechanical_arm"
     case rhinoceros = "rhinoceros"
-    case cardIndex = "cardIndex"
+    case cardIndex = "card_index"
     case registered = "registered"
     case bacon = "bacon"
-    case gemStone = "gemStone"
+    case gemStone = "gem_stone"
     case candle = "candle"
-    case japaneseAcceptableButton = "japaneseAcceptableButton"
-    case teacupWithoutHandle = "teacupWithoutHandle"
+    case japaneseAcceptableButton = "japanese_acceptable_button"
+    case teacupWithoutHandle = "teacup_without_handle"
     case guitar = "guitar"
     case butter = "butter"
     case castle = "castle"
-    case upwardsButton = "upwardsButton"
-    case deciduousTree = "deciduousTree"
+    case upwardsButton = "upwards_button"
+    case fourThirty = "four_thirty"
+    case deciduousTree = "deciduous_tree"
     case crocodile = "crocodile"
-    case whiteFlower = "whiteFlower"
-    case keycap10 = "keycap10"
+    case whiteFlower = "white_flower"
+    case keycap10 = "keycap_10"
     case candy = "candy"
-    case noSmoking = "noSmoking"
+    case noSmoking = "no_smoking"
     case tornado = "tornado"
-    case backArrow = "backArrow"
+    case zipperMouthFace = "zipper_mouth_face"
+    case backArrow = "back_arrow"
     case screwdriver = "screwdriver"
-    case whiteFlag = "whiteFlag"
+    case whiteFlag = "white_flag"
     case cooking = "cooking"
-    case pageFacingUp = "pageFacingUp"
-    case waterWave = "waterWave"
+    case pageFacingUp = "page_facing_up"
+    case waterWave = "water_wave"
     case ewe = "ewe"
-    case blackLargeSquare = "blackLargeSquare"
-    case sparklingHeart = "sparklingHeart"
-    case policeCarLight = "policeCarLight"
-    case whiteMediumSmallSquare = "whiteMediumSmallSquare"
+    case blackLargeSquare = "black_large_square"
+    case sparklingHeart = "sparkling_heart"
+    case policeCarLight = "police_car_light"
     case abacus = "abacus"
-    case aButtonBloodType = "aButtonBloodType"
-    case airplaneDeparture = "airplaneDeparture"
-    case knockedOutFace = "knockedOutFace"
+    case aButtonBloodType = "a_button_blood_type"
+    case airplaneDeparture = "airplane_departure"
     case tangerine = "tangerine"
-    case lotionBottle = "lotionBottle"
+    case lotionBottle = "lotion_bottle"
     case peach = "peach"
     case flatbread = "flatbread"
-    case checkMarkButton = "checkMarkButton"
-    case videoCamera = "videoCamera"
+    case checkMarkButton = "check_mark_button"
+    case videoCamera = "video_camera"
     case troll = "troll"
-    case crossedFlags = "crossedFlags"
-    case faceWithRollingEyes = "faceWithRollingEyes"
-    case sunBehindCloud = "sunBehindCloud"
-    case playButton = "playButton"
+    case crossedFlags = "crossed_flags"
+    case piAta = "pi_ata"
+    case faceWithRollingEyes = "face_with_rolling_eyes"
+    case sunBehindCloud = "sun_behind_cloud"
+    case playButton = "play_button"
     case receipt = "receipt"
-    case yellowSquare = "yellowSquare"
+    case yellowSquare = "yellow_square"
     case cockroach = "cockroach"
-    case okButton = "okButton"
-    case whiteCane = "whiteCane"
-    case beverageBox = "beverageBox"
-    case moneyMouthFace = "moneyMouthFace"
-    case sportUtilityVehicle = "sportUtilityVehicle"
+    case okButton = "ok_button"
+    case whiteCane = "white_cane"
+    case beverageBox = "beverage_box"
+    case sportUtilityVehicle = "sport_utility_vehicle"
     case skier = "skier"
-    case downRightArrow = "downRightArrow"
     case hedgehog = "hedgehog"
     case foggy = "foggy"
-    case lastTrackButton = "lastTrackButton"
-    case motorBoat = "motorBoat"
-    case oilDrum = "oilDrum"
+    case lastTrackButton = "last_track_button"
+    case motorBoat = "motor_boat"
+    case oilDrum = "oil_drum"
     case sandwich = "sandwich"
-    case catWithWrySmile = "catWithWrySmile"
+    case catWithWrySmile = "cat_with_wry_smile"
     case jellyfish = "jellyfish"
-    case eyeInSpeechBubble = "eyeInSpeechBubble"
-    case fishCakeWithSwirl = "fishCakeWithSwirl"
+    case eyeInSpeechBubble = "eye_in_speech_bubble"
+    case fishCakeWithSwirl = "fish_cake_with_swirl"
     case sauropod = "sauropod"
-    case noEntry = "noEntry"
-    case lastQuarterMoonFace = "lastQuarterMoonFace"
-    case barChart = "barChart"
-    case keycapAsterisk = "keycapAsterisk"
+    case noEntry = "no_entry"
+    case lastQuarterMoonFace = "last_quarter_moon_face"
+    case barChart = "bar_chart"
+    case keycapAsterisk = "keycap_asterisk"
     case lungs = "lungs"
-    case faceInClouds = "faceInClouds"
-    case shushingFace = "shushingFace"
+    case faceInClouds = "face_in_clouds"
+    case shushingFace = "shushing_face"
     case baseball = "baseball"
     case bubbles = "bubbles"
-    case frowningFaceWithOpenMouth = "frowningFaceWithOpenMouth"
+    case frowningFaceWithOpenMouth = "frowning_face_with_open_mouth"
     case fire = "fire"
-    case partyPopper = "partyPopper"
-    case greenCircle = "greenCircle"
-    case recordButton = "recordButton"
+    case partyPopper = "party_popper"
+    case greenCircle = "green_circle"
+    case recordButton = "record_button"
     case aquarius = "aquarius"
-    case sleepingFace = "sleepingFace"
-    case dimButton = "dimButton"
-    case nestingDolls = "nestingDolls"
+    case sleepingFace = "sleeping_face"
+    case dimButton = "dim_button"
+    case nestingDolls = "nesting_dolls"
     case radioactive = "radioactive"
     case bouquet = "bouquet"
-    case cowboyHatFace = "cowboyHatFace"
-    case fourOclock = "fourOclock"
-    case potOfFood = "potOfFood"
-    case kissMark = "kissMark"
-    case leftRightArrow = "leftRightArrow"
+    case cowboyHatFace = "cowboy_hat_face"
+    case fourOclock = "four_oclock"
+    case potOfFood = "pot_of_food"
+    case kissMark = "kiss_mark"
     case train = "train"
-    case bottleWithPoppingCork = "bottleWithPoppingCork"
+    case bottleWithPoppingCork = "bottle_with_popping_cork"
     case firecracker = "firecracker"
-    case glowingStar = "glowingStar"
-    case mountainCableway = "mountainCableway"
+    case glowingStar = "glowing_star"
+    case mountainCableway = "mountain_cableway"
     case robot = "robot"
     case panda = "panda"
     case dango = "dango"
-    case wrappedGift = "wrappedGift"
+    case wrappedGift = "wrapped_gift"
     case potato = "potato"
     case custard = "custard"
-    case topArrow = "topArrow"
-    case carpStreamer = "carpStreamer"
+    case topArrow = "top_arrow"
+    case carpStreamer = "carp_streamer"
     case koala = "koala"
     case snowman = "snowman"
-    case cardFileBox = "cardFileBox"
+    case cardFileBox = "card_file_box"
     case crutch = "crutch"
-    case postalHorn = "postalHorn"
-    case artistPalette = "artistPalette"
+    case postalHorn = "postal_horn"
+    case artistPalette = "artist_palette"
     case trumpet = "trumpet"
     case skis = "skis"
     case mirror = "mirror"
     case banjo = "banjo"
     case canoe = "canoe"
-    case faceHoldingBackTears = "faceHoldingBackTears"
-    case highVoltage = "highVoltage"
+    case faceHoldingBackTears = "face_holding_back_tears"
+    case highVoltage = "high_voltage"
     case compass = "compass"
-    case astonishedFace = "astonishedFace"
-    case classicalBuilding = "classicalBuilding"
-    case labCoat = "labCoat"
+    case astonishedFace = "astonished_face"
+    case classicalBuilding = "classical_building"
+    case labCoat = "lab_coat"
+    case fleurDeLis = "fleur_de_lis"
     case cityscape = "cityscape"
     case camel = "camel"
     case goggles = "goggles"
-    case brownSquare = "brownSquare"
+    case brownSquare = "brown_square"
     case hamsa = "hamsa"
     case desert = "desert"
     case fireworks = "fireworks"
-    case desktopComputer = "desktopComputer"
+    case desktopComputer = "desktop_computer"
     case maracas = "maracas"
     case basket = "basket"
     case ogre = "ogre"
     case pretzel = "pretzel"
     case toothbrush = "toothbrush"
+    case downRightArrow = "down_right_arrow"
     case headstone = "headstone"
-    case purpleSquare = "purpleSquare"
+    case purpleSquare = "purple_square"
     case pig = "pig"
-    case peaceSymbol = "peaceSymbol"
-    case starAndCrescent = "starAndCrescent"
+    case peaceSymbol = "peace_symbol"
+    case starAndCrescent = "star_and_crescent"
     case amphora = "amphora"
-    case clockwiseVerticalArrows = "clockwiseVerticalArrows"
+    case clockwiseVerticalArrows = "clockwise_vertical_arrows"
     case kimono = "kimono"
     case chair = "chair"
-    case downArrow = "downArrow"
-    case chocolateBar = "chocolateBar"
+    case downArrow = "down_arrow"
+    case chocolateBar = "chocolate_bar"
     case bikini = "bikini"
-    case rightArrow = "rightArrow"
-    case greenBook = "greenBook"
-    case dropOfBlood = "dropOfBlood"
-    case reverseButton = "reverseButton"
-    case pensiveFace = "pensiveFace"
+    case rightArrow = "right_arrow"
+    case greenBook = "green_book"
+    case upDownArrow = "up_down_arrow"
+    case dropOfBlood = "drop_of_blood"
+    case reverseButton = "reverse_button"
+    case pensiveFace = "pensive_face"
     case snowflake = "snowflake"
     case ribbon = "ribbon"
+    case upsideDownFace = "upside_down_face"
     case wood = "wood"
-    case rollerSkate = "rollerSkate"
-    case creditCard = "creditCard"
-    case verticalTrafficLight = "verticalTrafficLight"
-    case nutAndBolt = "nutAndBolt"
-    case whiteHeart = "whiteHeart"
+    case rollerSkate = "roller_skate"
+    case creditCard = "credit_card"
+    case verticalTrafficLight = "vertical_traffic_light"
+    case nutAndBolt = "nut_and_bolt"
+    case whiteHeart = "white_heart"
     case goat = "goat"
-    case hearNoEvilMonkey = "hearNoEvilMonkey"
     case umbrella = "umbrella"
-    case greyHeart = "greyHeart"
-    case twelveOclock = "twelveOclock"
+    case greyHeart = "grey_heart"
+    case twelveOclock = "twelve_oclock"
     case shower = "shower"
     case axe = "axe"
-    case postOffice = "postOffice"
-    case martialArtsUniform = "martialArtsUniform"
-    case faceWithOpenMouth = "faceWithOpenMouth"
-    case recyclingSymbol = "recyclingSymbol"
-    case faceSavoringFood = "faceSavoringFood"
-    case leftLuggage = "leftLuggage"
-    case manWrestling = "manWrestling"
-    case ringBuoy = "ringBuoy"
-    case elevenOclock = "elevenOclock"
+    case postOffice = "post_office"
+    case martialArtsUniform = "martial_arts_uniform"
+    case faceWithOpenMouth = "face_with_open_mouth"
+    case recyclingSymbol = "recycling_symbol"
+    case faceSavoringFood = "face_savoring_food"
+    case leftLuggage = "left_luggage"
+    case manWrestling = "man_wrestling"
+    case leftRightArrow = "left_right_arrow"
+    case ringBuoy = "ring_buoy"
+    case elevenOclock = "eleven_oclock"
     case plunger = "plunger"
-    case funeralUrn = "funeralUrn"
-    case iceSkate = "iceSkate"
+    case funeralUrn = "funeral_urn"
+    case iceSkate = "ice_skate"
     case aries = "aries"
-    case threeOclock = "threeOclock"
+    case threeOclock = "three_oclock"
     case banana = "banana"
-    case oncomingBus = "oncomingBus"
-    case cardIndexDividers = "cardIndexDividers"
-    case cryingCat = "cryingCat"
-    case closedMailboxWithRaisedFlag = "closedMailboxWithRaisedFlag"
-    case flagInHole = "flagInHole"
-    case gingerRoot = "gingerRoot"
+    case oncomingBus = "oncoming_bus"
+    case cardIndexDividers = "card_index_dividers"
+    case cryingCat = "crying_cat"
+    case closedMailboxWithRaisedFlag = "closed_mailbox_with_raised_flag"
+    case oneThirty = "one_thirty"
+    case flagInHole = "flag_in_hole"
+    case gingerRoot = "ginger_root"
     case wheel = "wheel"
-    case coolButton = "coolButton"
-    case hourglassDone = "hourglassDone"
+    case coolButton = "cool_button"
+    case hourglassDone = "hourglass_done"
     case leo = "leo"
-    case revolvingHearts = "revolvingHearts"
-    case fastReverseButton = "fastReverseButton"
+    case smilingFaceWithHeartEyes = "smiling_face_with_heart_eyes"
+    case revolvingHearts = "revolving_hearts"
+    case fastReverseButton = "fast_reverse_button"
     case orangutan = "orangutan"
-    case counterclockwiseArrowsButton = "counterclockwiseArrowsButton"
+    case counterclockwiseArrowsButton = "counterclockwise_arrows_button"
     case tractor = "tractor"
-    case frontFacingBabyChick = "frontFacingBabyChick"
-    case clubSuit = "clubSuit"
-    case keycap0 = "keycap0"
-    case fallenLeaf = "fallenLeaf"
+    case clubSuit = "club_suit"
+    case keycap0 = "keycap_0"
+    case fallenLeaf = "fallen_leaf"
     case accordion = "accordion"
     case bed = "bed"
-    case globeWithMeridians = "globeWithMeridians"
-    case playgroundSlide = "playgroundSlide"
-    case policeCar = "policeCar"
-    case whiteCircle = "whiteCircle"
-    case grinningCat = "grinningCat"
-    case bubbleTea = "bubbleTea"
-    case sunBehindRainCloud = "sunBehindRainCloud"
-    case adhesiveBandage = "adhesiveBandage"
-    case crystalBall = "crystalBall"
-    case diamondSuit = "diamondSuit"
+    case globeWithMeridians = "globe_with_meridians"
+    case playgroundSlide = "playground_slide"
+    case policeCar = "police_car"
+    case whiteCircle = "white_circle"
+    case grinningCat = "grinning_cat"
+    case bubbleTea = "bubble_tea"
+    case sunBehindRainCloud = "sun_behind_rain_cloud"
+    case adhesiveBandage = "adhesive_bandage"
+    case crystalBall = "crystal_ball"
+    case diamondSuit = "diamond_suit"
     case trophy = "trophy"
     case burrito = "burrito"
     case toilet = "toilet"
-    case largeBlueDiamond = "largeBlueDiamond"
-    case hourglassNotDone = "hourglassNotDone"
+    case largeBlueDiamond = "large_blue_diamond"
+    case hourglassNotDone = "hourglass_not_done"
     case joker = "joker"
-    case wearyCat = "wearyCat"
-    case circledM = "circledM"
+    case wearyCat = "weary_cat"
+    case circledM = "circled_m"
     case crab = "crab"
     case infinity = "infinity"
-    case pawPrints = "pawPrints"
-    case hotSprings = "hotSprings"
+    case pawPrints = "paw_prints"
+    case hotSprings = "hot_springs"
     case wedding = "wedding"
     case handshake = "handshake"
-    case windFace = "windFace"
-    case controlKnobs = "controlKnobs"
-    case stopButton = "stopButton"
+    case windFace = "wind_face"
+    case controlKnobs = "control_knobs"
+    case twelveThirty = "twelve_thirty"
+    case blackMediumSmallSquare = "black_medium_small_square"
+    case stopButton = "stop_button"
     case television = "television"
-    case puzzlePiece = "puzzlePiece"
+    case puzzlePiece = "puzzle_piece"
     case camping = "camping"
-    case zanyFace = "zanyFace"
+    case zanyFace = "zany_face"
     case cucumber = "cucumber"
-    case brownHeart = "brownHeart"
-    case atmSign = "atmSign"
-    case outboxTray = "outboxTray"
-    case sewingNeedle = "sewingNeedle"
-    case placeOfWorship = "placeOfWorship"
-    case smallAirplane = "smallAirplane"
+    case brownHeart = "brown_heart"
+    case atmSign = "atm_sign"
+    case outboxTray = "outbox_tray"
+    case sewingNeedle = "sewing_needle"
+    case placeOfWorship = "place_of_worship"
+    case smallAirplane = "small_airplane"
     case cinema = "cinema"
     case ox = "ox"
-    case faceScreamingInFear = "faceScreamingInFear"
+    case faceScreamingInFear = "face_screaming_in_fear"
     case oden = "oden"
-    case crossMarkButton = "crossMarkButton"
-    case expressionlessFace = "expressionlessFace"
-    case nationalPark = "nationalPark"
+    case crossMarkButton = "cross_mark_button"
+    case expressionlessFace = "expressionless_face"
+    case nationalPark = "national_park"
     case door = "door"
-    case redCircle = "redCircle"
-    case heartWithArrow = "heartWithArrow"
-    case piAta = "piAta"
-    case shuffleTracksButton = "shuffleTracksButton"
-    case linkedPaperclips = "linkedPaperclips"
-    case bellhopBell = "bellhopBell"
-    case faceWithPeekingEye = "faceWithPeekingEye"
-    case japaneseDolls = "japaneseDolls"
-    case musicalNote = "musicalNote"
-    case openMailboxWithLoweredFlag = "openMailboxWithLoweredFlag"
-    case sosButton = "sosButton"
-    case faceWithTearsOfJoy = "faceWithTearsOfJoy"
+    case redCircle = "red_circle"
+    case heartWithArrow = "heart_with_arrow"
+    case shuffleTracksButton = "shuffle_tracks_button"
+    case linkedPaperclips = "linked_paperclips"
+    case bellhopBell = "bellhop_bell"
+    case faceWithPeekingEye = "face_with_peeking_eye"
+    case japaneseDolls = "japanese_dolls"
+    case musicalNote = "musical_note"
+    case openMailboxWithLoweredFlag = "open_mailbox_with_lowered_flag"
+    case sosButton = "sos_button"
+    case faceWithTearsOfJoy = "face_with_tears_of_joy"
     case eyes = "eyes"
-    case clButton = "clButton"
+    case clButton = "cl_button"
     case dress = "dress"
     case snake = "snake"
     case skunk = "skunk"
-    case sunriseOverMountains = "sunriseOverMountains"
+    case sunriseOverMountains = "sunrise_over_mountains"
     case droplet = "droplet"
-    case bellWithSlash = "bellWithSlash"
-    case evergreenTree = "evergreenTree"
-    case greenSalad = "greenSalad"
-    case iceCream = "iceCream"
-    case admissionTickets = "admissionTickets"
-    case tridentEmblem = "tridentEmblem"
+    case bellWithSlash = "bell_with_slash"
+    case evergreenTree = "evergreen_tree"
+    case eightPointedStar = "eight_pointed_star"
+    case greenSalad = "green_salad"
+    case iceCream = "ice_cream"
+    case admissionTickets = "admission_tickets"
+    case tridentEmblem = "trident_emblem"
+    case elevenThirty = "eleven_thirty"
     case envelope = "envelope"
-    case mouseFace = "mouseFace"
-    case inputLatinLetters = "inputLatinLetters"
-    case mobilePhoneWithArrow = "mobilePhoneWithArrow"
+    case mouseFace = "mouse_face"
+    case inputLatinLetters = "input_latin_letters"
+    case mobilePhoneWithArrow = "mobile_phone_with_arrow"
     case butterfly = "butterfly"
-    case faceWithHandOverMouth = "faceWithHandOverMouth"
-    case oneOclock = "oneOclock"
-    case faceWithSpiralEyes = "faceWithSpiralEyes"
+    case faceWithHandOverMouth = "face_with_hand_over_mouth"
+    case oneOclock = "one_oclock"
+    case faceWithSpiralEyes = "face_with_spiral_eyes"
     case hyacinth = "hyacinth"
-    case balletShoes = "balletShoes"
-    case orangeCircle = "orangeCircle"
+    case balletShoes = "ballet_shoes"
+    case orangeCircle = "orange_circle"
     case herb = "herb"
+    case threeThirty = "three_thirty"
     case thermometer = "thermometer"
     case pen = "pen"
-    case kissingFace = "kissingFace"
+    case kissingFace = "kissing_face"
     case ring = "ring"
-    case elevenThirty = "elevenThirty"
     case ferry = "ferry"
-    case pleadingFace = "pleadingFace"
+    case pleadingFace = "pleading_face"
     case newspaper = "newspaper"
     case goose = "goose"
-    case waterCloset = "waterCloset"
-    case checkMark = "checkMark"
-    case mechanicalLeg = "mechanicalLeg"
-    case closedMailboxWithLoweredFlag = "closedMailboxWithLoweredFlag"
-    case honeyPot = "honeyPot"
-    case sunBehindSmallCloud = "sunBehindSmallCloud"
-    case threeThirty = "threeThirty"
-    case radioButton = "radioButton"
-    case globeShowingAsiaAustralia = "globeShowingAsiaAustralia"
+    case waterCloset = "water_closet"
+    case checkMark = "check_mark"
+    case mechanicalLeg = "mechanical_leg"
+    case closedMailboxWithLoweredFlag = "closed_mailbox_with_lowered_flag"
+    case honeyPot = "honey_pot"
+    case sunBehindSmallCloud = "sun_behind_small_cloud"
+    case radioButton = "radio_button"
     case memo = "memo"
-    case openFileFolder = "openFileFolder"
-    case bustInSilhouette = "bustInSilhouette"
+    case openFileFolder = "open_file_folder"
+    case bustInSilhouette = "bust_in_silhouette"
     case pager = "pager"
-    case repeatSingleButton = "repeatSingleButton"
+    case repeatSingleButton = "repeat_single_button"
     case gorilla = "gorilla"
-    case pineDecoration = "pineDecoration"
+    case pineDecoration = "pine_decoration"
     case bell = "bell"
-    case tRex = "tRex"
-    case smilingCatWithHeartEyes = "smilingCatWithHeartEyes"
-    case bridgeAtNight = "bridgeAtNight"
+    case bridgeAtNight = "bridge_at_night"
     case soap = "soap"
     case houses = "houses"
-    case cryingFace = "cryingFace"
+    case cryingFace = "crying_face"
     case beaver = "beaver"
     case strawberry = "strawberry"
-    case peopleHugging = "peopleHugging"
-    case angryFaceWithHorns = "angryFaceWithHorns"
-    case bulletTrain = "bulletTrain"
-    case noOneUnderEighteen = "noOneUnderEighteen"
+    case peopleHugging = "people_hugging"
+    case angryFaceWithHorns = "angry_face_with_horns"
+    case bulletTrain = "bullet_train"
+    case noOneUnderEighteen = "no_one_under_eighteen"
     case taco = "taco"
-    case dragonFace = "dragonFace"
-    case huggingFace = "huggingFace"
-    case grinningFaceWithBigEyes = "grinningFaceWithBigEyes"
+    case dragonFace = "dragon_face"
+    case huggingFace = "hugging_face"
+    case grinningFaceWithBigEyes = "grinning_face_with_big_eyes"
     case swan = "swan"
     case oyster = "oyster"
     case link = "link"
     case kaaba = "kaaba"
-    case oncomingTaxi = "oncomingTaxi"
+    case oncomingTaxi = "oncoming_taxi"
     case paperclip = "paperclip"
-    case diyaLamp = "diyaLamp"
-    case testTube = "testTube"
-    case billedCap = "billedCap"
+    case diyaLamp = "diya_lamp"
+    case testTube = "test_tube"
+    case billedCap = "billed_cap"
     case dagger = "dagger"
-    case speakerMediumVolume = "speakerMediumVolume"
-    case angerSymbol = "angerSymbol"
-    case hinduTemple = "hinduTemple"
-    case curlyLoop = "curlyLoop"
-    case cloudWithRain = "cloudWithRain"
-    case waningCrescentMoon = "waningCrescentMoon"
+    case speakerMediumVolume = "speaker_medium_volume"
+    case angerSymbol = "anger_symbol"
+    case hinduTemple = "hindu_temple"
+    case curlyLoop = "curly_loop"
+    case cloudWithRain = "cloud_with_rain"
+    case waningCrescentMoon = "waning_crescent_moon"
     case sunset = "sunset"
-    case poultryLeg = "poultryLeg"
-    case safetyVest = "safetyVest"
+    case poultryLeg = "poultry_leg"
+    case safetyVest = "safety_vest"
     case cherries = "cherries"
-    case nextTrackButton = "nextTrackButton"
-    case japaneseOpenForBusinessButton = "japaneseOpenForBusinessButton"
+    case nextTrackButton = "next_track_button"
+    case japaneseOpenForBusinessButton = "japanese_open_for_business_button"
     case ice = "ice"
+    case tRex = "t_rex"
     case scroll = "scroll"
-    case runningShoe = "runningShoe"
-    case departmentStore = "departmentStore"
+    case runningShoe = "running_shoe"
+    case departmentStore = "department_store"
     case minibus = "minibus"
     case mammoth = "mammoth"
+    case eightSpokedAsterisk = "eight_spoked_asterisk"
     case station = "station"
-    case womanWrestling = "womanWrestling"
-    case grinningFaceWithSweat = "grinningFaceWithSweat"
-    case kiwiFruit = "kiwiFruit"
-    case purpleHeart = "purpleHeart"
-    case spiralNotepad = "spiralNotepad"
-    case purpleCircle = "purpleCircle"
+    case womanWrestling = "woman_wrestling"
+    case grinningFaceWithSweat = "grinning_face_with_sweat"
+    case kiwiFruit = "kiwi_fruit"
+    case purpleHeart = "purple_heart"
+    case spiralNotepad = "spiral_notepad"
+    case purpleCircle = "purple_circle"
     case megaphone = "megaphone"
-    case onArrow = "onArrow"
-    case twelveThirty = "twelveThirty"
-    case nightWithStars = "nightWithStars"
-    case anatomicalHeart = "anatomicalHeart"
+    case nightWithStars = "night_with_stars"
+    case anatomicalHeart = "anatomical_heart"
+    case hearNoEvilMonkey = "hear_no_evil_monkey"
     case scorpio = "scorpio"
     case bullseye = "bullseye"
     case bomb = "bomb"
-    case orangeSquare = "orangeSquare"
-    case highHeeledShoe = "highHeeledShoe"
-    case beachWithUmbrella = "beachWithUmbrella"
+    case orangeSquare = "orange_square"
+    case beachWithUmbrella = "beach_with_umbrella"
     case fly = "fly"
-    case identificationCard = "identificationCard"
+    case identificationCard = "identification_card"
     case sake = "sake"
     case fog = "fog"
-    case framedPicture = "framedPicture"
-    case mobilePhoneOff = "mobilePhoneOff"
-    case leftArrowCurvingRight = "leftArrowCurvingRight"
-    case umbrellaOnGround = "umbrellaOnGround"
-    case diamondWithADot = "diamondWithADot"
+    case framedPicture = "framed_picture"
+    case mobilePhoneOff = "mobile_phone_off"
+    case leftArrowCurvingRight = "left_arrow_curving_right"
+    case umbrellaOnGround = "umbrella_on_ground"
+    case diamondWithADot = "diamond_with_a_dot"
     case pie = "pie"
     case shamrock = "shamrock"
-    case redQuestionMark = "redQuestionMark"
+    case redQuestionMark = "red_question_mark"
     case pill = "pill"
-    case flushedFace = "flushedFace"
-    case waningGibbousMoon = "waningGibbousMoon"
-    case oneThirty = "oneThirty"
+    case flushedFace = "flushed_face"
+    case waningGibbousMoon = "waning_gibbous_moon"
     case sunrise = "sunrise"
-    case stuffedFlatbread = "stuffedFlatbread"
-    case houseWithGarden = "houseWithGarden"
-    case chartIncreasingWithYen = "chartIncreasingWithYen"
-    case hollowRedCircle = "hollowRedCircle"
-    case mutedSpeaker = "mutedSpeaker"
-    case spoutingWhale = "spoutingWhale"
+    case stuffedFlatbread = "stuffed_flatbread"
+    case houseWithGarden = "house_with_garden"
+    case chartIncreasingWithYen = "chart_increasing_with_yen"
+    case hollowRedCircle = "hollow_red_circle"
+    case mutedSpeaker = "muted_speaker"
+    case spoutingWhale = "spouting_whale"
     case lacrosse = "lacrosse"
-    case redSquare = "redSquare"
-    case flyingSaucer = "flyingSaucer"
-    case grinningSquintingFace = "grinningSquintingFace"
+    case redSquare = "red_square"
+    case flyingSaucer = "flying_saucer"
+    case grinningSquintingFace = "grinning_squinting_face"
     case tulip = "tulip"
     case hotel = "hotel"
-    case cricketGame = "cricketGame"
-    case closedBook = "closedBook"
+    case cricketGame = "cricket_game"
+    case closedBook = "closed_book"
     case laptop = "laptop"
     case tram = "tram"
-    case curryRice = "curryRice"
-    case keycap2 = "keycap2"
-    case mountFuji = "mountFuji"
-    case softIceCream = "softIceCream"
-    case fullMoonFace = "fullMoonFace"
+    case curryRice = "curry_rice"
+    case highSpeedTrain = "high_speed_train"
+    case keycap2 = "keycap_2"
+    case mountFuji = "mount_fuji"
+    case softIceCream = "soft_ice_cream"
+    case fullMoonFace = "full_moon_face"
     case dragon = "dragon"
-    case heartExclamation = "heartExclamation"
-    case confoundedFace = "confoundedFace"
+    case heartExclamation = "heart_exclamation"
+    case confoundedFace = "confounded_face"
     case capricorn = "capricorn"
-    case tokyoTower = "tokyoTower"
+    case tearOffCalendar = "tear_off_calendar"
+    case tokyoTower = "tokyo_tower"
     case blackbird = "blackbird"
     case dolphin = "dolphin"
     case tooth = "tooth"
-    case mendingHeart = "mendingHeart"
+    case snowCappedMountain = "snow_capped_mountain"
+    case mendingHeart = "mending_heart"
     case hippopotamus = "hippopotamus"
-    case droolingFace = "droolingFace"
-    case fireEngine = "fireEngine"
-    case magnifyingGlassTiltedRight = "magnifyingGlassTiltedRight"
-    case poutingCat = "poutingCat"
-    case baggageClaim = "baggageClaim"
+    case droolingFace = "drooling_face"
+    case fireEngine = "fire_engine"
+    case magnifyingGlassTiltedRight = "magnifying_glass_tilted_right"
+    case poutingCat = "pouting_cat"
+    case baggageClaim = "baggage_claim"
     case whale = "whale"
-    case nameBadge = "nameBadge"
-    case couchAndLamp = "couchAndLamp"
-    case latinCross = "latinCross"
-    case beatingHeart = "beatingHeart"
-    case fountainPen = "fountainPen"
+    case nameBadge = "name_badge"
+    case couchAndLamp = "couch_and_lamp"
+    case latinCross = "latin_cross"
+    case beatingHeart = "beating_heart"
+    case fountainPen = "fountain_pen"
     case luggage = "luggage"
-    case downLeftArrow = "downLeftArrow"
-    case serviceDog = "serviceDog"
+    case serviceDog = "service_dog"
     case briefcase = "briefcase"
-    case womanZombie = "womanZombie"
-    case heartSuit = "heartSuit"
+    case womanZombie = "woman_zombie"
+    case heartSuit = "heart_suit"
     case footprints = "footprints"
     case flute = "flute"
-    case greenHeart = "greenHeart"
+    case greenHeart = "green_heart"
     case microscope = "microscope"
-    case pigFace = "pigFace"
+    case pigFace = "pig_face"
     case joystick = "joystick"
-    case telephoneReceiver = "telephoneReceiver"
-    case yellowHeart = "yellowHeart"
-    case motorScooter = "motorScooter"
+    case upRightArrow = "up_right_arrow"
+    case telephoneReceiver = "telephone_receiver"
+    case yellowHeart = "yellow_heart"
+    case motorScooter = "motor_scooter"
     case chipmunk = "chipmunk"
-    case smilingFaceWithHalo = "smilingFaceWithHalo"
+    case smilingFaceWithHalo = "smiling_face_with_halo"
     case kangaroo = "kangaroo"
-    case kissingFaceWithClosedEyes = "kissingFaceWithClosedEyes"
+    case kissingFaceWithClosedEyes = "kissing_face_with_closed_eyes"
     case backpack = "backpack"
-    case waterBuffalo = "waterBuffalo"
-    case bButtonBloodType = "bButtonBloodType"
+    case waterBuffalo = "water_buffalo"
+    case bButtonBloodType = "b_button_blood_type"
     case monkey = "monkey"
-    case waxingGibbousMoon = "waxingGibbousMoon"
-    case potableWater = "potableWater"
-    case mouseTrap = "mouseTrap"
+    case seeNoEvilMonkey = "see_no_evil_monkey"
+    case waxingGibbousMoon = "waxing_gibbous_moon"
+    case potableWater = "potable_water"
+    case mouseTrap = "mouse_trap"
     case parachute = "parachute"
     case shortcake = "shortcake"
-    case euroBanknote = "euroBanknote"
+    case euroBanknote = "euro_banknote"
     case alien = "alien"
     case plus = "plus"
-    case redTrianglePointedDown = "redTrianglePointedDown"
-    case glassOfMilk = "glassOfMilk"
+    case redTrianglePointedDown = "red_triangle_pointed_down"
+    case glassOfMilk = "glass_of_milk"
     case magnet = "magnet"
     case sparkles = "sparkles"
-    case womanWithBunnyEars = "womanWithBunnyEars"
-    case japaneseFreeOfChargeButton = "japaneseFreeOfChargeButton"
-    case sevenThirty = "sevenThirty"
+    case womanWithBunnyEars = "woman_with_bunny_ears"
+    case japaneseFreeOfChargeButton = "japanese_free_of_charge_button"
     case microbe = "microbe"
-    case womanGenie = "womanGenie"
-    case idButton = "idButton"
-    case cameraWithFlash = "cameraWithFlash"
-    case greenApple = "greenApple"
-    case xRay = "xRay"
-    case whiteExclamationMark = "whiteExclamationMark"
-    case loveLetter = "loveLetter"
-    case mensRoom = "mensRoom"
-    case blackCat = "blackCat"
-    case chartIncreasing = "chartIncreasing"
+    case womanGenie = "woman_genie"
+    case idButton = "id_button"
+    case cameraWithFlash = "camera_with_flash"
+    case greenApple = "green_apple"
+    case whiteExclamationMark = "white_exclamation_mark"
+    case loveLetter = "love_letter"
+    case mensRoom = "mens_room"
+    case blackCat = "black_cat"
+    case chartIncreasing = "chart_increasing"
     case dvd = "dvd"
     case wastebasket = "wastebasket"
     case ram = "ram"
-    case frenchFries = "frenchFries"
-    case ladyBeetle = "ladyBeetle"
-    case manZombie = "manZombie"
+    case frenchFries = "french_fries"
+    case ladyBeetle = "lady_beetle"
+    case manZombie = "man_zombie"
     case kite = "kite"
     case ambulance = "ambulance"
-    case newMoonFace = "newMoonFace"
+    case newMoonFace = "new_moon_face"
     case pear = "pear"
-    case shoppingCart = "shoppingCart"
-    case officeBuilding = "officeBuilding"
+    case shoppingCart = "shopping_cart"
+    case officeBuilding = "office_building"
+    case speakNoEvilMonkey = "speak_no_evil_monkey"
     case otter = "otter"
     case telescope = "telescope"
-    case passengerShip = "passengerShip"
+    case passengerShip = "passenger_ship"
     case parrot = "parrot"
     case radio = "radio"
-    case speakerLowVolume = "speakerLowVolume"
+    case speakerLowVolume = "speaker_low_volume"
     case raccoon = "raccoon"
+    case downLeftArrow = "down_left_arrow"
     case sailboat = "sailboat"
-    case ringedPlanet = "ringedPlanet"
+    case ringedPlanet = "ringed_planet"
     case wireless = "wireless"
-    case nineOclock = "nineOclock"
+    case nineOclock = "nine_oclock"
     case lollipop = "lollipop"
-    case timerClock = "timerClock"
+    case timerClock = "timer_clock"
+    case upButton = "up_button"
     case eggplant = "eggplant"
     case bagel = "bagel"
     case notebook = "notebook"
-    case spadeSuit = "spadeSuit"
-    case japaneseSymbolForBeginner = "japaneseSymbolForBeginner"
+    case spadeSuit = "spade_suit"
+    case japaneseSymbolForBeginner = "japanese_symbol_for_beginner"
     case warning = "warning"
-    case flowerPlayingCards = "flowerPlayingCards"
+    case flowerPlayingCards = "flower_playing_cards"
     case seedling = "seedling"
     case sagittarius = "sagittarius"
-    case japanesePassingGradeButton = "japanesePassingGradeButton"
-    case goalNet = "goalNet"
-    case keycap7 = "keycap7"
-    case snowCappedMountain = "snowCappedMountain"
-    case spiderWeb = "spiderWeb"
+    case japanesePassingGradeButton = "japanese_passing_grade_button"
+    case goalNet = "goal_net"
+    case xRay = "x_ray"
+    case keycap7 = "keycap_7"
+    case spiderWeb = "spider_web"
+    case smilingCatWithHeartEyes = "smiling_cat_with_heart_eyes"
     case loudspeaker = "loudspeaker"
-    case bellPepper = "bellPepper"
-    case tropicalFish = "tropicalFish"
-    case bustsInSilhouette = "bustsInSilhouette"
-    case chequeredFlag = "chequeredFlag"
+    case bellPepper = "bell_pepper"
+    case tropicalFish = "tropical_fish"
+    case bustsInSilhouette = "busts_in_silhouette"
+    case chequeredFlag = "chequered_flag"
     case mountain = "mountain"
     case goblin = "goblin"
-    case horseFace = "horseFace"
-    case blackMediumSmallSquare = "blackMediumSmallSquare"
-    case faceWithHeadBandage = "faceWithHeadBandage"
+    case horseFace = "horse_face"
     case gloves = "gloves"
-    case disguisedFace = "disguisedFace"
+    case disguisedFace = "disguised_face"
     case donkey = "donkey"
-    case alienMonster = "alienMonster"
-    case coldFace = "coldFace"
+    case alienMonster = "alien_monster"
+    case coldFace = "cold_face"
     case stadium = "stadium"
-    case rugbyFootball = "rugbyFootball"
+    case rugbyFootball = "rugby_football"
     case shrimp = "shrimp"
-    case movieCamera = "movieCamera"
+    case movieCamera = "movie_camera"
     case pisces = "pisces"
-    case whiteLargeSquare = "whiteLargeSquare"
+    case whiteLargeSquare = "white_large_square"
     case lipstick = "lipstick"
-    case sixThirty = "sixThirty"
-    case japaneseApplicationButton = "japaneseApplicationButton"
-    case worldMap = "worldMap"
+    case japaneseApplicationButton = "japanese_application_button"
+    case worldMap = "world_map"
     case socks = "socks"
     case ticket = "ticket"
     case volcano = "volcano"
-    case faxMachine = "faxMachine"
-    case clutchBag = "clutchBag"
+    case faxMachine = "fax_machine"
+    case clutchBag = "clutch_bag"
     case tamale = "tamale"
-    case hotDog = "hotDog"
+    case hotDog = "hot_dog"
     case elevator = "elevator"
-    case personGenie = "personGenie"
-    case musicalKeyboard = "musicalKeyboard"
-    case rescueWorkersHelmet = "rescueWorkersHelmet"
+    case personGenie = "person_genie"
+    case musicalKeyboard = "musical_keyboard"
+    case rescueWorkersHelmet = "rescue_workers_helmet"
     case syringe = "syringe"
     case worm = "worm"
-    case heartWithRibbon = "heartWithRibbon"
-    case pinkHeart = "pinkHeart"
-    case palmTree = "palmTree"
+    case heartWithRibbon = "heart_with_ribbon"
+    case pinkHeart = "pink_heart"
+    case palmTree = "palm_tree"
     case helicopter = "helicopter"
-    case fastDownButton = "fastDownButton"
+    case fastDownButton = "fast_down_button"
     case sushi = "sushi"
-    case kickScooter = "kickScooter"
-    case faceWithoutMouth = "faceWithoutMouth"
-    case manWithBunnyEars = "manWithBunnyEars"
+    case kickScooter = "kick_scooter"
+    case faceWithoutMouth = "face_without_mouth"
+    case manWithBunnyEars = "man_with_bunny_ears"
     case pizza = "pizza"
-    case faceWithSymbolsOnMouth = "faceWithSymbolsOnMouth"
+    case faceWithSymbolsOnMouth = "face_with_symbols_on_mouth"
     case unicorn = "unicorn"
-    case winkingFace = "winkingFace"
-    case iceHockey = "iceHockey"
+    case winkingFace = "winking_face"
+    case iceHockey = "ice_hockey"
+    case nineThirty = "nine_thirty"
     case fish = "fish"
     case battery = "battery"
-    case womansSandal = "womansSandal"
+    case womansSandal = "womans_sandal"
+    case nonPotableWater = "non_potable_water"
     case knot = "knot"
-    case motorizedWheelchair = "motorizedWheelchair"
-    case friedShrimp = "friedShrimp"
-    case tradeMark = "tradeMark"
+    case motorizedWheelchair = "motorized_wheelchair"
+    case friedShrimp = "fried_shrimp"
+    case tradeMark = "trade_mark"
     case hook = "hook"
-    case eightSpokedAsterisk = "eightSpokedAsterisk"
     case briefs = "briefs"
-    case wearyFace = "wearyFace"
-    case takeoutBox = "takeoutBox"
-    case gameDie = "gameDie"
+    case wearyFace = "weary_face"
+    case takeoutBox = "takeout_box"
+    case gameDie = "game_die"
     case sari = "sari"
-    case medicalSymbol = "medicalSymbol"
-    case fuelPump = "fuelPump"
-    case sportsMedal = "sportsMedal"
-    case japaneseCongratulationsButton = "japaneseCongratulationsButton"
-    case eightPointedStar = "eightPointedStar"
-    case militaryMedal = "militaryMedal"
+    case medicalSymbol = "medical_symbol"
+    case fuelPump = "fuel_pump"
+    case sportsMedal = "sports_medal"
+    case japaneseCongratulationsButton = "japanese_congratulations_button"
+    case militaryMedal = "military_medal"
     case ledger = "ledger"
-    case relievedFace = "relievedFace"
-    case sunWithFace = "sunWithFace"
-    case passportControl = "passportControl"
-    case hammerAndPick = "hammerAndPick"
+    case relievedFace = "relieved_face"
+    case sunWithFace = "sun_with_face"
+    case passportControl = "passport_control"
+    case hammerAndPick = "hammer_and_pick"
     case scorpion = "scorpion"
-    case shavedIce = "shavedIce"
-    case cloudWithLightning = "cloudWithLightning"
-    case pouringLiquid = "pouringLiquid"
-    case redEnvelope = "redEnvelope"
-    case meatOnBone = "meatOnBone"
-    case babySymbol = "babySymbol"
-    case dogFace = "dogFace"
-    case japaneseVacancyButton = "japaneseVacancyButton"
-    case blackSmallSquare = "blackSmallSquare"
-    case carpentrySaw = "carpentrySaw"
-    case milkyWay = "milkyWay"
+    case shavedIce = "shaved_ice"
+    case cloudWithLightning = "cloud_with_lightning"
+    case pouringLiquid = "pouring_liquid"
+    case redEnvelope = "red_envelope"
+    case meatOnBone = "meat_on_bone"
+    case babySymbol = "baby_symbol"
+    case dogFace = "dog_face"
+    case japaneseVacancyButton = "japanese_vacancy_button"
+    case blackSmallSquare = "black_small_square"
+    case carpentrySaw = "carpentry_saw"
+    case milkyWay = "milky_way"
     case drum = "drum"
-    case petriDish = "petriDish"
-    case onePieceSwimsuit = "onePieceSwimsuit"
+    case petriDish = "petri_dish"
     case softball = "softball"
     case spoon = "spoon"
-    case forkAndKnifeWithPlate = "forkAndKnifeWithPlate"
-    case nineThirty = "nineThirty"
+    case forkAndKnifeWithPlate = "fork_and_knife_with_plate"
     case paintbrush = "paintbrush"
     case stethoscope = "stethoscope"
-    case tanabataTree = "tanabataTree"
+    case tanabataTree = "tanabata_tree"
     case label = "label"
-    case starOfDavid = "starOfDavid"
-    case phoenixBird = "phoenixBird"
-    case lockedWithPen = "lockedWithPen"
-    case ngButton = "ngButton"
-    case smilingFaceWithHeartEyes = "smilingFaceWithHeartEyes"
+    case starOfDavid = "star_of_david"
+    case phoenixBird = "phoenix_bird"
+    case lockedWithPen = "locked_with_pen"
+    case ngButton = "ng_button"
     case eye = "eye"
     case hamster = "hamster"
-    case personZombie = "personZombie"
-    case hundredPoints = "hundredPoints"
+    case personZombie = "person_zombie"
+    case hundredPoints = "hundred_points"
     case carrot = "carrot"
-    case blueBook = "blueBook"
-    case nestWithEggs = "nestWithEggs"
+    case blueBook = "blue_book"
+    case nestWithEggs = "nest_with_eggs"
     case airplane = "airplane"
     case school = "school"
+    case onArrow = "on_arrow"
     case coffin = "coffin"
-    case poundBanknote = "poundBanknote"
+    case poundBanknote = "pound_banknote"
     case turtle = "turtle"
-    case fireExtinguisher = "fireExtinguisher"
-    case smallBlueDiamond = "smallBlueDiamond"
+    case fireExtinguisher = "fire_extinguisher"
+    case smallBlueDiamond = "small_blue_diamond"
     case cookie = "cookie"
     case necktie = "necktie"
     case broccoli = "broccoli"
-    case globeShowingAmericas = "globeShowingAmericas"
-    case wheelOfDharma = "wheelOfDharma"
-    case slightlySmilingFace = "slightlySmilingFace"
-    case largeOrangeDiamond = "largeOrangeDiamond"
+    case sixThirty = "six_thirty"
+    case globeShowingAmericas = "globe_showing_americas"
+    case wheelOfDharma = "wheel_of_dharma"
+    case slightlySmilingFace = "slightly_smiling_face"
+    case largeOrangeDiamond = "large_orange_diamond"
     case dna = "dna"
     case blowfish = "blowfish"
-    case sevenOclock = "sevenOclock"
-    case sweatDroplets = "sweatDroplets"
+    case sevenOclock = "seven_oclock"
+    case sweatDroplets = "sweat_droplets"
     case lion = "lion"
-    case performingArts = "performingArts"
-    case fastForwardButton = "fastForwardButton"
+    case performingArts = "performing_arts"
     case motorcycle = "motorcycle"
     case monorail = "monorail"
-    case hikingBoot = "hikingBoot"
-    case angryFace = "angryFace"
+    case hikingBoot = "hiking_boot"
+    case angryFace = "angry_face"
     case keyboard = "keyboard"
-    case poutingFace = "poutingFace"
+    case poutingFace = "pouting_face"
     case shark = "shark"
-    case flatShoe = "flatShoe"
+    case flatShoe = "flat_shoe"
     case libra = "libra"
-    case peaPod = "peaPod"
-    case desertIsland = "desertIsland"
-    case forkAndKnife = "forkAndKnife"
-    case fileCabinet = "fileCabinet"
-    case monkeyFace = "monkeyFace"
-    case carouselHorse = "carouselHorse"
+    case peaPod = "pea_pod"
+    case desertIsland = "desert_island"
+    case forkAndKnife = "fork_and_knife"
+    case fileCabinet = "file_cabinet"
+    case monkeyFace = "monkey_face"
+    case carouselHorse = "carousel_horse"
     case divide = "divide"
-    case steamingBowl = "steamingBowl"
+    case steamingBowl = "steaming_bowl"
     case crayon = "crayon"
-    case pigNose = "pigNose"
+    case pigNose = "pig_nose"
     case waffle = "waffle"
     case taxi = "taxi"
-    case smilingFaceWithHearts = "smilingFaceWithHearts"
-    case noLittering = "noLittering"
-    case derelictHouse = "derelictHouse"
-    case fileFolder = "fileFolder"
-    case blackFlag = "blackFlag"
+    case smilingFaceWithHearts = "smiling_face_with_hearts"
+    case noLittering = "no_littering"
+    case derelictHouse = "derelict_house"
+    case fileFolder = "file_folder"
+    case blackFlag = "black_flag"
     case postbox = "postbox"
-    case rollOfPaper = "rollOfPaper"
+    case rollOfPaper = "roll_of_paper"
     case onion = "onion"
     case peacock = "peacock"
     case restroom = "restroom"
     case minus = "minus"
     case violin = "violin"
-    case militaryHelmet = "militaryHelmet"
+    case militaryHelmet = "military_helmet"
     case books = "books"
-    case alarmClock = "alarmClock"
-    case upDownArrow = "upDownArrow"
-    case brokenHeart = "brokenHeart"
-    case boxingGlove = "boxingGlove"
-    case faceVomiting = "faceVomiting"
-    case sheafOfRice = "sheafOfRice"
-    case abButtonBloodType = "abButtonBloodType"
+    case alarmClock = "alarm_clock"
+    case brokenHeart = "broken_heart"
+    case boxingGlove = "boxing_glove"
+    case faceVomiting = "face_vomiting"
+    case sheafOfRice = "sheaf_of_rice"
+    case abButtonBloodType = "ab_button_blood_type"
     case honeybee = "honeybee"
-    case womansBoot = "womansBoot"
-    case redExclamationMark = "redExclamationMark"
-    case inputNumbers = "inputNumbers"
-    case confusedFace = "confusedFace"
+    case womansBoot = "womans_boot"
+    case redExclamationMark = "red_exclamation_mark"
+    case inputNumbers = "input_numbers"
+    case confusedFace = "confused_face"
     case hibiscus = "hibiscus"
-    case seeNoEvilMonkey = "seeNoEvilMonkey"
     case sunglasses = "sunglasses"
-    case autoRickshaw = "autoRickshaw"
+    case autoRickshaw = "auto_rickshaw"
     case automobile = "automobile"
-    case faceBlowingAKiss = "faceBlowingAKiss"
-    case curlingStone = "curlingStone"
+    case faceBlowingAKiss = "face_blowing_a_kiss"
+    case curlingStone = "curling_stone"
     case horse = "horse"
     case lemon = "lemon"
     case popcorn = "popcorn"
-    case partAlternationMark = "partAlternationMark"
-    case yinYang = "yinYang"
-    case keycap5 = "keycap5"
-    case explodingHead = "explodingHead"
-    case antennaBars = "antennaBars"
-    case kissingFaceWithSmilingEyes = "kissingFaceWithSmilingEyes"
+    case partAlternationMark = "part_alternation_mark"
+    case yinYang = "yin_yang"
+    case keycap5 = "keycap_5"
+    case explodingHead = "exploding_head"
+    case antennaBars = "antenna_bars"
+    case kissingFaceWithSmilingEyes = "kissing_face_with_smiling_eyes"
     case wing = "wing"
     case copyright = "copyright"
     case poodle = "poodle"
-    case childrenCrossing = "childrenCrossing"
+    case sevenThirty = "seven_thirty"
+    case childrenCrossing = "children_crossing"
     case elephant = "elephant"
     case star = "star"
-    case mahjongRedDragon = "mahjongRedDragon"
-    case lastQuarterMoon = "lastQuarterMoon"
-    case checkBoxWithCheck = "checkBoxWithCheck"
-    case emptyNest = "emptyNest"
+    case mahjongRedDragon = "mahjong_red_dragon"
+    case lastQuarterMoon = "last_quarter_moon"
+    case checkBoxWithCheck = "check_box_with_check"
+    case emptyNest = "empty_nest"
     case motorway = "motorway"
-    case mantelpieceClock = "mantelpieceClock"
-    case tearOffCalendar = "tearOffCalendar"
-    case partyingFace = "partyingFace"
+    case mantelpieceClock = "mantelpiece_clock"
+    case partyingFace = "partying_face"
     case croissant = "croissant"
-    case umbrellaWithRainDrops = "umbrellaWithRainDrops"
-    case crescentMoon = "crescentMoon"
-    case rightArrowCurvingUp = "rightArrowCurvingUp"
-    case japanesePostOffice = "japanesePostOffice"
-    case bowAndArrow = "bowAndArrow"
-    case crossMark = "crossMark"
+    case umbrellaWithRainDrops = "umbrella_with_rain_drops"
+    case crescentMoon = "crescent_moon"
+    case rightArrowCurvingUp = "right_arrow_curving_up"
+    case japanesePostOffice = "japanese_post_office"
+    case bowAndArrow = "bow_and_arrow"
+    case crossMark = "cross_mark"
     case cyclone = "cyclone"
     case chestnut = "chestnut"
-    case nerdFace = "nerdFace"
+    case nerdFace = "nerd_face"
     case mango = "mango"
-    case ferrisWheel = "ferrisWheel"
-    case sixOclock = "sixOclock"
+    case ferrisWheel = "ferris_wheel"
+    case sixOclock = "six_oclock"
     case bread = "bread"
-    case grimacingFace = "grimacingFace"
-    case speakNoEvilMonkey = "speakNoEvilMonkey"
-    case polarBear = "polarBear"
-    case smilingFace = "smilingFace"
+    case grimacingFace = "grimacing_face"
+    case polarBear = "polar_bear"
+    case smilingFace = "smiling_face"
     case fox = "fox"
     case package = "package"
-    case levelSlider = "levelSlider"
+    case levelSlider = "level_slider"
     case bowling = "bowling"
-    case circusTent = "circusTent"
+    case circusTent = "circus_tent"
     case llama = "llama"
     case ladder = "ladder"
-    case keycap9 = "keycap9"
-    case earOfCorn = "earOfCorn"
+    case keycap9 = "keycap_9"
+    case knockedOutFace = "knocked_out_face"
+    case earOfCorn = "ear_of_corn"
     case watch = "watch"
-    case hotBeverage = "hotBeverage"
-    case blackSquareButton = "blackSquareButton"
-    case americanFootball = "americanFootball"
+    case hotBeverage = "hot_beverage"
+    case blackSquareButton = "black_square_button"
+    case americanFootball = "american_football"
     case clipboard = "clipboard"
-    case openBook = "openBook"
+    case openBook = "open_book"
     case chicken = "chicken"
-    case smilingFaceWithSmilingEyes = "smilingFaceWithSmilingEyes"
+    case smilingFaceWithSmilingEyes = "smiling_face_with_smiling_eyes"
     case khanda = "khanda"
     case shorts = "shorts"
-    case teddyBear = "teddyBear"
-    case tShirt = "tShirt"
-    case mansShoe = "mansShoe"
-    case fiveThirty = "fiveThirty"
+    case teddyBear = "teddy_bear"
+    case mansShoe = "mans_shoe"
     case chopsticks = "chopsticks"
     case dog = "dog"
     case moai = "moai"
     case hut = "hut"
     case church = "church"
     case flashlight = "flashlight"
-    case cheeseWedge = "cheeseWedge"
-    case skullAndCrossbones = "skullAndCrossbones"
-    case blueSquare = "blueSquare"
-    case japaneseHereButton = "japaneseHereButton"
-    case wavyDash = "wavyDash"
+    case rolledUpNewspaper = "rolled_up_newspaper"
+    case cheeseWedge = "cheese_wedge"
+    case skullAndCrossbones = "skull_and_crossbones"
+    case blueSquare = "blue_square"
+    case moneyMouthFace = "money_mouth_face"
+    case japaneseHereButton = "japanese_here_button"
+    case wavyDash = "wavy_dash"
+    case yoYo = "yo_yo"
     case balloon = "balloon"
-    case roundPushpin = "roundPushpin"
-    case clinkingGlasses = "clinkingGlasses"
-    case disappointedFace = "disappointedFace"
-    case womensRoom = "womensRoom"
+    case roundPushpin = "round_pushpin"
+    case clinkingGlasses = "clinking_glasses"
+    case disappointedFace = "disappointed_face"
+    case womensRoom = "womens_room"
     case cricket = "cricket"
     case cow = "cow"
     case beetle = "beetle"
-    case satelliteAntenna = "satelliteAntenna"
-    case manGenie = "manGenie"
+    case satelliteAntenna = "satellite_antenna"
+    case manGenie = "man_genie"
     case om = "om"
-    case faceWithMedicalMask = "faceWithMedicalMask"
-    case hatchingChick = "hatchingChick"
-    case worriedFace = "worriedFace"
-    case shintoShrine = "shintoShrine"
-    case orangeBook = "orangeBook"
+    case faceWithMedicalMask = "face_with_medical_mask"
+    case hatchingChick = "hatching_chick"
+    case worriedFace = "worried_face"
+    case shintoShrine = "shinto_shrine"
+    case orangeBook = "orange_book"
     case falafel = "falafel"
     case owl = "owl"
     case snail = "snail"
     case trackball = "trackball"
     case frog = "frog"
-    case cowFace = "cowFace"
+    case cowFace = "cow_face"
     case duck = "duck"
     case tennis = "tennis"
-    case wiltedFlower = "wiltedFlower"
+    case wiltedFlower = "wilted_flower"
     case sloth = "sloth"
-    case cocktailGlass = "cocktailGlass"
+    case cocktailGlass = "cocktail_glass"
     case bucket = "bucket"
-    case floppyDisk = "floppyDisk"
-    case bowlWithSpoon = "bowlWithSpoon"
+    case floppyDisk = "floppy_disk"
+    case bowlWithSpoon = "bowl_with_spoon"
     case factory = "factory"
     case feather = "feather"
-    case leafFlutteringInWind = "leafFlutteringInWind"
+    case leafFlutteringInWind = "leaf_fluttering_in_wind"
     case trolleybus = "trolleybus"
     case speedboat = "speedboat"
     case tent = "tent"
-    case fishingPole = "fishingPole"
-    case globeShowingEuropeAfrica = "globeShowingEuropeAfrica"
-    case eMail = "eMail"
-    case oldKey = "oldKey"
+    case fishingPole = "fishing_pole"
+    case oldKey = "old_key"
     case collision = "collision"
     case videocassette = "videocassette"
-    case computerMouse = "computerMouse"
-    case articulatedLorry = "articulatedLorry"
-    case smilingFaceWithTear = "smilingFaceWithTear"
-    case twoOclock = "twoOclock"
-    case japaneseSecretButton = "japaneseSecretButton"
-    case smirkingFace = "smirkingFace"
-    case redTriangle = "redTriangle"
+    case computerMouse = "computer_mouse"
+    case articulatedLorry = "articulated_lorry"
+    case smilingFaceWithTear = "smiling_face_with_tear"
+    case twoOclock = "two_oclock"
+    case japaneseSecretButton = "japanese_secret_button"
+    case smirkingFace = "smirking_face"
+    case redTriangle = "red_triangle"
     case synagogue = "synagogue"
-    case buildingConstruction = "buildingConstruction"
-    case envelopeWithArrow = "envelopeWithArrow"
-    case _2ndPlaceMedal = "2ndPlaceMedal"
-    case pool8Ball = "pool8Ball"
+    case buildingConstruction = "building_construction"
+    case envelopeWithArrow = "envelope_with_arrow"
+    case _2ndPlaceMedal = "2nd_place_medal"
+    case pool8Ball = "pool_8_ball"
     case hamburger = "hamburger"
-    case eightThirty = "eightThirty"
-    case speakerHighVolume = "speakerHighVolume"
-    case dottedSixPointedStar = "dottedSixPointedStar"
-    case salutingFace = "salutingFace"
-    case tenThirty = "tenThirty"
+    case speakerHighVolume = "speaker_high_volume"
+    case salutingFace = "saluting_face"
     case window = "window"
     case dodo = "dodo"
-    case upButton = "upButton"
     case flamingo = "flamingo"
     case broom = "broom"
-    case jackOLantern = "jackOLantern"
-    case cookedRice = "cookedRice"
-    case heavyDollarSign = "heavyDollarSign"
+    case cookedRice = "cooked_rice"
+    case heavyDollarSign = "heavy_dollar_sign"
     case jeans = "jeans"
-    case cloudWithSnow = "cloudWithSnow"
+    case cloudWithSnow = "cloud_with_snow"
     case locked = "locked"
-    case pileOfPoo = "pileOfPoo"
+    case pileOfPoo = "pile_of_poo"
     case zebra = "zebra"
     case lobster = "lobster"
-    case rollingOnTheFloorLaughing = "rollingOnTheFloorLaughing"
-    case statueOfLiberty = "statueOfLiberty"
+    case rollingOnTheFloorLaughing = "rolling_on_the_floor_laughing"
+    case statueOfLiberty = "statue_of_liberty"
     case house = "house"
-    case keycap1 = "keycap1"
-    case pingPong = "pingPong"
+    case keycap1 = "keycap_1"
+    case pingPong = "ping_pong"
     case badminton = "badminton"
-    case dottedLineFace = "dottedLineFace"
-    case catWithTearsOfJoy = "catWithTearsOfJoy"
-    case moonCake = "moonCake"
-    case nazarAmulet = "nazarAmulet"
-    case magnifyingGlassTiltedLeft = "magnifyingGlassTiltedLeft"
+    case dottedLineFace = "dotted_line_face"
+    case catWithTearsOfJoy = "cat_with_tears_of_joy"
+    case moonCake = "moon_cake"
+    case nazarAmulet = "nazar_amulet"
+    case starStruck = "star_struck"
+    case magnifyingGlassTiltedLeft = "magnifying_glass_tilted_left"
     case lotus = "lotus"
-    case faceWithDiagonalMouth = "faceWithDiagonalMouth"
-    case _1stPlaceMedal = "1stPlaceMedal"
-    case filmFrames = "filmFrames"
+    case faceWithDiagonalMouth = "face_with_diagonal_mouth"
+    case _1stPlaceMedal = "1st_place_medal"
+    case filmFrames = "film_frames"
     case basketball = "basketball"
-    case faceWithRaisedEyebrow = "faceWithRaisedEyebrow"
-    case lyingFace = "lyingFace"
-    case zipperMouthFace = "zipperMouthFace"
-    case closedUmbrella = "closedUmbrella"
-    case brokenChain = "brokenChain"
-    case neutralFace = "neutralFace"
-    case oButtonBloodType = "oButtonBloodType"
-    case cupWithStraw = "cupWithStraw"
+    case faceWithRaisedEyebrow = "face_with_raised_eyebrow"
+    case lyingFace = "lying_face"
+    case twoThirty = "two_thirty"
+    case closedUmbrella = "closed_umbrella"
+    case brokenChain = "broken_chain"
+    case neutralFace = "neutral_face"
+    case cupWithStraw = "cup_with_straw"
     case microphone = "microphone"
-    case prayerBeads = "prayerBeads"
-    case maleSign = "maleSign"
-    case whiteSquareButton = "whiteSquareButton"
-    case triangularFlag = "triangularFlag"
+    case prayerBeads = "prayer_beads"
+    case maleSign = "male_sign"
+    case whiteSquareButton = "white_square_button"
+    case triangularFlag = "triangular_flag"
     case bicycle = "bicycle"
-    case womansClothes = "womansClothes"
-    case unamusedFace = "unamusedFace"
-    case cityscapeAtDusk = "cityscapeAtDusk"
-    case rainbowFlag = "rainbowFlag"
-    case snowmanWithoutSnow = "snowmanWithoutSnow"
-    case soonArrow = "soonArrow"
+    case womansClothes = "womans_clothes"
+    case unamusedFace = "unamused_face"
+    case cityscapeAtDusk = "cityscape_at_dusk"
+    case rainbowFlag = "rainbow_flag"
+    case snowmanWithoutSnow = "snowman_without_snow"
+    case soonArrow = "soon_arrow"
     case calendar = "calendar"
-    case balanceScale = "balanceScale"
-    case cherryBlossom = "cherryBlossom"
-    case brownMushroom = "brownMushroom"
-    case anguishedFace = "anguishedFace"
+    case balanceScale = "balance_scale"
+    case cherryBlossom = "cherry_blossom"
+    case brownMushroom = "brown_mushroom"
+    case anguishedFace = "anguished_face"
     case bathtub = "bathtub"
-    case opticalDisk = "opticalDisk"
+    case opticalDisk = "optical_disk"
     case mouse = "mouse"
-    case slotMachine = "slotMachine"
-    case blackHeart = "blackHeart"
-    case atomSymbol = "atomSymbol"
-    case guideDog = "guideDog"
+    case slotMachine = "slot_machine"
+    case blackHeart = "black_heart"
+    case atomSymbol = "atom_symbol"
+    case guideDog = "guide_dog"
     case mouth = "mouth"
     case giraffe = "giraffe"
     case volleyball = "volleyball"
-    case oncomingAutomobile = "oncomingAutomobile"
-    case orangeHeart = "orangeHeart"
-    case clapperBoard = "clapperBoard"
-    case chessPawn = "chessPawn"
-    case headShakingVertically = "headShakingVertically"
+    case oncomingAutomobile = "oncoming_automobile"
+    case orangeHeart = "orange_heart"
+    case clapperBoard = "clapper_board"
+    case chessPawn = "chess_pawn"
+    case headShakingVertically = "head_shaking_vertically"
     case cat = "cat"
     case bat = "bat"
-    case electricPlug = "electricPlug"
-    case cloudWithLightningAndRain = "cloudWithLightningAndRain"
+    case electricPlug = "electric_plug"
+    case cloudWithLightningAndRain = "cloud_with_lightning_and_rain"
     case multiply = "multiply"
-    case keycap3 = "keycap3"
-    case yoYo = "yoYo"
+    case keycap3 = "keycap_3"
     case stopwatch = "stopwatch"
-    case tumblerGlass = "tumblerGlass"
+    case tumblerGlass = "tumbler_glass"
     case egg = "egg"
     case turkey = "turkey"
     case rock = "rock"
-    case anxiousFaceWithSweat = "anxiousFaceWithSweat"
+    case anxiousFaceWithSweat = "anxious_face_with_sweat"
     case coat = "coat"
-    case rightAngerBubble = "rightAngerBubble"
+    case rightAngerBubble = "right_anger_bubble"
     case blossom = "blossom"
-    case japaneseDiscountButton = "japaneseDiscountButton"
+    case japaneseDiscountButton = "japanese_discount_button"
     case bone = "bone"
-    case twoThirty = "twoThirty"
-    case faceWithOpenEyesAndHandOverMouth = "faceWithOpenEyesAndHandOverMouth"
-    case notebookWithDecorativeCover = "notebookWithDecorativeCover"
+    case onePieceSwimsuit = "one_piece_swimsuit"
+    case faceWithOpenEyesAndHandOverMouth = "face_with_open_eyes_and_hand_over_mouth"
+    case notebookWithDecorativeCover = "notebook_with_decorative_cover"
     case razor = "razor"
     case wrench = "wrench"
-    case stopSign = "stopSign"
-    case topHat = "topHat"
+    case stopSign = "stop_sign"
+    case topHat = "top_hat"
     case sparkle = "sparkle"
     case ant = "ant"
-    case mobilePhone = "mobilePhone"
-    case litterInBinSign = "litterInBinSign"
+    case mobilePhone = "mobile_phone"
+    case litterInBinSign = "litter_in_bin_sign"
     case tomato = "tomato"
-    case lockedWithKey = "lockedWithKey"
-    case winkingFaceWithTongue = "winkingFaceWithTongue"
-    case racingCar = "racingCar"
-    case hammerAndWrench = "hammerAndWrench"
-    case _3rdPlaceMedal = "3rdPlaceMedal"
-    case fortuneCookie = "fortuneCookie"
-    case blackNib = "blackNib"
+    case lockedWithKey = "locked_with_key"
+    case winkingFaceWithTongue = "winking_face_with_tongue"
+    case racingCar = "racing_car"
+    case hammerAndWrench = "hammer_and_wrench"
+    case _3rdPlaceMedal = "3rd_place_medal"
+    case fortuneCookie = "fortune_cookie"
+    case blackNib = "black_nib"
     case cigarette = "cigarette"
+    case fastForwardButton = "fast_forward_button"
     case pushpin = "pushpin"
-    case fiveOclock = "fiveOclock"
-    case blueCircle = "blueCircle"
+    case fiveOclock = "five_oclock"
+    case blueCircle = "blue_circle"
     case ophiuchus = "ophiuchus"
-    case longDrum = "longDrum"
-    case starStruck = "starStruck"
-    case lightBlueHeart = "lightBlueHeart"
-    case studioMicrophone = "studioMicrophone"
-    case tiredFace = "tiredFace"
+    case longDrum = "long_drum"
+    case lightBlueHeart = "light_blue_heart"
+    case studioMicrophone = "studio_microphone"
+    case tenThirty = "ten_thirty"
+    case tiredFace = "tired_face"
     case gemini = "gemini"
     case glasses = "glasses"
-    case personWithBunnyEars = "personWithBunnyEars"
+    case personWithBunnyEars = "person_with_bunny_ears"
+    case whiteMediumSmallSquare = "white_medium_small_square"
     case badger = "badger"
     case bear = "bear"
-    case downwardsButton = "downwardsButton"
-    case waterPistol = "waterPistol"
-    case inputLatinUppercase = "inputLatinUppercase"
-    case pickupTruck = "pickupTruck"
-    case faceWithTongue = "faceWithTongue"
-    case blackMediumSquare = "blackMediumSquare"
-    case mapleLeaf = "mapleLeaf"
+    case downwardsButton = "downwards_button"
+    case waterPistol = "water_pistol"
+    case eightThirty = "eight_thirty"
+    case inputLatinUppercase = "input_latin_uppercase"
+    case pickupTruck = "pickup_truck"
+    case faceWithTongue = "face_with_tongue"
+    case blackMediumSquare = "black_medium_square"
+    case mapleLeaf = "maple_leaf"
     case comet = "comet"
-    case bentoBox = "bentoBox"
-    case redHeart = "redHeart"
-    case tigerFace = "tigerFace"
-    case squintingFaceWithTongue = "squintingFaceWithTongue"
-    case orthodoxCross = "orthodoxCross"
+    case bentoBox = "bento_box"
+    case redHeart = "red_heart"
+    case tigerFace = "tiger_face"
+    case squintingFaceWithTongue = "squinting_face_with_tongue"
+    case orthodoxCross = "orthodox_cross"
     case thread = "thread"
     case purse = "purse"
     case metro = "metro"
-    case clownFace = "clownFace"
+    case clownFace = "clown_face"
     case hospital = "hospital"
-    case manualWheelchair = "manualWheelchair"
+    case manualWheelchair = "manual_wheelchair"
     case beans = "beans"
-    case convenienceStore = "convenienceStore"
-    case japaneseServiceChargeButton = "japaneseServiceChargeButton"
+    case globeShowingEuropeAfrica = "globe_showing_europe_africa"
+    case convenienceStore = "convenience_store"
+    case japaneseServiceChargeButton = "japanese_service_charge_button"
     case rabbit = "rabbit"
-    case firstQuarterMoon = "firstQuarterMoon"
-    case whiteMediumSquare = "whiteMediumSquare"
-    case currencyExchange = "currencyExchange"
-    case speechBalloon = "speechBalloon"
-    case heartDecoration = "heartDecoration"
-    case tramCar = "tramCar"
+    case firstQuarterMoon = "first_quarter_moon"
+    case whiteMediumSquare = "white_medium_square"
+    case currencyExchange = "currency_exchange"
+    case speechBalloon = "speech_balloon"
+    case heartDecoration = "heart_decoration"
+    case tramCar = "tram_car"
     case avocado = "avocado"
     case ghost = "ghost"
-    case upRightArrow = "upRightArrow"
-    case christmasTree = "christmasTree"
+    case christmasTree = "christmas_tree"
     case printer = "printer"
     case watermelon = "watermelon"
-    case vsButton = "vsButton"
-    case transgenderSymbol = "transgenderSymbol"
-    case filmProjector = "filmProjector"
-    case windChime = "windChime"
-    case grinningFace = "grinningFace"
-    case faceWithMonocle = "faceWithMonocle"
+    case vsButton = "vs_button"
+    case transgenderSymbol = "transgender_symbol"
+    case filmProjector = "film_projector"
+    case windChime = "wind_chime"
+    case grinningFace = "grinning_face"
+    case faceWithMonocle = "face_with_monocle"
     case spider = "spider"
-    case thoughtBalloon = "thoughtBalloon"
+    case thoughtBalloon = "thought_balloon"
     case prohibited = "prohibited"
-    case japaneseNotFreeOfChargeButton = "japaneseNotFreeOfChargeButton"
-    case confettiBall = "confettiBall"
-    case hushedFace = "hushedFace"
-    case redPaperLantern = "redPaperLantern"
-    case roastedSweetPotato = "roastedSweetPotato"
-    case twoHumpCamel = "twoHumpCamel"
-    case mapOfJapan = "mapOfJapan"
-    case personFencing = "personFencing"
-    case japaneseCastle = "japaneseCastle"
+    case japaneseNotFreeOfChargeButton = "japanese_not_free_of_charge_button"
+    case confettiBall = "confetti_ball"
+    case hushedFace = "hushed_face"
+    case redPaperLantern = "red_paper_lantern"
+    case roastedSweetPotato = "roasted_sweet_potato"
+    case oButtonBloodType = "o_button_blood_type"
+    case mapOfJapan = "map_of_japan"
+    case personFencing = "person_fencing"
+    case japaneseCastle = "japanese_castle"
     case blueberries = "blueberries"
-    case lightBulb = "lightBulb"
-    case runningShirt = "runningShirt"
-    case bookmarkTabs = "bookmarkTabs"
-    case eightOclock = "eightOclock"
+    case lightBulb = "light_bulb"
+    case runningShirt = "running_shirt"
+    case bookmarkTabs = "bookmark_tabs"
+    case eightOclock = "eight_oclock"
     case coin = "coin"
-    case tenOclock = "tenOclock"
+    case tenOclock = "ten_oclock"
+    case upLeftArrow = "up_left_arrow"
     case skull = "skull"
-    case mirrorBall = "mirrorBall"
-    case thongSandal = "thongSandal"
-    case faceExhaling = "faceExhaling"
+    case mirrorBall = "mirror_ball"
+    case thongSandal = "thong_sandal"
+    case faceExhaling = "face_exhaling"
     case squid = "squid"
     case boar = "boar"
     case cancer = "cancer"
-    case speakingHead = "speakingHead"
-    case nonPotableWater = "nonPotableWater"
+    case speakingHead = "speaking_head"
     case sunflower = "sunflower"
-    case ejectButton = "ejectButton"
+    case ejectButton = "eject_button"
     case virgo = "virgo"
-    case japaneseReservedButton = "japaneseReservedButton"
+    case japaneseReservedButton = "japanese_reserved_button"
     case hole = "hole"
     case pencil = "pencil"
-    case lightRail = "lightRail"
+    case lightRail = "light_rail"
     case dizzy = "dizzy"
-    case exclamationQuestionMark = "exclamationQuestionMark"
-    case fearfulFace = "fearfulFace"
-    case leftArrow = "leftArrow"
+    case exclamationQuestionMark = "exclamation_question_mark"
+    case fearfulFace = "fearful_face"
+    case leftArrow = "left_arrow"
     case camera = "camera"
-    case grinningFaceWithSmilingEyes = "grinningFaceWithSmilingEyes"
-    case shakingFace = "shakingFace"
-    case womansHat = "womansHat"
-    case leftSpeechBubble = "leftSpeechBubble"
+    case grinningFaceWithSmilingEyes = "grinning_face_with_smiling_eyes"
+    case shakingFace = "shaking_face"
+    case womansHat = "womans_hat"
+    case leftSpeechBubble = "left_speech_bubble"
     case rooster = "rooster"
+    case fiveThirty = "five_thirty"
 
     /// Returns the camelCase identifier for the emoji (same as case name).
     public var identifier: String {
@@ -1298,23 +1298,27 @@ public enum FluentUIEmoji: String, CaseIterable {
     
     /// Returns the human-readable display name for the emoji.
     public var displayName: String {
-        // Convert camelCase to title case (e.g., 'grinningFace' -> 'Grinning Face')
-        let result = self.rawValue.replacingOccurrences(
-            of: "([a-z])([A-Z])",
-            with: "$1 $2",
-            options: .regularExpression
-        )
-        return result.prefix(1).uppercased() + result.dropFirst()
+        // Convert standardized name to display name
+        let words = self.rawValue.split(separator: "_").map(String.init)
+        var displayWords: [String] = []
+        
+        for (index, word) in words.enumerated() {
+            if index == 0 {
+                displayWords.append(word.capitalized)
+            } else if ["of", "the", "in", "on", "at", "by", "for", "with", "to", "from", "and", "or", "but"].contains(word.lowercased()) {
+                displayWords.append(word.lowercased())
+            } else {
+                displayWords.append(word.capitalized)
+            }
+        }
+        
+        return displayWords.joined(separator: " ")
     }
 
     /// Returns the URL for the emoji's 3D PNG asset.
     public var url: URL? {
-        // Convert camelCase to snake_case (e.g., 'grinningFace' -> 'grinning_face')
-        let fileName = self.rawValue.replacingOccurrences(
-            of: "([a-z])([A-Z])",
-            with: "$1_$2",
-            options: .regularExpression
-        ).lowercased() + "_3d"
+        // Use the standardized name directly
+        let fileName = self.rawValue + "_3d"
         
         if let url = Bundle.module.url(forResource: fileName, withExtension: "png") {
             return url
@@ -1327,13 +1331,13 @@ public enum FluentUIEmoji: String, CaseIterable {
         switch self {
         case .cutOfMeat, .pancakes, .wineGlass, .teapot, .tropicalDrink, .salt, .shallowPanOfFood, .redApple, .coconut, .oncomingPoliceCar, .riceCracker, .birthdayCake, .riceBall, .hotPepper, .baguetteBread, .grapes, .cupcake, .pineapple, .cannedFood, .teacupWithoutHandle, .policeCarLight, .peach, .flatbread, .potOfFood, .potato, .postOffice, .iceSkate, .banana, .policeCar, .bubbleTea, .iceCream, .honeyPot, .strawberry, .ice, .kiwiFruit, .stuffedFlatbread, .curryRice, .softIceCream, .capricorn, .shortcake, .glassOfMilk, .greenApple, .officeBuilding, .bellPepper, .pizza, .unicorn, .iceHockey, .shavedIce, .meatOnBone, .milkyWay, .carrot, .nestWithEggs, .steamingBowl, .sheafOfRice, .lemon, .popcorn, .japanesePostOffice, .bread, .earOfCorn, .chicken, .cheeseWedge, .hamburger, .cookedRice, .moonCake, .cherryBlossom, .egg, .tomato, .avocado, .watermelon, .roastedSweetPotato:
             return .food
-        case .heavyEqualsSign, .heartOnFire, .catFace, .sneezingFace, .endArrow, .loudlyCryingFace, .japaneseBargainButton, .newButton, .wheelchairSymbol, .frowningFace, .inputSymbols, .sleepyFace, .femaleSign, .shootingStar, .upsideDownFace, .smallOrangeDiamond, .japaneseProhibitedButton, .growingHeart, .downcastFaceWithSweat, .fastUpButton, .sadButRelievedFace, .beamingFaceWithSmilingEyes, .pirateFlag, .smilingFaceWithHorns, .firstQuarterMoonFace, .thinkingFace, .upLeftArrow, .grinningCatWithSmilingEyes, .brightButton, .woozyFace, .rightArrowCurvingLeft, .japaneseMonthlyAmountButton, .perseveringFace, .brownCircle, .twoHearts, .transgenderFlag, .upArrow, .pauseButton, .slightlyFrowningFace, .rabbitFace, .crossedSwords, .smilingFaceWithSunglasses, .playOrPauseButton, .faceWithThermometer, .greenSquare, .kissingCat, .rightArrowCurvingDown, .whiteSmallSquare, .yellowCircle, .faceWithSteamFromNose, .pButton, .doubleExclamationMark, .blueHeart, .meltingFace, .bookmark, .hotFace, .freeButton, .openMailboxWithRaisedFlag, .yawningFace, .blackCircle, .repeatButton, .tongue, .nauseatedFace, .japaneseNoVacancyButton, .whiteQuestionMark, .japaneseAcceptableButton, .upwardsButton, .backArrow, .whiteFlag, .blackLargeSquare, .sparklingHeart, .whiteMediumSmallSquare, .aButtonBloodType, .knockedOutFace, .checkMarkButton, .crossedFlags, .faceWithRollingEyes, .playButton, .yellowSquare, .okButton, .moneyMouthFace, .downRightArrow, .lastTrackButton, .catWithWrySmile, .lastQuarterMoonFace, .faceInClouds, .shushingFace, .frowningFaceWithOpenMouth, .greenCircle, .recordButton, .sleepingFace, .dimButton, .cowboyHatFace, .kissMark, .leftRightArrow, .glowingStar, .custard, .topArrow, .faceHoldingBackTears, .astonishedFace, .brownSquare, .purpleSquare, .peaceSymbol, .starAndCrescent, .clockwiseVerticalArrows, .downArrow, .rightArrow, .reverseButton, .pensiveFace, .whiteHeart, .greyHeart, .faceWithOpenMouth, .recyclingSymbol, .faceSavoringFood, .cryingCat, .closedMailboxWithRaisedFlag, .flagInHole, .coolButton, .revolvingHearts, .fastReverseButton, .counterclockwiseArrowsButton, .whiteCircle, .grinningCat, .crystalBall, .diamondSuit, .largeBlueDiamond, .circledM, .windFace, .stopButton, .zanyFace, .brownHeart, .atmSign, .faceScreamingInFear, .crossMarkButton, .expressionlessFace, .redCircle, .heartWithArrow, .shuffleTracksButton, .faceWithPeekingEye, .openMailboxWithLoweredFlag, .sosButton, .faceWithTearsOfJoy, .eyes, .clButton, .mouseFace, .mobilePhoneWithArrow, .faceWithHandOverMouth, .faceWithSpiralEyes, .orangeCircle, .kissingFace, .pleadingFace, .checkMark, .closedMailboxWithLoweredFlag, .radioButton, .repeatSingleButton, .smilingCatWithHeartEyes, .cryingFace, .angryFaceWithHorns, .dragonFace, .huggingFace, .grinningFaceWithBigEyes, .angerSymbol, .nextTrackButton, .japaneseOpenForBusinessButton, .grinningFaceWithSweat, .purpleHeart, .purpleCircle, .onArrow, .nightWithStars, .anatomicalHeart, .orangeSquare, .leftArrowCurvingRight, .diamondWithADot, .redQuestionMark, .flushedFace, .hollowRedCircle, .lacrosse, .redSquare, .grinningSquintingFace, .fullMoonFace, .heartExclamation, .confoundedFace, .mendingHeart, .droolingFace, .latinCross, .beatingHeart, .downLeftArrow, .heartSuit, .greenHeart, .pigFace, .yellowHeart, .smilingFaceWithHalo, .kissingFaceWithClosedEyes, .bButtonBloodType, .redTrianglePointedDown, .japaneseFreeOfChargeButton, .idButton, .whiteExclamationMark, .newMoonFace, .japaneseSymbolForBeginner, .japanesePassingGradeButton, .chequeredFlag, .horseFace, .blackMediumSmallSquare, .faceWithHeadBandage, .disguisedFace, .coldFace, .whiteLargeSquare, .japaneseApplicationButton, .heartWithRibbon, .pinkHeart, .fastDownButton, .faceWithoutMouth, .faceWithSymbolsOnMouth, .winkingFace, .tradeMark, .wearyFace, .medicalSymbol, .japaneseCongratulationsButton, .eightPointedStar, .relievedFace, .sunWithFace, .babySymbol, .dogFace, .japaneseVacancyButton, .blackSmallSquare, .starOfDavid, .ngButton, .smilingFaceWithHeartEyes, .smallBlueDiamond, .slightlySmilingFace, .largeOrangeDiamond, .fastForwardButton, .angryFace, .poutingFace, .monkeyFace, .smilingFaceWithHearts, .blackFlag, .upDownArrow, .brokenHeart, .faceVomiting, .abButtonBloodType, .redExclamationMark, .confusedFace, .faceBlowingAKiss, .partAlternationMark, .kissingFaceWithSmilingEyes, .childrenCrossing, .star, .tearOffCalendar, .partyingFace, .rightArrowCurvingUp, .bowAndArrow, .crossMark, .nerdFace, .grimacingFace, .smilingFace, .blackSquareButton, .smilingFaceWithSmilingEyes, .skullAndCrossbones, .blueSquare, .japaneseHereButton, .disappointedFace, .faceWithMedicalMask, .worriedFace, .cowFace, .smilingFaceWithTear, .japaneseSecretButton, .smirkingFace, .redTriangle, .envelopeWithArrow, .dottedSixPointedStar, .salutingFace, .upButton, .heavyDollarSign, .rollingOnTheFloorLaughing, .dottedLineFace, .catWithTearsOfJoy, .faceWithDiagonalMouth, .faceWithRaisedEyebrow, .lyingFace, .zipperMouthFace, .neutralFace, .oButtonBloodType, .maleSign, .whiteSquareButton, .triangularFlag, .unamusedFace, .rainbowFlag, .soonArrow, .anguishedFace, .blackHeart, .atomSymbol, .mouth, .orangeHeart, .anxiousFaceWithSweat, .japaneseDiscountButton, .faceWithOpenEyesAndHandOverMouth, .stopSign, .litterInBinSign, .winkingFaceWithTongue, .blueCircle, .starStruck, .lightBlueHeart, .tiredFace, .downwardsButton, .faceWithTongue, .blackMediumSquare, .redHeart, .tigerFace, .squintingFaceWithTongue, .orthodoxCross, .clownFace, .japaneseServiceChargeButton, .whiteMediumSquare, .heartDecoration, .upRightArrow, .vsButton, .transgenderSymbol, .grinningFace, .faceWithMonocle, .japaneseNotFreeOfChargeButton, .hushedFace, .bookmarkTabs, .faceExhaling, .ejectButton, .japaneseReservedButton, .exclamationQuestionMark, .fearfulFace, .leftArrow, .grinningFaceWithSmilingEyes, .shakingFace:
+        case .heavyEqualsSign, .heartOnFire, .catFace, .sneezingFace, .endArrow, .loudlyCryingFace, .japaneseBargainButton, .newButton, .wheelchairSymbol, .frowningFace, .inputSymbols, .sleepyFace, .femaleSign, .shootingStar, .smallOrangeDiamond, .japaneseProhibitedButton, .growingHeart, .downcastFaceWithSweat, .fastUpButton, .faceWithHeadBandage, .sadButRelievedFace, .beamingFaceWithSmilingEyes, .pirateFlag, .smilingFaceWithHorns, .firstQuarterMoonFace, .thinkingFace, .grinningCatWithSmilingEyes, .brightButton, .woozyFace, .rightArrowCurvingLeft, .japaneseMonthlyAmountButton, .perseveringFace, .brownCircle, .twoHearts, .transgenderFlag, .upArrow, .pauseButton, .dottedSixPointedStar, .slightlyFrowningFace, .rabbitFace, .crossedSwords, .smilingFaceWithSunglasses, .playOrPauseButton, .faceWithThermometer, .greenSquare, .kissingCat, .rightArrowCurvingDown, .whiteSmallSquare, .yellowCircle, .faceWithSteamFromNose, .pButton, .doubleExclamationMark, .blueHeart, .meltingFace, .bookmark, .hotFace, .freeButton, .openMailboxWithRaisedFlag, .yawningFace, .blackCircle, .repeatButton, .tongue, .nauseatedFace, .japaneseNoVacancyButton, .whiteQuestionMark, .japaneseAcceptableButton, .upwardsButton, .zipperMouthFace, .backArrow, .whiteFlag, .blackLargeSquare, .sparklingHeart, .aButtonBloodType, .checkMarkButton, .crossedFlags, .faceWithRollingEyes, .playButton, .yellowSquare, .okButton, .lastTrackButton, .catWithWrySmile, .lastQuarterMoonFace, .faceInClouds, .shushingFace, .frowningFaceWithOpenMouth, .greenCircle, .recordButton, .sleepingFace, .dimButton, .cowboyHatFace, .kissMark, .glowingStar, .custard, .topArrow, .faceHoldingBackTears, .astonishedFace, .brownSquare, .downRightArrow, .purpleSquare, .peaceSymbol, .starAndCrescent, .clockwiseVerticalArrows, .downArrow, .rightArrow, .upDownArrow, .reverseButton, .pensiveFace, .upsideDownFace, .whiteHeart, .greyHeart, .faceWithOpenMouth, .recyclingSymbol, .faceSavoringFood, .leftRightArrow, .cryingCat, .closedMailboxWithRaisedFlag, .flagInHole, .coolButton, .smilingFaceWithHeartEyes, .revolvingHearts, .fastReverseButton, .counterclockwiseArrowsButton, .whiteCircle, .grinningCat, .crystalBall, .diamondSuit, .largeBlueDiamond, .circledM, .windFace, .blackMediumSmallSquare, .stopButton, .zanyFace, .brownHeart, .atmSign, .faceScreamingInFear, .crossMarkButton, .expressionlessFace, .redCircle, .heartWithArrow, .shuffleTracksButton, .faceWithPeekingEye, .openMailboxWithLoweredFlag, .sosButton, .faceWithTearsOfJoy, .eyes, .clButton, .eightPointedStar, .mouseFace, .mobilePhoneWithArrow, .faceWithHandOverMouth, .faceWithSpiralEyes, .orangeCircle, .kissingFace, .pleadingFace, .checkMark, .closedMailboxWithLoweredFlag, .radioButton, .repeatSingleButton, .cryingFace, .angryFaceWithHorns, .dragonFace, .huggingFace, .grinningFaceWithBigEyes, .angerSymbol, .nextTrackButton, .japaneseOpenForBusinessButton, .grinningFaceWithSweat, .purpleHeart, .purpleCircle, .nightWithStars, .anatomicalHeart, .orangeSquare, .leftArrowCurvingRight, .diamondWithADot, .redQuestionMark, .flushedFace, .hollowRedCircle, .lacrosse, .redSquare, .grinningSquintingFace, .fullMoonFace, .heartExclamation, .confoundedFace, .tearOffCalendar, .mendingHeart, .droolingFace, .latinCross, .beatingHeart, .heartSuit, .greenHeart, .pigFace, .upRightArrow, .yellowHeart, .smilingFaceWithHalo, .kissingFaceWithClosedEyes, .bButtonBloodType, .redTrianglePointedDown, .japaneseFreeOfChargeButton, .idButton, .whiteExclamationMark, .newMoonFace, .downLeftArrow, .upButton, .japaneseSymbolForBeginner, .japanesePassingGradeButton, .smilingCatWithHeartEyes, .chequeredFlag, .horseFace, .disguisedFace, .coldFace, .whiteLargeSquare, .japaneseApplicationButton, .heartWithRibbon, .pinkHeart, .fastDownButton, .faceWithoutMouth, .faceWithSymbolsOnMouth, .winkingFace, .tradeMark, .wearyFace, .medicalSymbol, .japaneseCongratulationsButton, .relievedFace, .sunWithFace, .babySymbol, .dogFace, .japaneseVacancyButton, .blackSmallSquare, .starOfDavid, .ngButton, .onArrow, .smallBlueDiamond, .slightlySmilingFace, .largeOrangeDiamond, .angryFace, .poutingFace, .monkeyFace, .smilingFaceWithHearts, .blackFlag, .brokenHeart, .faceVomiting, .abButtonBloodType, .redExclamationMark, .confusedFace, .faceBlowingAKiss, .partAlternationMark, .kissingFaceWithSmilingEyes, .childrenCrossing, .star, .partyingFace, .rightArrowCurvingUp, .bowAndArrow, .crossMark, .nerdFace, .grimacingFace, .smilingFace, .knockedOutFace, .blackSquareButton, .smilingFaceWithSmilingEyes, .skullAndCrossbones, .blueSquare, .moneyMouthFace, .japaneseHereButton, .disappointedFace, .faceWithMedicalMask, .worriedFace, .cowFace, .smilingFaceWithTear, .japaneseSecretButton, .smirkingFace, .redTriangle, .envelopeWithArrow, .salutingFace, .heavyDollarSign, .rollingOnTheFloorLaughing, .dottedLineFace, .catWithTearsOfJoy, .starStruck, .faceWithDiagonalMouth, .faceWithRaisedEyebrow, .lyingFace, .neutralFace, .maleSign, .whiteSquareButton, .triangularFlag, .unamusedFace, .rainbowFlag, .soonArrow, .anguishedFace, .blackHeart, .atomSymbol, .mouth, .orangeHeart, .anxiousFaceWithSweat, .japaneseDiscountButton, .faceWithOpenEyesAndHandOverMouth, .stopSign, .litterInBinSign, .winkingFaceWithTongue, .fastForwardButton, .blueCircle, .lightBlueHeart, .tiredFace, .whiteMediumSmallSquare, .downwardsButton, .faceWithTongue, .blackMediumSquare, .redHeart, .tigerFace, .squintingFaceWithTongue, .orthodoxCross, .clownFace, .japaneseServiceChargeButton, .whiteMediumSquare, .heartDecoration, .vsButton, .transgenderSymbol, .grinningFace, .faceWithMonocle, .japaneseNotFreeOfChargeButton, .hushedFace, .oButtonBloodType, .bookmarkTabs, .upLeftArrow, .faceExhaling, .ejectButton, .japaneseReservedButton, .exclamationQuestionMark, .fearfulFace, .leftArrow, .grinningFaceWithSmilingEyes, .shakingFace:
             return .symbols
-        case .busStop, .crown, .safetyPin, .doubleCurlyLoop, .babyBottle, .computerDisk, .lowBattery, .construction, .moonViewingCeremony, .zzz, .fountain, .sunBehindLargeCloud, .mate, .fieldHockey, .brick, .noMobilePhones, .scissors, .dashingAway, .rolledUpNewspaper, .noPedestrians, .shield, .mosque, .cloud, .moneyBag, .doughnut, .menorah, .gear, .sponge, .spiralShell, .personWrestling, .moose, .fleurDeLis, .shoppingBags, .spaghetti, .spiralCalendar, .inboxTray, .hairPick, .deer, .magicWand, .handbag, .dumpling, .bitingLip, .fullMoon, .aerialTramway, .lime, .fondue, .pick, .locomotive, .penguin, .kitchenKnife, .headShakingHorizontally, .babyChick, .fourThirty, .coral, .leopard, .sun, .seal, .rainbow, .bank, .dollarBanknote, .cactus, .key, .boomerang, .melon, .alembic, .divingMask, .sled, .bus, .olive, .noBicycles, .rosette, .reminderRibbon, .headphone, .keycap6, .brain, .incomingEnvelope, .eagle, .dove, .chartDecreasing, .taurus, .inputLatinLowercase, .chains, .saxophone, .deliveryTruck, .moneyWithWings, .garlic, .triangularRuler, .keycapHashtag, .information, .flyingDisc, .clamp, .horizontalTrafficLight, .rat, .vibrationMode, .jar, .yenBanknote, .satellite, .customs, .seat, .sparkler, .railwayTrack, .foldingHandFan, .bison, .rollerCoaster, .pageWithCurl, .lizard, .unlocked, .waxingCrescentMoon, .toolbox, .keycap4, .yarn, .newMoon, .peanuts, .barberPole, .keycap8, .hammer, .suspensionRailway, .graduationCap, .anchor, .straightRuler, .rose, .skateboard, .mosquito, .telephone, .biohazard, .mechanicalArm, .rhinoceros, .registered, .bacon, .gemStone, .candle, .butter, .crocodile, .keycap10, .candy, .noSmoking, .tornado, .screwdriver, .cooking, .pageFacingUp, .waterWave, .ewe, .abacus, .tangerine, .lotionBottle, .videoCamera, .troll, .sunBehindCloud, .receipt, .cockroach, .whiteCane, .beverageBox, .hedgehog, .foggy, .sandwich, .eyeInSpeechBubble, .sauropod, .noEntry, .barChart, .keycapAsterisk, .lungs, .bubbles, .fire, .aquarius, .nestingDolls, .radioactive, .bouquet, .fourOclock, .bottleWithPoppingCork, .firecracker, .robot, .panda, .dango, .wrappedGift, .koala, .snowman, .crutch, .postalHorn, .artistPalette, .trumpet, .mirror, .banjo, .canoe, .highVoltage, .compass, .labCoat, .camel, .goggles, .hamsa, .fireworks, .desktopComputer, .maracas, .basket, .ogre, .pretzel, .toothbrush, .headstone, .amphora, .kimono, .chair, .chocolateBar, .bikini, .greenBook, .dropOfBlood, .snowflake, .ribbon, .wood, .rollerSkate, .verticalTrafficLight, .nutAndBolt, .goat, .umbrella, .twelveOclock, .shower, .axe, .martialArtsUniform, .leftLuggage, .manWrestling, .ringBuoy, .elevenOclock, .plunger, .funeralUrn, .aries, .threeOclock, .oncomingBus, .gingerRoot, .wheel, .hourglassDone, .leo, .orangutan, .tractor, .frontFacingBabyChick, .clubSuit, .keycap0, .accordion, .bed, .globeWithMeridians, .sunBehindRainCloud, .adhesiveBandage, .trophy, .burrito, .toilet, .hourglassNotDone, .joker, .crab, .infinity, .pawPrints, .hotSprings, .wedding, .handshake, .controlKnobs, .television, .puzzlePiece, .camping, .cucumber, .outboxTray, .sewingNeedle, .cinema, .ox, .oden, .nationalPark, .door, .piAta, .linkedPaperclips, .bellhopBell, .japaneseDolls, .dress, .skunk, .droplet, .bellWithSlash, .greenSalad, .admissionTickets, .tridentEmblem, .envelope, .inputLatinLetters, .oneOclock, .hyacinth, .herb, .thermometer, .pen, .ring, .elevenThirty, .ferry, .newspaper, .goose, .waterCloset, .mechanicalLeg, .sunBehindSmallCloud, .threeThirty, .globeShowingAsiaAustralia, .memo, .openFileFolder, .bustInSilhouette, .pager, .gorilla, .pineDecoration, .bell, .tRex, .soap, .beaver, .peopleHugging, .noOneUnderEighteen, .taco, .swan, .oyster, .link, .kaaba, .oncomingTaxi, .paperclip, .diyaLamp, .testTube, .billedCap, .dagger, .speakerMediumVolume, .hinduTemple, .curlyLoop, .cloudWithRain, .waningCrescentMoon, .sunset, .poultryLeg, .safetyVest, .cherries, .scroll, .departmentStore, .minibus, .mammoth, .station, .womanWrestling, .spiralNotepad, .megaphone, .twelveThirty, .scorpio, .bullseye, .bomb, .highHeeledShoe, .fly, .sake, .fog, .framedPicture, .mobilePhoneOff, .umbrellaOnGround, .pie, .shamrock, .pill, .waningGibbousMoon, .oneThirty, .sunrise, .chartIncreasingWithYen, .mutedSpeaker, .flyingSaucer, .tulip, .closedBook, .laptop, .tram, .keycap2, .mountFuji, .tooth, .hippopotamus, .fireEngine, .magnifyingGlassTiltedRight, .baggageClaim, .nameBadge, .couchAndLamp, .fountainPen, .luggage, .briefcase, .womanZombie, .footprints, .flute, .microscope, .joystick, .telephoneReceiver, .motorScooter, .chipmunk, .kangaroo, .backpack, .waterBuffalo, .waxingGibbousMoon, .potableWater, .parachute, .euroBanknote, .alien, .plus, .magnet, .sparkles, .womanWithBunnyEars, .sevenThirty, .microbe, .womanGenie, .cameraWithFlash, .xRay, .loveLetter, .mensRoom, .chartIncreasing, .dvd, .wastebasket, .ram, .frenchFries, .manZombie, .kite, .ambulance, .pear, .otter, .telescope, .parrot, .radio, .speakerLowVolume, .raccoon, .wireless, .nineOclock, .lollipop, .timerClock, .bagel, .notebook, .spadeSuit, .warning, .seedling, .sagittarius, .goalNet, .keycap7, .loudspeaker, .bustsInSilhouette, .goblin, .gloves, .donkey, .alienMonster, .stadium, .shrimp, .movieCamera, .pisces, .lipstick, .sixThirty, .socks, .ticket, .volcano, .faxMachine, .clutchBag, .tamale, .elevator, .personGenie, .rescueWorkersHelmet, .syringe, .worm, .helicopter, .sushi, .kickScooter, .manWithBunnyEars, .battery, .womansSandal, .knot, .motorizedWheelchair, .friedShrimp, .hook, .eightSpokedAsterisk, .briefs, .takeoutBox, .sari, .fuelPump, .militaryMedal, .ledger, .hammerAndPick, .scorpion, .cloudWithLightning, .pouringLiquid, .redEnvelope, .petriDish, .spoon, .forkAndKnifeWithPlate, .nineThirty, .paintbrush, .stethoscope, .label, .lockedWithPen, .eye, .hamster, .personZombie, .hundredPoints, .blueBook, .coffin, .poundBanknote, .fireExtinguisher, .cookie, .necktie, .broccoli, .globeShowingAmericas, .wheelOfDharma, .dna, .sevenOclock, .sweatDroplets, .performingArts, .motorcycle, .monorail, .hikingBoot, .keyboard, .flatShoe, .libra, .peaPod, .forkAndKnife, .fileCabinet, .divide, .crayon, .waffle, .taxi, .noLittering, .fileFolder, .postbox, .rollOfPaper, .onion, .peacock, .restroom, .minus, .violin, .militaryHelmet, .books, .alarmClock, .boxingGlove, .womansBoot, .inputNumbers, .hibiscus, .sunglasses, .autoRickshaw, .automobile, .curlingStone, .yinYang, .keycap5, .explodingHead, .wing, .copyright, .poodle, .lastQuarterMoon, .checkBoxWithCheck, .emptyNest, .motorway, .umbrellaWithRainDrops, .crescentMoon, .cyclone, .chestnut, .mango, .ferrisWheel, .sixOclock, .package, .levelSlider, .bowling, .circusTent, .llama, .ladder, .keycap9, .watch, .hotBeverage, .clipboard, .openBook, .khanda, .shorts, .tShirt, .mansShoe, .fiveThirty, .chopsticks, .moai, .hut, .flashlight, .wavyDash, .roundPushpin, .clinkingGlasses, .womensRoom, .cricket, .manGenie, .om, .hatchingChick, .shintoShrine, .orangeBook, .falafel, .owl, .snail, .duck, .tennis, .sloth, .cocktailGlass, .bucket, .floppyDisk, .bowlWithSpoon, .factory, .feather, .trolleybus, .tent, .globeShowingEuropeAfrica, .eMail, .oldKey, .collision, .videocassette, .articulatedLorry, .twoOclock, .synagogue, ._2ndPlaceMedal, .eightThirty, .speakerHighVolume, .tenThirty, .window, .dodo, .flamingo, .broom, .jeans, .cloudWithSnow, .locked, .pileOfPoo, .zebra, .lobster, .statueOfLiberty, .keycap1, .pingPong, .badminton, .nazarAmulet, .magnifyingGlassTiltedLeft, .lotus, ._1stPlaceMedal, .filmFrames, .closedUmbrella, .brokenChain, .cupWithStraw, .microphone, .prayerBeads, .bicycle, .womansClothes, .snowmanWithoutSnow, .calendar, .balanceScale, .bathtub, .opticalDisk, .slotMachine, .giraffe, .oncomingAutomobile, .clapperBoard, .chessPawn, .headShakingVertically, .bat, .electricPlug, .cloudWithLightningAndRain, .multiply, .keycap3, .yoYo, .stopwatch, .tumblerGlass, .turkey, .rock, .coat, .rightAngerBubble, .blossom, .bone, .twoThirty, .notebookWithDecorativeCover, .razor, .wrench, .topHat, .sparkle, .mobilePhone, .lockedWithKey, .hammerAndWrench, ._3rdPlaceMedal, .fortuneCookie, .blackNib, .cigarette, .pushpin, .fiveOclock, .ophiuchus, .studioMicrophone, .gemini, .glasses, .personWithBunnyEars, .badger, .waterPistol, .inputLatinUppercase, .pickupTruck, .comet, .bentoBox, .thread, .purse, .metro, .manualWheelchair, .beans, .convenienceStore, .firstQuarterMoon, .currencyExchange, .ghost, .printer, .filmProjector, .windChime, .prohibited, .twoHumpCamel, .personFencing, .blueberries, .lightBulb, .eightOclock, .coin, .tenOclock, .skull, .thongSandal, .squid, .boar, .cancer, .speakingHead, .nonPotableWater, .virgo, .hole, .pencil, .lightRail, .dizzy, .camera, .womansHat, .leftSpeechBubble, .rooster:
+        case .busStop, .crown, .twoHumpCamel, .safetyPin, .highHeeledShoe, .doubleCurlyLoop, .babyBottle, .computerDisk, .lowBattery, .construction, .moonViewingCeremony, .zzz, .fountain, .sunBehindLargeCloud, .mate, .fieldHockey, .brick, .noMobilePhones, .scissors, .dashingAway, .tShirt, .noPedestrians, .shield, .mosque, .cloud, .moneyBag, .doughnut, .menorah, .gear, .sponge, .spiralShell, .personWrestling, .moose, .shoppingBags, .spaghetti, .spiralCalendar, .inboxTray, .hairPick, .deer, .magicWand, .handbag, .dumpling, .bitingLip, .fullMoon, .aerialTramway, .lime, .fondue, .pick, .locomotive, .penguin, .kitchenKnife, .headShakingHorizontally, .babyChick, .coral, .leopard, .sun, .seal, .rainbow, .bank, .dollarBanknote, .cactus, .key, .boomerang, .melon, .alembic, .divingMask, .sled, .bus, .olive, .noBicycles, .rosette, .reminderRibbon, .headphone, .keycap6, .brain, .incomingEnvelope, .eagle, .dove, .chartDecreasing, .taurus, .inputLatinLowercase, .chains, .saxophone, .deliveryTruck, .moneyWithWings, .garlic, .triangularRuler, .keycapHashtag, .information, .flyingDisc, .clamp, .frontFacingBabyChick, .horizontalTrafficLight, .rat, .vibrationMode, .jar, .yenBanknote, .satellite, .customs, .seat, .sparkler, .railwayTrack, .foldingHandFan, .bison, .rollerCoaster, .pageWithCurl, .lizard, .unlocked, .waxingCrescentMoon, .toolbox, .keycap4, .yarn, .globeShowingAsiaAustralia, .newMoon, .peanuts, .barberPole, .keycap8, .hammer, .suspensionRailway, .graduationCap, .anchor, .eMail, .straightRuler, .rose, .skateboard, .mosquito, .telephone, .biohazard, .mechanicalArm, .rhinoceros, .registered, .bacon, .gemStone, .candle, .butter, .fourThirty, .crocodile, .keycap10, .candy, .noSmoking, .tornado, .screwdriver, .cooking, .pageFacingUp, .waterWave, .ewe, .abacus, .tangerine, .lotionBottle, .videoCamera, .troll, .piAta, .sunBehindCloud, .receipt, .cockroach, .whiteCane, .beverageBox, .hedgehog, .foggy, .sandwich, .eyeInSpeechBubble, .sauropod, .noEntry, .barChart, .keycapAsterisk, .lungs, .bubbles, .fire, .aquarius, .nestingDolls, .radioactive, .bouquet, .fourOclock, .bottleWithPoppingCork, .firecracker, .robot, .panda, .dango, .wrappedGift, .koala, .snowman, .crutch, .postalHorn, .artistPalette, .trumpet, .mirror, .banjo, .canoe, .highVoltage, .compass, .labCoat, .fleurDeLis, .camel, .goggles, .hamsa, .fireworks, .desktopComputer, .maracas, .basket, .ogre, .pretzel, .toothbrush, .headstone, .amphora, .kimono, .chair, .chocolateBar, .bikini, .greenBook, .dropOfBlood, .snowflake, .ribbon, .wood, .rollerSkate, .verticalTrafficLight, .nutAndBolt, .goat, .umbrella, .twelveOclock, .shower, .axe, .martialArtsUniform, .leftLuggage, .manWrestling, .ringBuoy, .elevenOclock, .plunger, .funeralUrn, .aries, .threeOclock, .oncomingBus, .oneThirty, .gingerRoot, .wheel, .hourglassDone, .leo, .orangutan, .tractor, .clubSuit, .keycap0, .accordion, .bed, .globeWithMeridians, .sunBehindRainCloud, .adhesiveBandage, .trophy, .burrito, .toilet, .hourglassNotDone, .joker, .crab, .infinity, .pawPrints, .hotSprings, .wedding, .handshake, .controlKnobs, .twelveThirty, .television, .puzzlePiece, .camping, .cucumber, .outboxTray, .sewingNeedle, .cinema, .ox, .oden, .nationalPark, .door, .linkedPaperclips, .bellhopBell, .japaneseDolls, .dress, .skunk, .droplet, .bellWithSlash, .greenSalad, .admissionTickets, .tridentEmblem, .elevenThirty, .envelope, .inputLatinLetters, .oneOclock, .hyacinth, .herb, .threeThirty, .thermometer, .pen, .ring, .ferry, .newspaper, .goose, .waterCloset, .mechanicalLeg, .sunBehindSmallCloud, .memo, .openFileFolder, .bustInSilhouette, .pager, .gorilla, .pineDecoration, .bell, .soap, .beaver, .peopleHugging, .noOneUnderEighteen, .taco, .swan, .oyster, .link, .kaaba, .oncomingTaxi, .paperclip, .diyaLamp, .testTube, .billedCap, .dagger, .speakerMediumVolume, .hinduTemple, .curlyLoop, .cloudWithRain, .waningCrescentMoon, .sunset, .poultryLeg, .safetyVest, .cherries, .tRex, .scroll, .departmentStore, .minibus, .mammoth, .eightSpokedAsterisk, .station, .womanWrestling, .spiralNotepad, .megaphone, .scorpio, .bullseye, .bomb, .fly, .sake, .fog, .framedPicture, .mobilePhoneOff, .umbrellaOnGround, .pie, .shamrock, .pill, .waningGibbousMoon, .sunrise, .chartIncreasingWithYen, .mutedSpeaker, .flyingSaucer, .tulip, .closedBook, .laptop, .tram, .keycap2, .mountFuji, .tooth, .hippopotamus, .fireEngine, .magnifyingGlassTiltedRight, .baggageClaim, .nameBadge, .couchAndLamp, .fountainPen, .luggage, .briefcase, .womanZombie, .footprints, .flute, .microscope, .joystick, .telephoneReceiver, .motorScooter, .chipmunk, .kangaroo, .backpack, .waterBuffalo, .waxingGibbousMoon, .potableWater, .parachute, .euroBanknote, .alien, .plus, .magnet, .sparkles, .womanWithBunnyEars, .microbe, .womanGenie, .cameraWithFlash, .loveLetter, .mensRoom, .chartIncreasing, .dvd, .wastebasket, .ram, .frenchFries, .manZombie, .kite, .ambulance, .pear, .otter, .telescope, .parrot, .radio, .speakerLowVolume, .raccoon, .wireless, .nineOclock, .lollipop, .timerClock, .bagel, .notebook, .spadeSuit, .warning, .seedling, .sagittarius, .goalNet, .xRay, .keycap7, .loudspeaker, .bustsInSilhouette, .goblin, .gloves, .donkey, .alienMonster, .stadium, .shrimp, .movieCamera, .pisces, .lipstick, .socks, .ticket, .volcano, .faxMachine, .clutchBag, .tamale, .elevator, .personGenie, .rescueWorkersHelmet, .syringe, .worm, .helicopter, .sushi, .kickScooter, .manWithBunnyEars, .nineThirty, .battery, .womansSandal, .nonPotableWater, .knot, .motorizedWheelchair, .friedShrimp, .hook, .briefs, .takeoutBox, .sari, .fuelPump, .militaryMedal, .ledger, .hammerAndPick, .scorpion, .cloudWithLightning, .pouringLiquid, .redEnvelope, .petriDish, .spoon, .forkAndKnifeWithPlate, .paintbrush, .stethoscope, .label, .lockedWithPen, .eye, .hamster, .personZombie, .hundredPoints, .blueBook, .coffin, .poundBanknote, .fireExtinguisher, .cookie, .necktie, .broccoli, .sixThirty, .globeShowingAmericas, .wheelOfDharma, .dna, .sevenOclock, .sweatDroplets, .performingArts, .motorcycle, .monorail, .hikingBoot, .keyboard, .flatShoe, .libra, .peaPod, .forkAndKnife, .fileCabinet, .divide, .crayon, .waffle, .taxi, .noLittering, .fileFolder, .postbox, .rollOfPaper, .onion, .peacock, .restroom, .minus, .violin, .militaryHelmet, .books, .alarmClock, .boxingGlove, .womansBoot, .inputNumbers, .hibiscus, .sunglasses, .autoRickshaw, .automobile, .curlingStone, .yinYang, .keycap5, .explodingHead, .wing, .copyright, .poodle, .sevenThirty, .lastQuarterMoon, .checkBoxWithCheck, .emptyNest, .motorway, .umbrellaWithRainDrops, .crescentMoon, .cyclone, .chestnut, .mango, .ferrisWheel, .sixOclock, .package, .levelSlider, .bowling, .circusTent, .llama, .ladder, .keycap9, .watch, .hotBeverage, .clipboard, .openBook, .khanda, .shorts, .mansShoe, .chopsticks, .moai, .hut, .flashlight, .rolledUpNewspaper, .wavyDash, .yoYo, .roundPushpin, .clinkingGlasses, .womensRoom, .cricket, .manGenie, .om, .hatchingChick, .shintoShrine, .orangeBook, .falafel, .owl, .snail, .duck, .tennis, .sloth, .cocktailGlass, .bucket, .floppyDisk, .bowlWithSpoon, .factory, .feather, .trolleybus, .tent, .oldKey, .collision, .videocassette, .articulatedLorry, .twoOclock, .synagogue, ._2ndPlaceMedal, .speakerHighVolume, .window, .dodo, .flamingo, .broom, .jeans, .cloudWithSnow, .locked, .pileOfPoo, .zebra, .lobster, .statueOfLiberty, .keycap1, .pingPong, .badminton, .nazarAmulet, .magnifyingGlassTiltedLeft, .lotus, ._1stPlaceMedal, .filmFrames, .twoThirty, .closedUmbrella, .brokenChain, .cupWithStraw, .microphone, .prayerBeads, .bicycle, .womansClothes, .snowmanWithoutSnow, .calendar, .balanceScale, .bathtub, .opticalDisk, .slotMachine, .giraffe, .oncomingAutomobile, .clapperBoard, .chessPawn, .headShakingVertically, .bat, .electricPlug, .cloudWithLightningAndRain, .multiply, .keycap3, .stopwatch, .tumblerGlass, .turkey, .rock, .coat, .rightAngerBubble, .blossom, .bone, .notebookWithDecorativeCover, .razor, .wrench, .topHat, .sparkle, .mobilePhone, .lockedWithKey, .hammerAndWrench, ._3rdPlaceMedal, .fortuneCookie, .blackNib, .cigarette, .pushpin, .fiveOclock, .ophiuchus, .studioMicrophone, .tenThirty, .gemini, .glasses, .personWithBunnyEars, .badger, .waterPistol, .eightThirty, .inputLatinUppercase, .pickupTruck, .comet, .bentoBox, .thread, .purse, .metro, .manualWheelchair, .beans, .globeShowingEuropeAfrica, .convenienceStore, .firstQuarterMoon, .currencyExchange, .ghost, .printer, .filmProjector, .windChime, .prohibited, .personFencing, .blueberries, .lightBulb, .eightOclock, .coin, .tenOclock, .skull, .thongSandal, .squid, .boar, .cancer, .speakingHead, .virgo, .hole, .pencil, .lightRail, .dizzy, .camera, .womansHat, .leftSpeechBubble, .rooster, .fiveThirty:
             return .objects
-        case .soccerBall, .placard, .rocket, .scarf, .highSpeedTrain, .railwayCar, .musicalNotes, .musicalScore, .videoGame, .ballotBoxWithBallot, .mountainRailway, .airplaneArrival, .ship, .loveHotel, .cardIndex, .guitar, .castle, .airplaneDeparture, .sportUtilityVehicle, .skier, .motorBoat, .oilDrum, .baseball, .partyPopper, .train, .mountainCableway, .carpStreamer, .cardFileBox, .skis, .classicalBuilding, .cityscape, .desert, .creditCard, .cardIndexDividers, .playgroundSlide, .placeOfWorship, .smallAirplane, .musicalNote, .sunriseOverMountains, .balletShoes, .bridgeAtNight, .houses, .bulletTrain, .runningShoe, .beachWithUmbrella, .houseWithGarden, .hotel, .cricketGame, .tokyoTower, .shoppingCart, .passengerShip, .sailboat, .ringedPlanet, .snowCappedMountain, .mountain, .rugbyFootball, .worldMap, .musicalKeyboard, .gameDie, .sportsMedal, .passportControl, .carpentrySaw, .drum, .onePieceSwimsuit, .softball, .airplane, .school, .desertIsland, .derelictHouse, .americanFootball, .church, .balloon, .trackball, .speedboat, .buildingConstruction, .pool8Ball, .house, .basketball, .cityscapeAtDusk, .volleyball, .racingCar, .longDrum, .hospital, .speechBalloon, .tramCar, .thoughtBalloon, .confettiBall, .mapOfJapan, .japaneseCastle, .runningShirt, .mirrorBall:
+        case .soccerBall, .placard, .rocket, .scarf, .railwayCar, .musicalNotes, .musicalScore, .videoGame, .ballotBoxWithBallot, .mountainRailway, .airplaneArrival, .ship, .loveHotel, .cardIndex, .guitar, .castle, .airplaneDeparture, .sportUtilityVehicle, .skier, .motorBoat, .oilDrum, .baseball, .partyPopper, .train, .mountainCableway, .carpStreamer, .cardFileBox, .skis, .classicalBuilding, .cityscape, .desert, .creditCard, .cardIndexDividers, .playgroundSlide, .placeOfWorship, .smallAirplane, .musicalNote, .sunriseOverMountains, .balletShoes, .bridgeAtNight, .houses, .bulletTrain, .runningShoe, .beachWithUmbrella, .houseWithGarden, .hotel, .cricketGame, .highSpeedTrain, .tokyoTower, .snowCappedMountain, .shoppingCart, .passengerShip, .sailboat, .ringedPlanet, .mountain, .rugbyFootball, .worldMap, .musicalKeyboard, .gameDie, .sportsMedal, .passportControl, .carpentrySaw, .drum, .softball, .airplane, .school, .desertIsland, .derelictHouse, .americanFootball, .church, .balloon, .trackball, .speedboat, .buildingConstruction, .pool8Ball, .house, .basketball, .cityscapeAtDusk, .volleyball, .onePieceSwimsuit, .racingCar, .longDrum, .hospital, .speechBalloon, .tramCar, .thoughtBalloon, .confettiBall, .mapOfJapan, .japaneseCastle, .runningShirt, .mirrorBall:
             return .activities
-        case .tiger, .bird, .clinkingBeerMugs, .beerMug, .fourLeafClover, .pottedPlant, .mushroom, .octopus, .leafyGreen, .bug, .wolf, .deciduousTree, .whiteFlower, .jellyfish, .fishCakeWithSwirl, .pig, .hearNoEvilMonkey, .fallenLeaf, .wearyCat, .snake, .evergreenTree, .butterfly, .identificationCard, .spoutingWhale, .dragon, .blackbird, .dolphin, .poutingCat, .whale, .serviceDog, .monkey, .mouseTrap, .blackCat, .ladyBeetle, .eggplant, .flowerPlayingCards, .spiderWeb, .tropicalFish, .hotDog, .palmTree, .fish, .tanabataTree, .phoenixBird, .turtle, .blowfish, .lion, .shark, .carouselHorse, .pigNose, .honeybee, .seeNoEvilMonkey, .horse, .antennaBars, .elephant, .mahjongRedDragon, .mantelpieceClock, .croissant, .speakNoEvilMonkey, .polarBear, .fox, .teddyBear, .dog, .cow, .beetle, .satelliteAntenna, .frog, .wiltedFlower, .leafFlutteringInWind, .fishingPole, .computerMouse, .jackOLantern, .brownMushroom, .mouse, .guideDog, .cat, .ant, .bear, .mapleLeaf, .rabbit, .christmasTree, .spider, .redPaperLantern, .sunflower:
+        case .tiger, .jackOLantern, .bird, .clinkingBeerMugs, .beerMug, .fourLeafClover, .pottedPlant, .mushroom, .octopus, .leafyGreen, .bug, .wolf, .deciduousTree, .whiteFlower, .jellyfish, .fishCakeWithSwirl, .pig, .fallenLeaf, .wearyCat, .snake, .evergreenTree, .butterfly, .hearNoEvilMonkey, .identificationCard, .spoutingWhale, .dragon, .blackbird, .dolphin, .poutingCat, .whale, .serviceDog, .monkey, .seeNoEvilMonkey, .mouseTrap, .blackCat, .ladyBeetle, .speakNoEvilMonkey, .eggplant, .flowerPlayingCards, .spiderWeb, .tropicalFish, .hotDog, .palmTree, .fish, .tanabataTree, .phoenixBird, .turtle, .blowfish, .lion, .shark, .carouselHorse, .pigNose, .honeybee, .horse, .antennaBars, .elephant, .mahjongRedDragon, .mantelpieceClock, .croissant, .polarBear, .fox, .teddyBear, .dog, .cow, .beetle, .satelliteAntenna, .frog, .wiltedFlower, .leafFlutteringInWind, .fishingPole, .computerMouse, .brownMushroom, .mouse, .guideDog, .cat, .ant, .bear, .mapleLeaf, .rabbit, .christmasTree, .spider, .redPaperLantern, .sunflower:
             return .animals
         }
     }
@@ -1357,10 +1361,12 @@ public enum FluentUIEmoji: String, CaseIterable {
         .placard: ["placard"],
         .crown: ["crown"],
         .japaneseBargainButton: ["bargain", "button", "japanese"],
+        .twoHumpCamel: ["camel", "hump", "two"],
         .safetyPin: ["pin", "safety"],
         .pancakes: ["pancakes"],
         .wineGlass: ["glass", "wine"],
         .newButton: ["button", "new"],
+        .highHeeledShoe: ["heeled", "high", "shoe"],
         .wheelchairSymbol: ["symbol", "wheelchair"],
         .tiger: ["tiger"],
         .frowningFace: ["face", "frowning"],
@@ -1374,7 +1380,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .construction: ["construction"],
         .moonViewingCeremony: ["ceremony", "moon", "viewing"],
         .shootingStar: ["shooting", "star"],
-        .upsideDownFace: ["down", "face", "upside"],
         .zzz: ["zzz"],
         .fountain: ["fountain"],
         .sunBehindLargeCloud: ["behind", "cloud", "large", "sun"],
@@ -1388,9 +1393,9 @@ public enum FluentUIEmoji: String, CaseIterable {
         .scissors: ["scissors"],
         .dashingAway: ["away", "dashing"],
         .rocket: ["rocket"],
-        .rolledUpNewspaper: ["newspaper", "rolled", "up"],
         .growingHeart: ["growing", "heart"],
         .downcastFaceWithSweat: ["downcast", "face", "sweat", "with"],
+        .tShirt: ["shirt", "t"],
         .noPedestrians: ["no", "pedestrians"],
         .tropicalDrink: ["drink", "tropical"],
         .shield: ["shield"],
@@ -1401,14 +1406,14 @@ public enum FluentUIEmoji: String, CaseIterable {
         .fastUpButton: ["button", "fast", "up"],
         .doughnut: ["doughnut"],
         .menorah: ["menorah"],
+        .faceWithHeadBandage: ["bandage", "face", "head", "with"],
         .gear: ["gear"],
         .sponge: ["sponge"],
         .sadButRelievedFace: ["but", "face", "relieved", "sad"],
         .spiralShell: ["shell", "spiral"],
+        .jackOLantern: ["jack", "lantern", "o"],
         .personWrestling: ["person", "wrestling"],
-        .highSpeedTrain: ["high", "speed", "train"],
         .moose: ["moose"],
-        .fleurDeLis: ["de", "fleur", "lis"],
         .beamingFaceWithSmilingEyes: ["beaming", "eyes", "face", "smiling", "with"],
         .shoppingBags: ["bags", "shopping"],
         .spaghetti: ["spaghetti"],
@@ -1427,7 +1432,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .thinkingFace: ["face", "thinking"],
         .railwayCar: ["car", "railway"],
         .fullMoon: ["full", "moon"],
-        .upLeftArrow: ["arrow", "left", "up"],
         .clinkingBeerMugs: ["beer", "clinking", "mugs"],
         .aerialTramway: ["aerial", "tramway"],
         .grinningCatWithSmilingEyes: ["cat", "eyes", "grinning", "smiling", "with"],
@@ -1446,7 +1450,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .headShakingHorizontally: ["head", "horizontally", "shaking"],
         .musicalNotes: ["musical", "notes"],
         .babyChick: ["baby", "chick"],
-        .fourThirty: ["four", "thirty"],
         .coral: ["coral"],
         .leopard: ["leopard"],
         .twoHearts: ["hearts", "two"],
@@ -1460,6 +1463,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .dollarBanknote: ["banknote", "dollar"],
         .salt: ["salt"],
         .cactus: ["cactus"],
+        .dottedSixPointedStar: ["dotted", "pointed", "six", "star"],
         .slightlyFrowningFace: ["face", "frowning", "slightly"],
         .key: ["key"],
         .boomerang: ["boomerang"],
@@ -1513,6 +1517,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .birthdayCake: ["birthday", "cake"],
         .clamp: ["clamp"],
         .mushroom: ["mushroom"],
+        .frontFacingBabyChick: ["baby", "chick", "facing", "front"],
         .horizontalTrafficLight: ["horizontal", "light", "traffic"],
         .riceBall: ["ball", "rice"],
         .rat: ["rat"],
@@ -1553,6 +1558,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .loveHotel: ["hotel", "love"],
         .yarn: ["yarn"],
         .freeButton: ["button", "free"],
+        .globeShowingAsiaAustralia: ["asia", "australia", "globe", "showing"],
         .wolf: ["wolf"],
         .openMailboxWithRaisedFlag: ["flag", "mailbox", "open", "raised", "with"],
         .newMoon: ["moon", "new"],
@@ -1567,6 +1573,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .cupcake: ["cupcake"],
         .graduationCap: ["cap", "graduation"],
         .anchor: ["anchor"],
+        .eMail: ["e", "mail"],
         .straightRuler: ["ruler", "straight"],
         .rose: ["rose"],
         .tongue: ["tongue"],
@@ -1592,6 +1599,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .butter: ["butter"],
         .castle: ["castle"],
         .upwardsButton: ["button", "upwards"],
+        .fourThirty: ["four", "thirty"],
         .deciduousTree: ["deciduous", "tree"],
         .crocodile: ["crocodile"],
         .whiteFlower: ["flower", "white"],
@@ -1599,6 +1607,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .candy: ["candy"],
         .noSmoking: ["no", "smoking"],
         .tornado: ["tornado"],
+        .zipperMouthFace: ["face", "mouth", "zipper"],
         .backArrow: ["arrow", "back"],
         .screwdriver: ["screwdriver"],
         .whiteFlag: ["flag", "white"],
@@ -1609,11 +1618,9 @@ public enum FluentUIEmoji: String, CaseIterable {
         .blackLargeSquare: ["black", "large", "square"],
         .sparklingHeart: ["heart", "sparkling"],
         .policeCarLight: ["car", "light", "police"],
-        .whiteMediumSmallSquare: ["medium", "small", "square", "white"],
         .abacus: ["abacus"],
         .aButtonBloodType: ["a", "blood", "button", "type"],
         .airplaneDeparture: ["airplane", "departure"],
-        .knockedOutFace: ["face", "knocked", "out"],
         .tangerine: ["tangerine"],
         .lotionBottle: ["bottle", "lotion"],
         .peach: ["peach"],
@@ -1622,6 +1629,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .videoCamera: ["camera", "video"],
         .troll: ["troll"],
         .crossedFlags: ["crossed", "flags"],
+        .piAta: ["ata", "pi"],
         .faceWithRollingEyes: ["eyes", "face", "rolling", "with"],
         .sunBehindCloud: ["behind", "cloud", "sun"],
         .playButton: ["button", "play"],
@@ -1631,10 +1639,8 @@ public enum FluentUIEmoji: String, CaseIterable {
         .okButton: ["button", "ok"],
         .whiteCane: ["cane", "white"],
         .beverageBox: ["beverage", "box"],
-        .moneyMouthFace: ["face", "money", "mouth"],
         .sportUtilityVehicle: ["sport", "utility", "vehicle"],
         .skier: ["skier"],
-        .downRightArrow: ["arrow", "down", "right"],
         .hedgehog: ["hedgehog"],
         .foggy: ["foggy"],
         .lastTrackButton: ["button", "last", "track"],
@@ -1670,7 +1676,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .fourOclock: ["four", "oclock"],
         .potOfFood: ["food", "of", "pot"],
         .kissMark: ["kiss", "mark"],
-        .leftRightArrow: ["arrow", "left", "right"],
         .train: ["train"],
         .bottleWithPoppingCork: ["bottle", "cork", "popping", "with"],
         .firecracker: ["firecracker"],
@@ -1701,6 +1706,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .astonishedFace: ["astonished", "face"],
         .classicalBuilding: ["building", "classical"],
         .labCoat: ["coat", "lab"],
+        .fleurDeLis: ["de", "fleur", "lis"],
         .cityscape: ["cityscape"],
         .camel: ["camel"],
         .goggles: ["goggles"],
@@ -1714,6 +1720,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .ogre: ["ogre"],
         .pretzel: ["pretzel"],
         .toothbrush: ["toothbrush"],
+        .downRightArrow: ["arrow", "down", "right"],
         .headstone: ["headstone"],
         .purpleSquare: ["purple", "square"],
         .pig: ["pig"],
@@ -1728,11 +1735,13 @@ public enum FluentUIEmoji: String, CaseIterable {
         .bikini: ["bikini"],
         .rightArrow: ["arrow", "right"],
         .greenBook: ["book", "green"],
+        .upDownArrow: ["arrow", "down", "up"],
         .dropOfBlood: ["blood", "drop", "of"],
         .reverseButton: ["button", "reverse"],
         .pensiveFace: ["face", "pensive"],
         .snowflake: ["snowflake"],
         .ribbon: ["ribbon"],
+        .upsideDownFace: ["down", "face", "upside"],
         .wood: ["wood"],
         .rollerSkate: ["roller", "skate"],
         .creditCard: ["card", "credit"],
@@ -1740,7 +1749,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .nutAndBolt: ["and", "bolt", "nut"],
         .whiteHeart: ["heart", "white"],
         .goat: ["goat"],
-        .hearNoEvilMonkey: ["evil", "hear", "monkey", "no"],
         .umbrella: ["umbrella"],
         .greyHeart: ["grey", "heart"],
         .twelveOclock: ["oclock", "twelve"],
@@ -1753,6 +1761,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .faceSavoringFood: ["face", "food", "savoring"],
         .leftLuggage: ["left", "luggage"],
         .manWrestling: ["man", "wrestling"],
+        .leftRightArrow: ["arrow", "left", "right"],
         .ringBuoy: ["buoy", "ring"],
         .elevenOclock: ["eleven", "oclock"],
         .plunger: ["plunger"],
@@ -1765,18 +1774,19 @@ public enum FluentUIEmoji: String, CaseIterable {
         .cardIndexDividers: ["card", "dividers", "index"],
         .cryingCat: ["cat", "crying"],
         .closedMailboxWithRaisedFlag: ["closed", "flag", "mailbox", "raised", "with"],
+        .oneThirty: ["one", "thirty"],
         .flagInHole: ["flag", "hole", "in"],
         .gingerRoot: ["ginger", "root"],
         .wheel: ["wheel"],
         .coolButton: ["button", "cool"],
         .hourglassDone: ["done", "hourglass"],
         .leo: ["leo"],
+        .smilingFaceWithHeartEyes: ["eyes", "face", "heart", "smiling", "with"],
         .revolvingHearts: ["hearts", "revolving"],
         .fastReverseButton: ["button", "fast", "reverse"],
         .orangutan: ["orangutan"],
         .counterclockwiseArrowsButton: ["arrows", "button", "counterclockwise"],
         .tractor: ["tractor"],
-        .frontFacingBabyChick: ["baby", "chick", "facing", "front"],
         .clubSuit: ["club", "suit"],
         .keycap0: ["0", "keycap"],
         .fallenLeaf: ["fallen", "leaf"],
@@ -1808,6 +1818,8 @@ public enum FluentUIEmoji: String, CaseIterable {
         .handshake: ["handshake"],
         .windFace: ["face", "wind"],
         .controlKnobs: ["control", "knobs"],
+        .twelveThirty: ["thirty", "twelve"],
+        .blackMediumSmallSquare: ["black", "medium", "small", "square"],
         .stopButton: ["button", "stop"],
         .television: ["television"],
         .puzzlePiece: ["piece", "puzzle"],
@@ -1830,7 +1842,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .door: ["door"],
         .redCircle: ["circle", "red"],
         .heartWithArrow: ["arrow", "heart", "with"],
-        .piAta: ["ata", "pi"],
         .shuffleTracksButton: ["button", "shuffle", "tracks"],
         .linkedPaperclips: ["linked", "paperclips"],
         .bellhopBell: ["bell", "bellhop"],
@@ -1849,10 +1860,12 @@ public enum FluentUIEmoji: String, CaseIterable {
         .droplet: ["droplet"],
         .bellWithSlash: ["bell", "slash", "with"],
         .evergreenTree: ["evergreen", "tree"],
+        .eightPointedStar: ["eight", "pointed", "star"],
         .greenSalad: ["green", "salad"],
         .iceCream: ["cream", "ice"],
         .admissionTickets: ["admission", "tickets"],
         .tridentEmblem: ["emblem", "trident"],
+        .elevenThirty: ["eleven", "thirty"],
         .envelope: ["envelope"],
         .mouseFace: ["face", "mouse"],
         .inputLatinLetters: ["input", "latin", "letters"],
@@ -1865,11 +1878,11 @@ public enum FluentUIEmoji: String, CaseIterable {
         .balletShoes: ["ballet", "shoes"],
         .orangeCircle: ["circle", "orange"],
         .herb: ["herb"],
+        .threeThirty: ["thirty", "three"],
         .thermometer: ["thermometer"],
         .pen: ["pen"],
         .kissingFace: ["face", "kissing"],
         .ring: ["ring"],
-        .elevenThirty: ["eleven", "thirty"],
         .ferry: ["ferry"],
         .pleadingFace: ["face", "pleading"],
         .newspaper: ["newspaper"],
@@ -1880,9 +1893,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .closedMailboxWithLoweredFlag: ["closed", "flag", "lowered", "mailbox", "with"],
         .honeyPot: ["honey", "pot"],
         .sunBehindSmallCloud: ["behind", "cloud", "small", "sun"],
-        .threeThirty: ["thirty", "three"],
         .radioButton: ["button", "radio"],
-        .globeShowingAsiaAustralia: ["asia", "australia", "globe", "showing"],
         .memo: ["memo"],
         .openFileFolder: ["file", "folder", "open"],
         .bustInSilhouette: ["bust", "in", "silhouette"],
@@ -1891,8 +1902,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .gorilla: ["gorilla"],
         .pineDecoration: ["decoration", "pine"],
         .bell: ["bell"],
-        .tRex: ["rex", "t"],
-        .smilingCatWithHeartEyes: ["cat", "eyes", "heart", "smiling", "with"],
         .bridgeAtNight: ["at", "bridge", "night"],
         .soap: ["soap"],
         .houses: ["houses"],
@@ -1930,11 +1939,13 @@ public enum FluentUIEmoji: String, CaseIterable {
         .nextTrackButton: ["button", "next", "track"],
         .japaneseOpenForBusinessButton: ["business", "button", "for", "japanese", "open"],
         .ice: ["ice"],
+        .tRex: ["rex", "t"],
         .scroll: ["scroll"],
         .runningShoe: ["running", "shoe"],
         .departmentStore: ["department", "store"],
         .minibus: ["minibus"],
         .mammoth: ["mammoth"],
+        .eightSpokedAsterisk: ["asterisk", "eight", "spoked"],
         .station: ["station"],
         .womanWrestling: ["woman", "wrestling"],
         .grinningFaceWithSweat: ["face", "grinning", "sweat", "with"],
@@ -1943,15 +1954,13 @@ public enum FluentUIEmoji: String, CaseIterable {
         .spiralNotepad: ["notepad", "spiral"],
         .purpleCircle: ["circle", "purple"],
         .megaphone: ["megaphone"],
-        .onArrow: ["arrow", "on"],
-        .twelveThirty: ["thirty", "twelve"],
         .nightWithStars: ["night", "stars", "with"],
         .anatomicalHeart: ["anatomical", "heart"],
+        .hearNoEvilMonkey: ["evil", "hear", "monkey", "no"],
         .scorpio: ["scorpio"],
         .bullseye: ["bullseye"],
         .bomb: ["bomb"],
         .orangeSquare: ["orange", "square"],
-        .highHeeledShoe: ["heeled", "high", "shoe"],
         .beachWithUmbrella: ["beach", "umbrella", "with"],
         .fly: ["fly"],
         .identificationCard: ["card", "identification"],
@@ -1968,7 +1977,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .pill: ["pill"],
         .flushedFace: ["face", "flushed"],
         .waningGibbousMoon: ["gibbous", "moon", "waning"],
-        .oneThirty: ["one", "thirty"],
         .sunrise: ["sunrise"],
         .stuffedFlatbread: ["flatbread", "stuffed"],
         .houseWithGarden: ["garden", "house", "with"],
@@ -1987,6 +1995,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .laptop: ["laptop"],
         .tram: ["tram"],
         .curryRice: ["curry", "rice"],
+        .highSpeedTrain: ["high", "speed", "train"],
         .keycap2: ["2", "keycap"],
         .mountFuji: ["fuji", "mount"],
         .softIceCream: ["cream", "ice", "soft"],
@@ -1995,10 +2004,12 @@ public enum FluentUIEmoji: String, CaseIterable {
         .heartExclamation: ["exclamation", "heart"],
         .confoundedFace: ["confounded", "face"],
         .capricorn: ["capricorn"],
+        .tearOffCalendar: ["calendar", "off", "tear"],
         .tokyoTower: ["tokyo", "tower"],
         .blackbird: ["blackbird"],
         .dolphin: ["dolphin"],
         .tooth: ["tooth"],
+        .snowCappedMountain: ["capped", "mountain", "snow"],
         .mendingHeart: ["heart", "mending"],
         .hippopotamus: ["hippopotamus"],
         .droolingFace: ["drooling", "face"],
@@ -2013,7 +2024,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .beatingHeart: ["beating", "heart"],
         .fountainPen: ["fountain", "pen"],
         .luggage: ["luggage"],
-        .downLeftArrow: ["arrow", "down", "left"],
         .serviceDog: ["dog", "service"],
         .briefcase: ["briefcase"],
         .womanZombie: ["woman", "zombie"],
@@ -2024,6 +2034,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .microscope: ["microscope"],
         .pigFace: ["face", "pig"],
         .joystick: ["joystick"],
+        .upRightArrow: ["arrow", "right", "up"],
         .telephoneReceiver: ["receiver", "telephone"],
         .yellowHeart: ["heart", "yellow"],
         .motorScooter: ["motor", "scooter"],
@@ -2035,6 +2046,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .waterBuffalo: ["buffalo", "water"],
         .bButtonBloodType: ["b", "blood", "button", "type"],
         .monkey: ["monkey"],
+        .seeNoEvilMonkey: ["evil", "monkey", "no", "see"],
         .waxingGibbousMoon: ["gibbous", "moon", "waxing"],
         .potableWater: ["potable", "water"],
         .mouseTrap: ["mouse", "trap"],
@@ -2049,13 +2061,11 @@ public enum FluentUIEmoji: String, CaseIterable {
         .sparkles: ["sparkles"],
         .womanWithBunnyEars: ["bunny", "ears", "with", "woman"],
         .japaneseFreeOfChargeButton: ["button", "charge", "free", "japanese", "of"],
-        .sevenThirty: ["seven", "thirty"],
         .microbe: ["microbe"],
         .womanGenie: ["genie", "woman"],
         .idButton: ["button", "id"],
         .cameraWithFlash: ["camera", "flash", "with"],
         .greenApple: ["apple", "green"],
-        .xRay: ["ray", "x"],
         .whiteExclamationMark: ["exclamation", "mark", "white"],
         .loveLetter: ["letter", "love"],
         .mensRoom: ["mens", "room"],
@@ -2073,6 +2083,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .pear: ["pear"],
         .shoppingCart: ["cart", "shopping"],
         .officeBuilding: ["building", "office"],
+        .speakNoEvilMonkey: ["evil", "monkey", "no", "speak"],
         .otter: ["otter"],
         .telescope: ["telescope"],
         .passengerShip: ["passenger", "ship"],
@@ -2080,12 +2091,14 @@ public enum FluentUIEmoji: String, CaseIterable {
         .radio: ["radio"],
         .speakerLowVolume: ["low", "speaker", "volume"],
         .raccoon: ["raccoon"],
+        .downLeftArrow: ["arrow", "down", "left"],
         .sailboat: ["sailboat"],
         .ringedPlanet: ["planet", "ringed"],
         .wireless: ["wireless"],
         .nineOclock: ["nine", "oclock"],
         .lollipop: ["lollipop"],
         .timerClock: ["clock", "timer"],
+        .upButton: ["button", "up"],
         .eggplant: ["eggplant"],
         .bagel: ["bagel"],
         .notebook: ["notebook"],
@@ -2097,9 +2110,10 @@ public enum FluentUIEmoji: String, CaseIterable {
         .sagittarius: ["sagittarius"],
         .japanesePassingGradeButton: ["button", "grade", "japanese", "passing"],
         .goalNet: ["goal", "net"],
+        .xRay: ["ray", "x"],
         .keycap7: ["7", "keycap"],
-        .snowCappedMountain: ["capped", "mountain", "snow"],
         .spiderWeb: ["spider", "web"],
+        .smilingCatWithHeartEyes: ["cat", "eyes", "heart", "smiling", "with"],
         .loudspeaker: ["loudspeaker"],
         .bellPepper: ["bell", "pepper"],
         .tropicalFish: ["fish", "tropical"],
@@ -2108,8 +2122,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .mountain: ["mountain"],
         .goblin: ["goblin"],
         .horseFace: ["face", "horse"],
-        .blackMediumSmallSquare: ["black", "medium", "small", "square"],
-        .faceWithHeadBandage: ["bandage", "face", "head", "with"],
         .gloves: ["gloves"],
         .disguisedFace: ["disguised", "face"],
         .donkey: ["donkey"],
@@ -2122,7 +2134,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .pisces: ["pisces"],
         .whiteLargeSquare: ["large", "square", "white"],
         .lipstick: ["lipstick"],
-        .sixThirty: ["six", "thirty"],
         .japaneseApplicationButton: ["application", "button", "japanese"],
         .worldMap: ["map", "world"],
         .socks: ["socks"],
@@ -2152,15 +2163,16 @@ public enum FluentUIEmoji: String, CaseIterable {
         .unicorn: ["unicorn"],
         .winkingFace: ["face", "winking"],
         .iceHockey: ["hockey", "ice"],
+        .nineThirty: ["nine", "thirty"],
         .fish: ["fish"],
         .battery: ["battery"],
         .womansSandal: ["sandal", "womans"],
+        .nonPotableWater: ["non", "potable", "water"],
         .knot: ["knot"],
         .motorizedWheelchair: ["motorized", "wheelchair"],
         .friedShrimp: ["fried", "shrimp"],
         .tradeMark: ["mark", "trade"],
         .hook: ["hook"],
-        .eightSpokedAsterisk: ["asterisk", "eight", "spoked"],
         .briefs: ["briefs"],
         .wearyFace: ["face", "weary"],
         .takeoutBox: ["box", "takeout"],
@@ -2170,7 +2182,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .fuelPump: ["fuel", "pump"],
         .sportsMedal: ["medal", "sports"],
         .japaneseCongratulationsButton: ["button", "congratulations", "japanese"],
-        .eightPointedStar: ["eight", "pointed", "star"],
         .militaryMedal: ["medal", "military"],
         .ledger: ["ledger"],
         .relievedFace: ["face", "relieved"],
@@ -2191,11 +2202,9 @@ public enum FluentUIEmoji: String, CaseIterable {
         .milkyWay: ["milky", "way"],
         .drum: ["drum"],
         .petriDish: ["dish", "petri"],
-        .onePieceSwimsuit: ["one", "piece", "swimsuit"],
         .softball: ["softball"],
         .spoon: ["spoon"],
         .forkAndKnifeWithPlate: ["and", "fork", "knife", "plate", "with"],
-        .nineThirty: ["nine", "thirty"],
         .paintbrush: ["paintbrush"],
         .stethoscope: ["stethoscope"],
         .tanabataTree: ["tanabata", "tree"],
@@ -2204,7 +2213,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .phoenixBird: ["bird", "phoenix"],
         .lockedWithPen: ["locked", "pen", "with"],
         .ngButton: ["button", "ng"],
-        .smilingFaceWithHeartEyes: ["eyes", "face", "heart", "smiling", "with"],
         .eye: ["eye"],
         .hamster: ["hamster"],
         .personZombie: ["person", "zombie"],
@@ -2214,6 +2222,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .nestWithEggs: ["eggs", "nest", "with"],
         .airplane: ["airplane"],
         .school: ["school"],
+        .onArrow: ["arrow", "on"],
         .coffin: ["coffin"],
         .poundBanknote: ["banknote", "pound"],
         .turtle: ["turtle"],
@@ -2222,6 +2231,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .cookie: ["cookie"],
         .necktie: ["necktie"],
         .broccoli: ["broccoli"],
+        .sixThirty: ["six", "thirty"],
         .globeShowingAmericas: ["americas", "globe", "showing"],
         .wheelOfDharma: ["dharma", "of", "wheel"],
         .slightlySmilingFace: ["face", "slightly", "smiling"],
@@ -2232,7 +2242,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .sweatDroplets: ["droplets", "sweat"],
         .lion: ["lion"],
         .performingArts: ["arts", "performing"],
-        .fastForwardButton: ["button", "fast", "forward"],
         .motorcycle: ["motorcycle"],
         .monorail: ["monorail"],
         .hikingBoot: ["boot", "hiking"],
@@ -2269,7 +2278,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .militaryHelmet: ["helmet", "military"],
         .books: ["books"],
         .alarmClock: ["alarm", "clock"],
-        .upDownArrow: ["arrow", "down", "up"],
         .brokenHeart: ["broken", "heart"],
         .boxingGlove: ["boxing", "glove"],
         .faceVomiting: ["face", "vomiting"],
@@ -2281,7 +2289,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .inputNumbers: ["input", "numbers"],
         .confusedFace: ["confused", "face"],
         .hibiscus: ["hibiscus"],
-        .seeNoEvilMonkey: ["evil", "monkey", "no", "see"],
         .sunglasses: ["sunglasses"],
         .autoRickshaw: ["auto", "rickshaw"],
         .automobile: ["automobile"],
@@ -2299,6 +2306,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .wing: ["wing"],
         .copyright: ["copyright"],
         .poodle: ["poodle"],
+        .sevenThirty: ["seven", "thirty"],
         .childrenCrossing: ["children", "crossing"],
         .elephant: ["elephant"],
         .star: ["star"],
@@ -2308,7 +2316,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .emptyNest: ["empty", "nest"],
         .motorway: ["motorway"],
         .mantelpieceClock: ["clock", "mantelpiece"],
-        .tearOffCalendar: ["calendar", "off", "tear"],
         .partyingFace: ["face", "partying"],
         .croissant: ["croissant"],
         .umbrellaWithRainDrops: ["drops", "rain", "umbrella", "with"],
@@ -2325,7 +2332,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .sixOclock: ["oclock", "six"],
         .bread: ["bread"],
         .grimacingFace: ["face", "grimacing"],
-        .speakNoEvilMonkey: ["evil", "monkey", "no", "speak"],
         .polarBear: ["bear", "polar"],
         .smilingFace: ["face", "smiling"],
         .fox: ["fox"],
@@ -2336,6 +2342,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .llama: ["llama"],
         .ladder: ["ladder"],
         .keycap9: ["9", "keycap"],
+        .knockedOutFace: ["face", "knocked", "out"],
         .earOfCorn: ["corn", "ear", "of"],
         .watch: ["watch"],
         .hotBeverage: ["beverage", "hot"],
@@ -2348,20 +2355,21 @@ public enum FluentUIEmoji: String, CaseIterable {
         .khanda: ["khanda"],
         .shorts: ["shorts"],
         .teddyBear: ["bear", "teddy"],
-        .tShirt: ["shirt", "t"],
         .mansShoe: ["mans", "shoe"],
-        .fiveThirty: ["five", "thirty"],
         .chopsticks: ["chopsticks"],
         .dog: ["dog"],
         .moai: ["moai"],
         .hut: ["hut"],
         .church: ["church"],
         .flashlight: ["flashlight"],
+        .rolledUpNewspaper: ["newspaper", "rolled", "up"],
         .cheeseWedge: ["cheese", "wedge"],
         .skullAndCrossbones: ["and", "crossbones", "skull"],
         .blueSquare: ["blue", "square"],
+        .moneyMouthFace: ["face", "money", "mouth"],
         .japaneseHereButton: ["button", "here", "japanese"],
         .wavyDash: ["dash", "wavy"],
+        .yoYo: ["yo"],
         .balloon: ["balloon"],
         .roundPushpin: ["pushpin", "round"],
         .clinkingGlasses: ["clinking", "glasses"],
@@ -2399,8 +2407,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .speedboat: ["speedboat"],
         .tent: ["tent"],
         .fishingPole: ["fishing", "pole"],
-        .globeShowingEuropeAfrica: ["africa", "europe", "globe", "showing"],
-        .eMail: ["e", "mail"],
         .oldKey: ["key", "old"],
         .collision: ["collision"],
         .videocassette: ["videocassette"],
@@ -2417,17 +2423,12 @@ public enum FluentUIEmoji: String, CaseIterable {
         ._2ndPlaceMedal: ["2nd", "medal", "place"],
         .pool8Ball: ["8", "ball", "pool"],
         .hamburger: ["hamburger"],
-        .eightThirty: ["eight", "thirty"],
         .speakerHighVolume: ["high", "speaker", "volume"],
-        .dottedSixPointedStar: ["dotted", "pointed", "six", "star"],
         .salutingFace: ["face", "saluting"],
-        .tenThirty: ["ten", "thirty"],
         .window: ["window"],
         .dodo: ["dodo"],
-        .upButton: ["button", "up"],
         .flamingo: ["flamingo"],
         .broom: ["broom"],
-        .jackOLantern: ["jack", "lantern", "o"],
         .cookedRice: ["cooked", "rice"],
         .heavyDollarSign: ["dollar", "heavy", "sign"],
         .jeans: ["jeans"],
@@ -2446,6 +2447,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .catWithTearsOfJoy: ["cat", "joy", "of", "tears", "with"],
         .moonCake: ["cake", "moon"],
         .nazarAmulet: ["amulet", "nazar"],
+        .starStruck: ["star", "struck"],
         .magnifyingGlassTiltedLeft: ["glass", "left", "magnifying", "tilted"],
         .lotus: ["lotus"],
         .faceWithDiagonalMouth: ["diagonal", "face", "mouth", "with"],
@@ -2454,11 +2456,10 @@ public enum FluentUIEmoji: String, CaseIterable {
         .basketball: ["basketball"],
         .faceWithRaisedEyebrow: ["eyebrow", "face", "raised", "with"],
         .lyingFace: ["face", "lying"],
-        .zipperMouthFace: ["face", "mouth", "zipper"],
+        .twoThirty: ["thirty", "two"],
         .closedUmbrella: ["closed", "umbrella"],
         .brokenChain: ["broken", "chain"],
         .neutralFace: ["face", "neutral"],
-        .oButtonBloodType: ["blood", "button", "o", "type"],
         .cupWithStraw: ["cup", "straw", "with"],
         .microphone: ["microphone"],
         .prayerBeads: ["beads", "prayer"],
@@ -2498,7 +2499,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .cloudWithLightningAndRain: ["and", "cloud", "lightning", "rain", "with"],
         .multiply: ["multiply"],
         .keycap3: ["3", "keycap"],
-        .yoYo: ["yo"],
         .stopwatch: ["stopwatch"],
         .tumblerGlass: ["glass", "tumbler"],
         .egg: ["egg"],
@@ -2510,7 +2510,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .blossom: ["blossom"],
         .japaneseDiscountButton: ["button", "discount", "japanese"],
         .bone: ["bone"],
-        .twoThirty: ["thirty", "two"],
+        .onePieceSwimsuit: ["one", "piece", "swimsuit"],
         .faceWithOpenEyesAndHandOverMouth: ["and", "eyes", "face", "hand", "mouth", "open", "over", "with"],
         .notebookWithDecorativeCover: ["cover", "decorative", "notebook", "with"],
         .razor: ["razor"],
@@ -2530,22 +2530,25 @@ public enum FluentUIEmoji: String, CaseIterable {
         .fortuneCookie: ["cookie", "fortune"],
         .blackNib: ["black", "nib"],
         .cigarette: ["cigarette"],
+        .fastForwardButton: ["button", "fast", "forward"],
         .pushpin: ["pushpin"],
         .fiveOclock: ["five", "oclock"],
         .blueCircle: ["blue", "circle"],
         .ophiuchus: ["ophiuchus"],
         .longDrum: ["drum", "long"],
-        .starStruck: ["star", "struck"],
         .lightBlueHeart: ["blue", "heart", "light"],
         .studioMicrophone: ["microphone", "studio"],
+        .tenThirty: ["ten", "thirty"],
         .tiredFace: ["face", "tired"],
         .gemini: ["gemini"],
         .glasses: ["glasses"],
         .personWithBunnyEars: ["bunny", "ears", "person", "with"],
+        .whiteMediumSmallSquare: ["medium", "small", "square", "white"],
         .badger: ["badger"],
         .bear: ["bear"],
         .downwardsButton: ["button", "downwards"],
         .waterPistol: ["pistol", "water"],
+        .eightThirty: ["eight", "thirty"],
         .inputLatinUppercase: ["input", "latin", "uppercase"],
         .pickupTruck: ["pickup", "truck"],
         .faceWithTongue: ["face", "tongue", "with"],
@@ -2564,6 +2567,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .hospital: ["hospital"],
         .manualWheelchair: ["manual", "wheelchair"],
         .beans: ["beans"],
+        .globeShowingEuropeAfrica: ["africa", "europe", "globe", "showing"],
         .convenienceStore: ["convenience", "store"],
         .japaneseServiceChargeButton: ["button", "charge", "japanese", "service"],
         .rabbit: ["rabbit"],
@@ -2575,7 +2579,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .tramCar: ["car", "tram"],
         .avocado: ["avocado"],
         .ghost: ["ghost"],
-        .upRightArrow: ["arrow", "right", "up"],
         .christmasTree: ["christmas", "tree"],
         .printer: ["printer"],
         .watermelon: ["watermelon"],
@@ -2593,7 +2596,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .hushedFace: ["face", "hushed"],
         .redPaperLantern: ["lantern", "paper", "red"],
         .roastedSweetPotato: ["potato", "roasted", "sweet"],
-        .twoHumpCamel: ["camel", "hump", "two"],
+        .oButtonBloodType: ["blood", "button", "o", "type"],
         .mapOfJapan: ["japan", "map", "of"],
         .personFencing: ["fencing", "person"],
         .japaneseCastle: ["castle", "japanese"],
@@ -2604,6 +2607,7 @@ public enum FluentUIEmoji: String, CaseIterable {
         .eightOclock: ["eight", "oclock"],
         .coin: ["coin"],
         .tenOclock: ["oclock", "ten"],
+        .upLeftArrow: ["arrow", "left", "up"],
         .skull: ["skull"],
         .mirrorBall: ["ball", "mirror"],
         .thongSandal: ["sandal", "thong"],
@@ -2612,7 +2616,6 @@ public enum FluentUIEmoji: String, CaseIterable {
         .boar: ["boar"],
         .cancer: ["cancer"],
         .speakingHead: ["head", "speaking"],
-        .nonPotableWater: ["non", "potable", "water"],
         .sunflower: ["sunflower"],
         .ejectButton: ["button", "eject"],
         .virgo: ["virgo"],
@@ -2629,7 +2632,8 @@ public enum FluentUIEmoji: String, CaseIterable {
         .shakingFace: ["face", "shaking"],
         .womansHat: ["hat", "womans"],
         .leftSpeechBubble: ["bubble", "left", "speech"],
-        .rooster: ["rooster"]
+        .rooster: ["rooster"],
+        .fiveThirty: ["five", "thirty"]
     ]
     
     /// Returns emojis in the specified category.

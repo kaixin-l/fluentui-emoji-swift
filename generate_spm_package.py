@@ -4,6 +4,7 @@ import urllib.request
 import zipfile
 import re
 from pathlib import Path
+from collections import defaultdict
 
 # Configuration
 UPSTREAM_REPO = "https://github.com/microsoft/fluentui-emoji/archive/refs/heads/main.zip"
@@ -13,6 +14,39 @@ SOURCES_DIR = f"{OUTPUT_DIR}/Sources/FluentUIEmoji"
 PACKAGE_SWIFT = f"{OUTPUT_DIR}/Package.swift"
 SWIFT_FILE = f"{SOURCES_DIR}/FluentUIEmoji.swift"
 TESTS_DIR = f"{OUTPUT_DIR}/Tests/FluentUIEmojiTests"
+
+# Prepositions that should not be capitalized in display names
+PREPOSITIONS = {'of', 'the', 'in', 'on', 'at', 'by',
+                'for', 'with', 'to', 'from', 'and', 'or', 'but'}
+
+
+def standardize_filename(filename):
+    """Convert filename to standard format: lowercase letters, numbers, underscores only."""
+    # Remove file extension
+    name = filename.replace('.png', '').replace('_3d', '')
+    # Convert to lowercase and replace non-alphanumeric characters with underscores
+    name = re.sub(r'[^a-z0-9_]', '_', name.lower())
+    # Remove multiple consecutive underscores
+    name = re.sub(r'_+', '_', name)
+    # Remove leading/trailing underscores
+    name = name.strip('_')
+    return name
+
+
+def generate_display_name(standardized_name):
+    """Generate display name from standardized filename."""
+    words = standardized_name.split('_')
+    display_words = []
+
+    for i, word in enumerate(words):
+        if i == 0:  # First word is always capitalized
+            display_words.append(word.capitalize())
+        elif word.lower() in PREPOSITIONS:  # Prepositions remain lowercase
+            display_words.append(word.lower())
+        else:
+            display_words.append(word.capitalize())
+
+    return ' '.join(display_words)
 
 
 def to_camel_case(name):
@@ -98,70 +132,82 @@ def create_package_structure():
 
 
 def copy_emoji_assets(repo_dir):
-    """Copy 3D PNG assets to Resources/, keeping original filenames."""
+    """Copy 3D PNG assets to Resources/ and standardize filenames."""
     assets_path = f"{repo_dir}/assets"
     copied_files = 0
+    filename_counts = defaultdict(int)
+
+    # First pass: collect all files and their standardized names
+    files_to_copy = []
     for emoji_dir in Path(assets_path).iterdir():
         if emoji_dir.is_dir():
             for file in emoji_dir.glob("3D/*_3d.png"):
-                dest_file = Path(ASSETS_DIR) / file.name
-                shutil.copy(file, dest_file)
-                print(f"Copied {file} to {dest_file}")
-                copied_files += 1
+                standardized_name = standardize_filename(file.name)
+                files_to_copy.append((file, standardized_name))
+
+    # Second pass: handle duplicates and copy files
+    for file, standardized_name in files_to_copy:
+        filename_counts[standardized_name] += 1
+
+        # Handle duplicates by adding suffix
+        if filename_counts[standardized_name] > 1:
+            final_name = f"{standardized_name}_{filename_counts[standardized_name]:02d}_3d.png"
+        else:
+            final_name = f"{standardized_name}_3d.png"
+
+        dest_file = Path(ASSETS_DIR) / final_name
+        shutil.copy(file, dest_file)
+        print(f"Copied {file} to {dest_file}")
+        copied_files += 1
+
     print(f"Total files copied: {copied_files}")
 
 
 def generate_swift_file():
-    """Generate a Swift enum with camelCase cases for each emoji."""
+    """Generate a Swift enum with camelCase cases for each emoji based on actual files."""
     emoji_cases = []
     emoji_data = []
-    generated_emojis = set()  # Track generated camelCase names
+    generated_emojis = set()
 
+    # Process actual files in the assets directory
     for file in Path(ASSETS_DIR).glob("*_3d.png"):
-        # Remove '_3d.png' to get rawValue (e.g., 'soft_ice_cream_3d.png' -> 'Soft ice cream')
-        raw_name = file.stem.replace('_3d', '')
-        # Convert to title case for rawValue (e.g., 'soft_ice_cream' -> 'Soft ice cream')
-        display_name = ' '.join(word.capitalize()
-                                for word in raw_name.split('_'))
+        # Get the standardized name without _3d.png
+        standardized_name = file.stem.replace('_3d', '')
+
+        # Generate display name
+        display_name = generate_display_name(standardized_name)
+
+        # Generate camelCase name
         camel_name = to_camel_case(display_name)
 
-        if re.match(r'^[a-zA-Z_][a-zA-Z0-9_]*$', camel_name):
-            emoji_cases.append((camel_name, camel_name))
-            emoji_data.append({
-                'camel_name': camel_name,
-                'display_name': display_name,
-                'category': categorize_emoji(display_name),
-                'search_tags': generate_search_tags(display_name)
-            })
-            generated_emojis.add(camel_name)
-            print(f"Generated emoji: {camel_name} from file: {file.name}")
-        else:
+        # Ensure valid Swift identifier
+        if not re.match(r'^[a-zA-Z_][a-zA-Z0-9_]*$', camel_name):
             camel_name = f"_{camel_name}"
-            if re.match(r'^[a-zA-Z_][a-zA-Z0-9_]*$', camel_name):
-                # Remove leading underscore for identifier
-                emoji_cases.append((camel_name, camel_name[1:]))
-                emoji_data.append({
-                    'camel_name': camel_name,
-                    'display_name': display_name,
-                    'category': categorize_emoji(display_name),
-                    'search_tags': generate_search_tags(display_name)
-                })
-                generated_emojis.add(camel_name)
-                print(f"Generated emoji: {camel_name} from file: {file.name}")
+
+        # Handle duplicate camelCase names
+        original_camel_name = camel_name
+        counter = 1
+        while camel_name in generated_emojis:
+            camel_name = f"{original_camel_name}_{counter:02d}"
+            counter += 1
+
+        emoji_cases.append((camel_name, standardized_name))
+        emoji_data.append({
+            'camel_name': camel_name,
+            'display_name': display_name,
+            'standardized_name': standardized_name,
+            'category': categorize_emoji(display_name),
+            'search_tags': generate_search_tags(display_name)
+        })
+        generated_emojis.add(camel_name)
+        print(
+            f"Generated emoji: {camel_name} -> {standardized_name}_3d.png (Display: {display_name})")
 
     # Log the number of generated cases for debugging
     print(f"Generated {len(emoji_cases)} emoji cases")
 
     cases = "\n    ".join(
         f'case {name} = "{identifier}"' for name, identifier in emoji_cases)
-
-    # Generate category mappings
-    category_cases = {}
-    for data in emoji_data:
-        category = data['category']
-        if category not in category_cases:
-            category_cases[category] = []
-        category_cases[category].append(data['camel_name'])
 
     # Generate search tag mappings with commas
     search_mappings = []
@@ -171,17 +217,13 @@ def generate_swift_file():
 
     # Define popular emojis, only including those that exist in generated_emojis
     candidate_popular_emojis = [
-        ('grinningFace', 'grinning_face_3d.png'),
-        ('smilingFaceWithHeartEyes', 'smiling_face_with_heart_eyes_3d.png'),
-        ('winkingFace', 'winking_face_3d.png'),
-        ('thumbsUp', 'thumbs_up_3d.png'),
-        ('redHeart', 'red_heart_3d.png')
+        'grinningFace', 'smilingFaceWithHeartEyes', 'winkingFace', 'thumbsUp', 'redHeart'
     ]
-    popular_emojis = [f'.{camel_name}' for camel_name,
-                      _ in candidate_popular_emojis if camel_name in generated_emojis]
+    popular_emojis = [
+        f'.{camel_name}' for camel_name in candidate_popular_emojis if camel_name in generated_emojis]
     if not popular_emojis:
-        # Fallback to a single known emoji if none exist
-        popular_emojis = ['.grinningFace']
+        # Fallback to first few emojis if none of the candidates exist
+        popular_emojis = [f'.{data["camel_name"]}' for data in emoji_data[:5]]
     popular_emojis_code = ', '.join(popular_emojis)
     print(f"Popular emojis included: {popular_emojis}")
 
@@ -201,23 +243,27 @@ public enum FluentUIEmoji: String, CaseIterable {{
     
     /// Returns the human-readable display name for the emoji.
     public var displayName: String {{
-        // Convert camelCase to title case (e.g., 'grinningFace' -> 'Grinning Face')
-        let result = self.rawValue.replacingOccurrences(
-            of: "([a-z])([A-Z])",
-            with: "$1 $2",
-            options: .regularExpression
-        )
-        return result.prefix(1).uppercased() + result.dropFirst()
+        // Convert standardized name to display name
+        let words = self.rawValue.split(separator: "_").map(String.init)
+        var displayWords: [String] = []
+        
+        for (index, word) in words.enumerated() {{
+            if index == 0 {{
+                displayWords.append(word.capitalized)
+            }} else if ["of", "the", "in", "on", "at", "by", "for", "with", "to", "from", "and", "or", "but"].contains(word.lowercased()) {{
+                displayWords.append(word.lowercased())
+            }} else {{
+                displayWords.append(word.capitalized)
+            }}
+        }}
+        
+        return displayWords.joined(separator: " ")
     }}
 
     /// Returns the URL for the emoji's 3D PNG asset.
     public var url: URL? {{
-        // Convert camelCase to snake_case (e.g., 'grinningFace' -> 'grinning_face')
-        let fileName = self.rawValue.replacingOccurrences(
-            of: "([a-z])([A-Z])",
-            with: "$1_$2",
-            options: .regularExpression
-        ).lowercased() + "_3d"
+        // Use the standardized name directly
+        let fileName = self.rawValue + "_3d"
         
         if let url = Bundle.module.url(forResource: fileName, withExtension: "png") {{
             return url
@@ -417,6 +463,13 @@ final class FluentUIEmojiTests: XCTestCase {
             for emoji in emojis {
                 XCTAssertEqual(emoji.category, category, "Emoji should belong to correct category")
             }
+        }
+    }
+    
+    func testFilenameStandardization() {
+        // Test that all emojis have valid URLs
+        for emoji in FluentUIEmoji.allCases {
+            XCTAssertNotNil(emoji.url, "Emoji \(emoji.rawValue) should have a valid URL")
         }
     }
 }

@@ -54,4 +54,11 @@ final class FluentUIEmojiTests: XCTestCase {
             }
         }
     }
+    
+    func testFilenameStandardization() {
+        // Test that all emojis have valid URLs
+        for emoji in FluentUIEmoji.allCases {
+            XCTAssertNotNil(emoji.url, "Emoji \(emoji.rawValue) should have a valid URL")
+        }
+    }
 }
